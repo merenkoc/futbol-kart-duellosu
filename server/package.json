@@ -1,0 +1,24 @@
+{
+  "name": "@fkd/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@fkd/shared": "*",
+    "socket.io": "^4.8.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "socket.io-client": "^4.8.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.1.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  }
+}

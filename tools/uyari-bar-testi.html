@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Uyarı Barı Testi</title>
+<style>
+  :root{--bg:#0f172a;--surface:#1e293b;--surface-2:#334155;--text:#f1f5f9;--border:#334155;--danger-bg:#7f1d1d;--danger-text:#fecaca;--r-sm:6px;--r-lg:12px;--ease-out:cubic-bezier(0.16,1,0.3,1);}
+  *{box-sizing:border-box}
+  html{scrollbar-gutter:stable;}
+  body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);}
+  .app{max-width:900px;margin:0 auto;padding:1.5rem;}
+  /* Oyundaki ile aynı: sabit üst katman — akışı ETKİLEMEZ */
+  .banner-stack{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:60;width:min(92vw,560px);display:flex;flex-direction:column;gap:.5rem;pointer-events:none;}
+  .error-banner{background:var(--danger-bg);color:var(--danger-text);padding:.5rem 1rem;border-radius:var(--r-sm);pointer-events:auto;box-shadow:0 6px 18px rgba(2,6,23,.5);animation:banner-in .25s var(--ease-out);text-align:center;}
+  @keyframes banner-in{from{opacity:0}to{opacity:1}}
+  .screen{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;border-radius:var(--r-lg);border:1px solid rgba(255,255,255,.06);
+    background:radial-gradient(circle at 50% 50%,transparent 58px,rgba(255,255,255,.10) 59px,rgba(255,255,255,.10) 61px,transparent 62px),linear-gradient(160deg,#14532d,#0e3a20);}
+  .marker{outline:2px dashed #38bdf8;padding:.4rem .8rem;border-radius:6px;background:rgba(2,6,23,.5);font-weight:700;}
+  .cards{display:flex;gap:1rem}
+  .cardbox{width:120px;height:168px;border-radius:10px;background:linear-gradient(160deg,#334155,#1e293b);border:2px solid #64748b;}
+  /* Sabit referans çizgisi: içeriğin tepesi bununla aynı hizada kalmalı */
+  .ruler{position:fixed;left:0;right:0;height:0;border-top:2px dotted #f59e0b;z-index:40;pointer-events:none;}
+  .rulerlbl{position:fixed;right:8px;color:#f59e0b;font-size:.72rem;z-index:40;}
+  .controls{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:70;display:flex;gap:.5rem;}
+  .controls button{font-family:inherit;font-weight:700;padding:.6rem 1rem;border-radius:8px;border:1px solid var(--border);background:#22c55e;color:#0f172a;cursor:pointer;}
+  .note{position:fixed;bottom:64px;left:50%;transform:translateX(-50%);color:#94a3b8;font-size:.8rem;z-index:70;background:rgba(2,6,23,.6);padding:.3rem .7rem;border-radius:6px;}
+</style>
+</head>
+<body>
+  <div id="stack" class="banner-stack"></div>
+  <div class="app">
+    <div class="screen">
+      <div id="marker" class="marker">↑ İçeriğin tepesi (bu, turuncu çizgiyle aynı hizada KALMALI)</div>
+      <div class="cards"><div class="cardbox"></div><div class="cardbox"></div><div class="cardbox"></div></div>
+      <p>Aşağıdaki butonla kırmızı barı aç/kapat. İçerik oynamamalı.</p>
+    </div>
+  </div>
+  <div id="ruler" class="ruler"></div>
+  <div id="rulerlbl" class="rulerlbl">referans çizgisi</div>
+  <div class="note">Kırmızı bar açılıp kapanırken mavi kutu turuncu çizgiden oynamıyorsa DÜZGÜN demektir.</div>
+  <div class="controls">
+    <button id="toggle">Kırmızı barı AÇ/KAPAT</button>
+  </div>
+<script>
+  const stack=document.getElementById('stack');
+  const marker=document.getElementById('marker');
+  const ruler=document.getElementById('ruler');
+  const lbl=document.getElementById('rulerlbl');
+  // referans çizgisini marker'ın başlangıç konumuna sabitle
+  function placeRuler(){const y=marker.getBoundingClientRect().top;ruler.style.top=y+'px';lbl.style.top=(y-16)+'px';}
+  placeRuler(); window.addEventListener('resize',placeRuler);
+  let on=false;
+  document.getElementById('toggle').addEventListener('click',()=>{
+    on=!on;
+    stack.innerHTML = on ? '<div class="error-banner">Rakip bağlantısı koptu — 60 sn içinde dönmezse maçı kazanacaksın.</div>' : '';
+    // marker'ın yeni konumunu ölç ve konsola yaz (kayma var mı?)
+    const y=marker.getBoundingClientRect().top;
+    console.log('marker top =', Math.round(y), '| referans =', Math.round(parseFloat(ruler.style.top)));
+  });
+</script>
+</body>
+</html>

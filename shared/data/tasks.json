@@ -1,0 +1,20 @@
+{
+  "field": [
+    { "id": "ara_pasi", "name": "Ara Pası", "type": "field", "weights": { "teknik": 0.5, "pas": 0.5 } },
+    { "id": "kontratak", "name": "Kontratak", "type": "field", "weights": { "hiz": 0.5, "dripling": 0.5 } },
+    { "id": "uzaktan_sut", "name": "Uzaktan Şut", "type": "field", "weights": { "sut": 0.5, "teknik": 0.5 } },
+    { "id": "birebir_calim", "name": "Birebir Çalım", "type": "field", "weights": { "calim": 0.5, "dripling": 0.5 } },
+    { "id": "kanat_bindirmesi", "name": "Kanat Bindirmesi", "type": "field", "weights": { "hiz": 0.5, "pas": 0.5 } },
+    { "id": "bitiricilik", "name": "Bitiricilik", "type": "field", "weights": { "sut": 0.5, "calim": 0.5 } },
+    { "id": "pres_direnci", "name": "Pres Direnci", "type": "field", "weights": { "teknik": 0.5, "dripling": 0.5 } },
+    { "id": "serbest_vurus", "name": "Serbest Vuruş", "type": "field", "weights": { "sut": 0.5, "pas": 0.5 } },
+    { "id": "oyun_kurma", "name": "Oyun Kurma", "type": "field", "weights": { "pas": 1, "teknik": 1, "dripling": 1 } },
+    { "id": "derinlik_kosusu", "name": "Derinlik Koşusu", "type": "field", "weights": { "hiz": 0.5, "sut": 0.5 } }
+  ],
+  "gk": [
+    { "id": "uzak_sut_tutma", "name": "Uzaktan Şutu Tutma", "type": "gk", "weights": { "atlama": 0.5, "kurtaris": 0.5 } },
+    { "id": "karsi_karsiya", "name": "Karşı Karşıya", "type": "gk", "weights": { "pozisyonAlma": 0.5, "kurtaris": 0.5 } },
+    { "id": "asirtma_tutma", "name": "Aşırtmayı Tutma", "type": "gk", "weights": { "atlama": 0.5, "pozisyonAlma": 0.5 } },
+    { "id": "yakin_refleks", "name": "Yakın Mesafe Refleksi", "type": "gk", "weights": { "kurtaris": 0.6, "atlama": 0.4 } }
+  ]
+}

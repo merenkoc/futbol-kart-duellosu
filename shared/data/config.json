@@ -1,0 +1,54 @@
+{
+  "stats": {
+    "field": ["dripling", "hiz", "sut", "teknik", "pas", "calim"],
+    "gk": ["atlama", "kurtaris", "pozisyonAlma"]
+  },
+  "tiers": {
+    "alt": { "min": 50, "max": 69 },
+    "orta": { "min": 70, "max": 75 },
+    "ust": { "min": 76, "max": 95 }
+  },
+  "draft": {
+    "rounds": 5,
+    "gkRound": 3,
+    "optionsPerRound": 3,
+    "fieldCompositions": [
+      ["alt", "orta", "ust"],
+      ["alt", "alt", "orta"],
+      ["alt", "orta", "orta"],
+      ["orta", "orta", "orta"],
+      ["orta", "orta", "ust"],
+      ["orta", "ust", "ust"],
+      ["ust", "ust", "ust"],
+      ["alt", "alt", "alt"]
+    ],
+    "gkCompositions": [
+      ["alt", "orta", "ust"],
+      ["orta", "orta", "orta"],
+      ["orta", "orta", "ust"],
+      ["alt", "orta", "orta"]
+    ]
+  },
+  "match": {
+    "rounds": 5,
+    "gkRound": 3
+  },
+  "scoring": {
+    "win": 3,
+    "draw": 1
+  },
+  "penalty": {
+    "shooterWeights": { "sut": 0.7, "teknik": 0.3 }
+  },
+  "bot": {
+    "bestPickProbability": 0.7,
+    "minDelayMs": 1000,
+    "maxDelayMs": 2000
+  },
+  "timing": {
+    "revealMs": 3000,
+    "keeperIntroMs": 2500,
+    "keeperRevealMs": 3500,
+    "penaltyResultMs": 3000
+  }
+}

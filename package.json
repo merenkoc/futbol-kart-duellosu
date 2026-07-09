@@ -1,0 +1,19 @@
+{
+  "name": "futbol-kart-duellosu",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Futbol Kart Düellosu — 2 oyunculu draft + düello kart oyunu (MVP)",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "test": "npm run test -w @fkd/server && npm run test -w @fkd/client",
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev -w @fkd/server\" \"npm run dev -w @fkd/client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "playwright": "^1.61.1"
+  }
+}

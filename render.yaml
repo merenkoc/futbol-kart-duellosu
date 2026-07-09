@@ -1,0 +1,17 @@
+# Render blueprint — sunucu (Socket.io) free tier'da tek instance çalışır.
+# Kullanım: Render Dashboard → New → Blueprint → bu repo'yu seç.
+# Not: Free tier 15 dk hareketsizlikte uyur; ilk bağlantıda 30-60 sn'de uyanır.
+# Client'taki splash ekranı bu bekleme için tasarlandı ("Sunucu uyanıyor…" notu).
+services:
+  - type: web
+    name: fkd-server
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run start -w @fkd/server
+    healthCheckPath: /health
+    envVars:
+      # Vercel deploy'undan sonra client adresini buraya gir (CORS izni).
+      # Örn: https://futbol-kart-duellosu.vercel.app  (sonunda / OLMADAN)
+      - key: CLIENT_ORIGIN
+        sync: false
