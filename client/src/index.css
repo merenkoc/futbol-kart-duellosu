@@ -568,15 +568,15 @@ button, .card { touch-action: manipulation; -webkit-tap-highlight-color: transpa
   }
   .menu-buttons button, .room-link button, .card { min-height: 44px; }
   .card-row, .shot-scene-row {
-    flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x mandatory;
+    /* Mobilde yatay kaydırma yerine kartlar satırlara sarılır: 3 kart → 2+1,
+       4 kart → 2+2, 5 kart → 2+2+1 (hepsi tek bakışta görünür, kaydırma yok).
+       align-self:stretch olmadan align-items:center'lı ebeveynlerde satır
+       max-content'e büyüyüp sayfayı yatay kaydırıyordu — o kısıt korunuyor. */
+    flex-wrap: wrap; justify-content: center; row-gap: 0.75rem;
     padding-bottom: 0.5rem;
-    /* KRİTİK: align-items:center'lı ebeveynlerde (draft/penaltı/arena) satır
-       max-content genişliğine büyüyüp SAYFAYI yatay kaydırıyordu; satırı ekran
-       genişliğine sabitle, kaydırma satırın KENDİ içinde kalsın. */
     align-self: stretch; min-width: 0; max-width: 100%;
   }
-  .card-row > *, .shot-scene-row > * { scroll-snap-align: start; flex: 0 0 auto; }
-  .draft-deal-slot { scroll-snap-align: start; flex: 0 0 auto; }
+  .card-row > *, .shot-scene-row > *, .draft-deal-slot { flex: 0 0 auto; }
   .card { width: 128px; height: 180px; }
   .card-overall-badge { width: 24px; height: 24px; font-size: 0.7rem; }
   .card-name { font-size: 0.8rem; }
@@ -597,7 +597,6 @@ button, .card { touch-action: manipulation; -webkit-tap-highlight-color: transpa
   .end-timeline { padding-left: 0; font-size: 0.8rem; }
   .end-scoreline { font-size: 2rem; }
   .draft-screen, .penalty-screen, .match-screen { min-height: auto; }
-  .match-screen .card-row, .draft-screen .card-row, .penalty-screen .card-row { justify-content: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
