@@ -66,6 +66,8 @@ export interface ClientState {
   pendingMode: PendingMode;
   /** Maçın oynandığı (ya da host'un seçtiği) havuz. */
   poolId: string | null;
+  /** Maçın tur sıralı 5 görevi (görev önizlemesi) — draft başında sunucudan gelir. */
+  matchTasks: Task[] | null;
   matchId: string | null;
   /** Sunucudaki RoundResult/PenaltyExchange gibi [0,1] indeksli verilerde "ben" hangisiyim. */
   myIdx: 0 | 1;
@@ -85,6 +87,7 @@ export const initialClientState: ClientState = {
   screen: 'menu',
   pendingMode: null,
   poolId: null,
+  matchTasks: null,
   matchId: null,
   myIdx: 0,
   error: null,

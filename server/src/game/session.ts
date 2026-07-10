@@ -3,6 +3,7 @@ import {
   applyPick,
   createDraft,
   createMatch,
+  createMatchTasks,
   createPenalty,
   currentTask,
   isGkRound,
@@ -68,13 +69,14 @@ export class MatchSession {
     this.pool = pool;
     this.poolId = poolId;
     this.rng = mulberry32(seed);
+    // Görevler draft'tan ÖNCE çekilir ki draft ekranında önizlenebilsin
+    // (görev önizlemesi). Seed determinizmi korunur: aynı seed → aynı görevler + draft.
+    this.matchTasks = createMatchTasks(fieldTasks, gkTasks, config, this.rng);
     this.draftState = createDraft(pool, config, this.rng);
-    this.fieldTasks = fieldTasks;
-    this.gkTasks = gkTasks;
   }
 
-  private fieldTasks: Task[];
-  private gkTasks: Task[];
+  /** Bu maçın tur sıralı 5 görevi — draft aşamasında önizleme olarak gönderilir. */
+  readonly matchTasks: Task[];
 
   get isDraftGkRound(): boolean {
     return isGkRound(this.draftState.round, this.config);
@@ -87,7 +89,7 @@ export class MatchSession {
       const hand0 = splitHand(this.draftState.hands[0]);
       const hand1 = splitHand(this.draftState.hands[1]);
       this.hands = [hand0, hand1];
-      this.matchState = createMatch(this.fieldTasks, this.gkTasks, this.config, this.rng);
+      this.matchState = createMatch(this.matchTasks);
       this.phase = 'match';
     }
   }

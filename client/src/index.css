@@ -473,6 +473,35 @@ button, .card { touch-action: manipulation; -webkit-tap-highlight-color: transpa
 .menu-buttons .menu-btn-secondary { background: rgba(2, 6, 23, 0.4); color: var(--text); border-color: var(--border); }
 .menu-buttons .menu-btn-secondary:hover { border-color: var(--text-muted); }
 
+/* ========== GÖREV ZAMAN ÇİZELGESİ (önizleme) ========== */
+.task-timeline {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.4rem;
+  list-style: none; margin: 0; padding: 0; align-self: center; max-width: 100%;
+}
+.task-timeline-label {
+  font-size: 0.65rem; font-weight: 800; letter-spacing: 0.14em;
+  color: var(--text-faint);
+}
+.task-timeline-chip {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  background: rgba(2, 6, 23, 0.5); border: 1px solid var(--border);
+  border-radius: 999px; padding: 0.16rem 0.6rem 0.16rem 0.22rem;
+  font-size: 0.74rem; color: var(--text-dim); white-space: nowrap;
+}
+.task-timeline-round {
+  display: flex; align-items: center; justify-content: center;
+  width: 17px; height: 17px; border-radius: 50%;
+  background: var(--surface-2); font-weight: 800; font-size: 0.62rem; color: var(--text);
+}
+.task-timeline-chip.is-gk { border-color: rgba(251, 191, 36, 0.55); }
+.task-timeline-chip.is-gk .task-timeline-round { background: var(--gold); color: var(--bg); }
+.task-timeline-chip.is-done { opacity: 0.42; }
+.task-timeline-chip.is-done .task-timeline-name { text-decoration: line-through; }
+.task-timeline-chip.is-active {
+  border-color: var(--accent); color: var(--text); box-shadow: var(--glow-accent);
+}
+.task-timeline-chip.is-active .task-timeline-round { background: var(--accent); color: var(--bg); }
+
 /* ========== TAKIM SEÇİMİ — yuvarlak rozetler + kaydırmalı şeritler ========== */
 .team-select-screen { align-items: center; text-align: center; }
 .pool-section { align-self: stretch; min-width: 0; max-width: 100%; }

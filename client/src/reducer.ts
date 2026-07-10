@@ -21,10 +21,10 @@ export type Action =
   | { type: 'OPPONENT_RECONNECTED' }
   | { type: 'REMATCH_LOCAL' }
   | { type: 'MATCH_REMATCH_REQUESTED' }
-  | { type: 'DRAFT_OPTIONS'; round: number; totalRounds: number; isGkRound: boolean; options: Card[] }
+  | { type: 'DRAFT_OPTIONS'; round: number; totalRounds: number; isGkRound: boolean; options: Card[]; tasks: Task[] }
   | { type: 'DRAFT_PICK_LOCAL'; cardId: string }
   | { type: 'DRAFT_OPPONENT_PICKED'; round: number }
-  | { type: 'DRAFT_COMPLETE'; hand: Hand }
+  | { type: 'DRAFT_COMPLETE'; hand: Hand; tasks: Task[] }
   | { type: 'ROUND_TASK'; round: number; totalRounds: number; task: Task }
   | { type: 'CLEAR_KEEPER_BANNER' }
   | { type: 'ROUND_PLAY_LOCAL'; cardId: string }
@@ -114,6 +114,7 @@ export function reducer(state: ClientState, action: Action): ClientState {
       return {
         ...state,
         screen: 'draft',
+        matchTasks: action.tasks,
         draft: {
           round: action.round,
           totalRounds: action.totalRounds,
@@ -134,6 +135,7 @@ export function reducer(state: ClientState, action: Action): ClientState {
       return {
         ...state,
         draft: null,
+        matchTasks: action.tasks,
         match: {
           round: 0,
           totalRounds: 5,

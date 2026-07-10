@@ -1,20 +1,24 @@
 import { useEffect } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
+import type { Task } from '@fkd/shared';
 import type { MatchUiState } from '../types.js';
 import { CardView } from '../components/CardView.js';
 import { DuelArea } from '../components/DuelArea.js';
+import { TaskTimeline } from '../components/TaskTimeline.js';
 import { statLabel } from '../gameConfig.js';
 import { playClick, playFlip } from '../sound.js';
 
 interface Props {
   state: MatchUiState;
   myIdx: 0 | 1;
+  /** Maçın tur sıralı görevleri — geçmiş soluk, aktif vurgulu gösterilir. */
+  tasks?: Task[] | null;
   banner: string | null;
   onBannerDone: () => void;
   onPlay: (cardId: string) => void;
 }
 
-export function MatchScreen({ state, myIdx, banner, onBannerDone, onPlay }: Props) {
+export function MatchScreen({ state, myIdx, tasks, banner, onBannerDone, onPlay }: Props) {
   const reduceMotion = useReducedMotion();
   const locked = state.myPickId !== null;
   const other = myIdx === 0 ? 1 : 0;
@@ -54,6 +58,8 @@ export function MatchScreen({ state, myIdx, banner, onBannerDone, onPlay }: Prop
         </span>
         <span>Rakip: {state.scores[other]}</span>
       </div>
+
+      {tasks && tasks.length > 0 && <TaskTimeline tasks={tasks} currentRound={state.round} />}
 
       {/* Rakip tarafı — üstte kapalı kart sırtları (kalan el kadar) */}
       {oppRemaining > 0 && (

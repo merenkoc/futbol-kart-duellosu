@@ -41,10 +41,14 @@ export function createMatchTasks(fieldTasks: Task[], gkTasks: Task[], config: Ga
   return tasks;
 }
 
-export function createMatch(fieldTasks: Task[], gkTasks: Task[], config: GameConfig, rng: RNG): MatchState {
+/**
+ * Görevler dışarıdan verilir (createMatchTasks ile üretilmiş, tur sıralı liste) —
+ * görev önizlemesi için seçim maçtan ÖNCE (session kurulumunda) yapılır.
+ */
+export function createMatch(tasks: Task[]): MatchState {
   return {
     round: 1,
-    tasks: createMatchTasks(fieldTasks, gkTasks, config, rng),
+    tasks,
     scores: [0, 0],
     usedCardIds: [[], []],
     pending: [null, null],

@@ -30,7 +30,7 @@ const keeperB = makeGkCard('gkb', 80, 82, 81);
 /** Maçı baştan sona oynatır; her turda verilen sıradaki kartlar oynanır. */
 function playFullMatch(seed: number, orderA = handA, orderB = handB) {
   const rng = mulberry32(seed);
-  let state = createMatch(fieldTasks, gkTasks, config, rng);
+  let state = createMatch(createMatchTasks(fieldTasks, gkTasks, config, rng));
   let fa = 0;
   let fb = 0;
   while (!state.finished) {
@@ -78,7 +78,7 @@ describe('tur akışı ve doğrulamalar', () => {
 
   it('kullanılan saha kartı tekrar oynanamaz', () => {
     const rng = mulberry32(2);
-    let state = createMatch(fieldTasks, gkTasks, config, rng);
+    let state = createMatch(createMatchTasks(fieldTasks, gkTasks, config, rng));
     state = playCard(state, 0, handA[0]!, config);
     state = playCard(state, 1, handB[0]!, config);
     state = resolveRound(state, config);
@@ -87,13 +87,13 @@ describe('tur akışı ve doğrulamalar', () => {
 
   it('kaleci kartı saha turunda oynanamaz', () => {
     const rng = mulberry32(3);
-    const state = createMatch(fieldTasks, gkTasks, config, rng);
+    const state = createMatch(createMatchTasks(fieldTasks, gkTasks, config, rng));
     expect(() => playCard(state, 0, keeperA, config)).toThrow(/saha turunda oynanamaz/);
   });
 
   it('3. turda manuel kart seçimi yok, kaleciler otomatik', () => {
     const rng = mulberry32(4);
-    let state = createMatch(fieldTasks, gkTasks, config, rng);
+    let state = createMatch(createMatchTasks(fieldTasks, gkTasks, config, rng));
     // İlk iki turu oyna.
     for (const i of [0, 1]) {
       state = playCard(state, 0, handA[i]!, config);
@@ -112,21 +112,21 @@ describe('tur akışı ve doğrulamalar', () => {
 
   it('iki oyuncu kilitlemeden tur çözülemez', () => {
     const rng = mulberry32(5);
-    let state = createMatch(fieldTasks, gkTasks, config, rng);
+    let state = createMatch(createMatchTasks(fieldTasks, gkTasks, config, rng));
     state = playCard(state, 0, handA[0]!, config);
     expect(() => resolveRound(state, config)).toThrow();
   });
 
   it('aynı turda ikinci kart kilitlenemez', () => {
     const rng = mulberry32(6);
-    let state = createMatch(fieldTasks, gkTasks, config, rng);
+    let state = createMatch(createMatchTasks(fieldTasks, gkTasks, config, rng));
     state = playCard(state, 0, handA[0]!, config);
     expect(() => playCard(state, 0, handA[1]!, config)).toThrow();
   });
 
   it('görev skorları ve kazanan doğru hesaplanır', () => {
     const rng = mulberry32(7);
-    let state = createMatch(fieldTasks, gkTasks, config, rng);
+    let state = createMatch(createMatchTasks(fieldTasks, gkTasks, config, rng));
     const task = currentTask(state);
     state = playCard(state, 0, handA[0]!, config);
     state = playCard(state, 1, handB[0]!, config);
@@ -159,7 +159,7 @@ describe('maç sonucu', () => {
 
   it('maç bitmeden sonuç sorgulanamaz', () => {
     const rng = mulberry32(10);
-    const state = createMatch(fieldTasks, gkTasks, config, rng);
+    const state = createMatch(createMatchTasks(fieldTasks, gkTasks, config, rng));
     expect(() => matchWinner(state)).toThrow();
   });
 });

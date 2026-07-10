@@ -302,10 +302,11 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
         totalRounds: session.config.draft.rounds,
         isGkRound: session.isDraftGkRound,
         options: session.draftState.options[idx],
+        tasks: session.matchTasks,
       });
       return;
     }
-    emitToPlayer(session.id, idx, 'draft:complete', { hand: session.hands![idx] });
+    emitToPlayer(session.id, idx, 'draft:complete', { hand: session.hands![idx], tasks: session.matchTasks });
     if (session.phase === 'match') {
       emitToPlayer(session.id, idx, 'round:task', {
         round: session.matchState!.round,
@@ -339,6 +340,7 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
         totalRounds: session.config.draft.rounds,
         isGkRound: session.isDraftGkRound,
         options: session.draftState.options[idx],
+        tasks: session.matchTasks,
       });
     }
   }
@@ -359,7 +361,9 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
 
   function handleDraftAdvance(session: MatchSession, actedPlayer: 0 | 1): void {
     if (session.phase === 'match') {
-      for (const idx of [0, 1] as const) emitToPlayer(session.id, idx, 'draft:complete', { hand: session.hands![idx] });
+      for (const idx of [0, 1] as const) {
+        emitToPlayer(session.id, idx, 'draft:complete', { hand: session.hands![idx], tasks: session.matchTasks });
+      }
       startMatchRound(session);
       return;
     }

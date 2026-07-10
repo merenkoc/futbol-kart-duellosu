@@ -1,15 +1,19 @@
 import { motion, useReducedMotion } from 'framer-motion';
+import type { Task } from '@fkd/shared';
 import type { DraftUiState } from '../types.js';
 import { CardView } from '../components/CardView.js';
+import { TaskTimeline } from '../components/TaskTimeline.js';
 import { playClick } from '../sound.js';
 
 interface Props {
   state: DraftUiState;
   poolLabel?: string | null;
+  /** Maçın tur sıralı görevleri (önizleme) — karta göre plan yapılabilsin. */
+  tasks?: Task[] | null;
   onPick: (cardId: string) => void;
 }
 
-export function Draft({ state, poolLabel, onPick }: Props) {
+export function Draft({ state, poolLabel, tasks, onPick }: Props) {
   const reduceMotion = useReducedMotion();
   const locked = state.myPickId !== null;
   return (
@@ -19,6 +23,7 @@ export function Draft({ state, poolLabel, onPick }: Props) {
         Draft — Tur {state.round}/{state.totalRounds}
         {state.isGkRound && ' (Kaleci Turu)'}
       </h2>
+      {tasks && tasks.length > 0 && <TaskTimeline tasks={tasks} showLabel />}
       {state.isGkRound && (
         <p className="status">
           Bu kart Kilit Round'da otomatik oynar ve penaltıda kurtarış gücünü belirler.

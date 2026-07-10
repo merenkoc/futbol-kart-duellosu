@@ -1,7 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import type { Card, PenaltyExchangeResultPayload } from '@fkd/shared';
+import type { Card, PenaltyExchangeResultPayload, Task } from '@fkd/shared';
 import { reducer } from '../src/reducer.js';
 import { initialClientState } from '../src/types.js';
+
+function makeTask(id: string, type: 'field' | 'gk' = 'field'): Task {
+  return { id, name: id, type, weights: { sut: 1 } };
+}
 
 function makeCard(id: string): Card {
   return { id, name: id, position: 'field', stats: { dripling: 80, hiz: 80, sut: 80, teknik: 80, pas: 80, calim: 80 } };
@@ -35,6 +39,32 @@ function penaltyStart(
     opponentPicked: false,
   };
 }
+
+describe('reducer — görev önizlemesi', () => {
+  const tasks = [makeTask('t1'), makeTask('t2'), makeTask('gk1', 'gk'), makeTask('t3'), makeTask('t4')];
+
+  it('DRAFT_OPTIONS görev listesini state.matchTasks olarak saklar', () => {
+    const state = reducer(initialClientState, {
+      type: 'DRAFT_OPTIONS',
+      round: 1,
+      totalRounds: 5,
+      isGkRound: false,
+      options: [],
+      tasks,
+    });
+    expect(state.matchTasks).toEqual(tasks);
+  });
+
+  it('DRAFT_COMPLETE görev listesini taşır (reconnect maç ortası dahil)', () => {
+    const state = reducer(initialClientState, {
+      type: 'DRAFT_COMPLETE',
+      hand: { fieldCards: [], goalkeeper: { id: 'g', name: 'g', position: 'gk', stats: {} } },
+      tasks,
+    });
+    expect(state.matchTasks).toEqual(tasks);
+    expect(state.match).not.toBeNull();
+  });
+});
 
 describe('reducer — penaltı ani ölüm (docs/faz4-duzeltme-plani.md Sorun 2)', () => {
   it('PENALTY_START -> PENALTY_RESULT -> PENALTY_START sonrası yeni seride kart seçimi tekrar açılır', () => {

@@ -63,7 +63,7 @@ export default function App() {
     });
     socket.on('draft:options', (payload) => dispatch({ type: 'DRAFT_OPTIONS', ...payload }));
     socket.on('draft:opponentPicked', ({ round }) => dispatch({ type: 'DRAFT_OPPONENT_PICKED', round }));
-    socket.on('draft:complete', ({ hand }) => dispatch({ type: 'DRAFT_COMPLETE', hand }));
+    socket.on('draft:complete', (payload) => dispatch({ type: 'DRAFT_COMPLETE', ...payload }));
     socket.on('round:task', (payload) => dispatch({ type: 'ROUND_TASK', ...payload }));
     socket.on('round:waitingOpponent', () => dispatch({ type: 'ROUND_WAITING_OPPONENT' }));
     socket.on('round:reveal', (result) => dispatch({ type: 'ROUND_REVEAL', result }));
@@ -173,6 +173,7 @@ export default function App() {
             <Draft
               state={state.draft}
               poolLabel={poolLabel(state.poolId)}
+              tasks={state.matchTasks}
               onPick={(cardId) => {
                 dispatch({ type: 'DRAFT_PICK_LOCAL', cardId });
                 socket.emit('draft:pick', { cardId });
@@ -183,6 +184,7 @@ export default function App() {
             <MatchScreen
               state={state.match}
               myIdx={state.myIdx}
+              tasks={state.matchTasks}
               banner={state.keeperBanner}
               onBannerDone={() => dispatch({ type: 'CLEAR_KEEPER_BANNER' })}
               onPlay={(cardId) => {

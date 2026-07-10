@@ -151,9 +151,16 @@ export interface ServerToClientEvents {
   'room:created': (payload: { roomId: string }) => void;
   'queue:waiting': () => void;
   'match:start': (payload: { matchId: string; playerIdx: 0 | 1; playerToken: string; poolId: string }) => void;
-  'draft:options': (payload: { round: number; totalRounds: number; isGkRound: boolean; options: Card[] }) => void;
+  'draft:options': (payload: {
+    round: number;
+    totalRounds: number;
+    isGkRound: boolean;
+    options: Card[];
+    /** Maçın tur sıralı 5 görevi (görev önizlemesi) — iki oyuncuya da aynı gider. */
+    tasks: Task[];
+  }) => void;
   'draft:opponentPicked': (payload: { round: number }) => void;
-  'draft:complete': (payload: { hand: Hand }) => void;
+  'draft:complete': (payload: { hand: Hand; tasks: Task[] }) => void;
   'round:task': (payload: { round: number; totalRounds: number; task: Task }) => void;
   'round:waitingOpponent': () => void;
   'round:reveal': (payload: RoundResult) => void;
