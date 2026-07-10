@@ -11,8 +11,31 @@ export interface Card {
   id: string;
   name: string;
   position: Position;
+  /** Ait olduğu havuz (milli takım / lig id'si, pools.json). */
+  pool?: string;
+  /**
+   * Havuz-içi göreli kademe. Set ise tierOf overall aralığı yerine bunu kullanır —
+   * "en iyi 30" havuzlarında herkes yüksek overall'lı olduğundan mutlak aralıkla
+   * herkes üst çıkardı, draft kademe kompozisyonları anlamını yitirirdi.
+   */
+  tier?: Tier;
   /** Stat adı -> değer (0-99). Anahtarlar config.stats listesiyle eşleşmeli. */
   stats: Record<string, number>;
+}
+
+/** Takım seçme ekranı + havuz doğrulaması için havuz meta verisi (pools.json). */
+export interface PoolInfo {
+  id: string;
+  label: string;
+  type: 'national' | 'league';
+  /** EA veri setindeki karşılığı (üretim script'i kullanır). */
+  nation?: string;
+  league?: string;
+  /** Rozet görseli: bayrak emojisi (milli) ya da kısaltma monogramı (lig). */
+  emoji?: string;
+  short: string;
+  /** Rozet gradyanı [üst, alt]. */
+  colors: [string, string];
 }
 
 export interface Task {
@@ -113,10 +136,10 @@ export interface PenaltyExchangeResultPayload {
 }
 
 export interface ClientToServerEvents {
-  'bot:start': () => void;
-  'room:create': () => void;
+  'bot:start': (payload?: { poolId?: string }) => void;
+  'room:create': (payload?: { poolId?: string }) => void;
   'room:join': (payload: { roomId: string }) => void;
-  'queue:join': () => void;
+  'queue:join': (payload?: { poolId?: string }) => void;
   'match:reconnect': (payload: { matchId: string; playerToken: string }) => void;
   'draft:pick': (payload: { cardId: string }) => void;
   'round:playCard': (payload: { cardId: string }) => void;
@@ -127,7 +150,7 @@ export interface ClientToServerEvents {
 export interface ServerToClientEvents {
   'room:created': (payload: { roomId: string }) => void;
   'queue:waiting': () => void;
-  'match:start': (payload: { matchId: string; playerIdx: 0 | 1; playerToken: string }) => void;
+  'match:start': (payload: { matchId: string; playerIdx: 0 | 1; playerToken: string; poolId: string }) => void;
   'draft:options': (payload: { round: number; totalRounds: number; isGkRound: boolean; options: Card[] }) => void;
   'draft:opponentPicked': (payload: { round: number }) => void;
   'draft:complete': (payload: { hand: Hand }) => void;

@@ -5,17 +5,18 @@ import type {
   RoundResult,
   Task,
 } from '@fkd/shared';
-import { type ClientState, initialClientState } from './types.js';
+import { type ClientState, type PendingMode, initialClientState } from './types.js';
 
 export type Action =
   | { type: 'RESET' }
-  | { type: 'LOBBY_CREATING' }
+  | { type: 'TEAM_SELECT_OPEN'; mode: Exclude<PendingMode, null> }
+  | { type: 'LOBBY_CREATING'; poolId?: string }
   | { type: 'LOBBY_JOINING' }
-  | { type: 'LOBBY_QUEUE' }
+  | { type: 'LOBBY_QUEUE'; poolId?: string }
   | { type: 'ROOM_CREATED'; roomId: string }
   | { type: 'QUEUE_WAITING' }
-  | { type: 'MATCH_START'; matchId: string; playerIdx: 0 | 1 }
-  | { type: 'RESTORE_SESSION'; matchId: string; playerIdx: 0 | 1 }
+  | { type: 'MATCH_START'; matchId: string; playerIdx: 0 | 1; poolId: string }
+  | { type: 'RESTORE_SESSION'; matchId: string; playerIdx: 0 | 1; poolId?: string }
   | { type: 'OPPONENT_DISCONNECTED'; graceMs: number }
   | { type: 'OPPONENT_RECONNECTED' }
   | { type: 'REMATCH_LOCAL' }
@@ -57,14 +58,27 @@ export function reducer(state: ClientState, action: Action): ClientState {
     case 'RESET':
       return initialClientState;
 
+    case 'TEAM_SELECT_OPEN':
+      return { ...initialClientState, screen: 'teamSelect', pendingMode: action.mode };
+
     case 'LOBBY_CREATING':
-      return { ...initialClientState, screen: 'lobby', lobby: { mode: 'creating', roomId: null } };
+      return {
+        ...initialClientState,
+        screen: 'lobby',
+        lobby: { mode: 'creating', roomId: null },
+        poolId: action.poolId ?? null,
+      };
 
     case 'LOBBY_JOINING':
       return { ...initialClientState, screen: 'lobby', lobby: { mode: 'joining', roomId: null } };
 
     case 'LOBBY_QUEUE':
-      return { ...initialClientState, screen: 'lobby', lobby: { mode: 'queue', roomId: null } };
+      return {
+        ...initialClientState,
+        screen: 'lobby',
+        lobby: { mode: 'queue', roomId: null },
+        poolId: action.poolId ?? null,
+      };
 
     case 'ROOM_CREATED':
       return state.lobby ? { ...state, lobby: { ...state.lobby, roomId: action.roomId } } : state;
@@ -73,10 +87,16 @@ export function reducer(state: ClientState, action: Action): ClientState {
       return state.lobby ? { ...state, lobby: { ...state.lobby, mode: 'queue' } } : state;
 
     case 'MATCH_START':
-      return { ...initialClientState, matchId: action.matchId, myIdx: action.playerIdx, screen: 'draft' };
+      return {
+        ...initialClientState,
+        matchId: action.matchId,
+        myIdx: action.playerIdx,
+        poolId: action.poolId,
+        screen: 'draft',
+      };
 
     case 'RESTORE_SESSION':
-      return { ...state, matchId: action.matchId, myIdx: action.playerIdx };
+      return { ...state, matchId: action.matchId, myIdx: action.playerIdx, poolId: action.poolId ?? null };
 
     case 'OPPONENT_DISCONNECTED':
       return { ...state, opponentDisconnected: { graceMs: action.graceMs } };

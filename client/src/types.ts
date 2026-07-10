@@ -1,6 +1,9 @@
 import type { Card, Hand, PenaltyExchangeResultPayload, RoundResult, Task } from '@fkd/shared';
 
-export type Screen = 'menu' | 'lobby' | 'draft' | 'match' | 'keeperRound' | 'penalty' | 'end';
+export type Screen = 'menu' | 'teamSelect' | 'lobby' | 'draft' | 'match' | 'keeperRound' | 'penalty' | 'end';
+
+/** Takım seçiminden sonra hangi modda maç başlatılacak. */
+export type PendingMode = 'bot' | 'friend' | 'queue' | null;
 
 export interface LobbyUiState {
   mode: 'creating' | 'joining' | 'queue';
@@ -59,6 +62,10 @@ export interface EndUiState {
 
 export interface ClientState {
   screen: Screen;
+  /** Takım seçme ekranı hangi mod için açık. */
+  pendingMode: PendingMode;
+  /** Maçın oynandığı (ya da host'un seçtiği) havuz. */
+  poolId: string | null;
   matchId: string | null;
   /** Sunucudaki RoundResult/PenaltyExchange gibi [0,1] indeksli verilerde "ben" hangisiyim. */
   myIdx: 0 | 1;
@@ -76,6 +83,8 @@ export interface ClientState {
 
 export const initialClientState: ClientState = {
   screen: 'menu',
+  pendingMode: null,
+  poolId: null,
   matchId: null,
   myIdx: 0,
   error: null,

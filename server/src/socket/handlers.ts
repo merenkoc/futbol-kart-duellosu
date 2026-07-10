@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import type { Server } from 'socket.io';
 import type { ClientToServerEvents, GameConfig, MatchMode, ServerToClientEvents } from '@fkd/shared';
-import { cards, config, fieldTasks, gkTasks } from '../data/loadData.js';
+import { cardsByPool, config, fieldTasks, gkTasks, resolvePoolId } from '../data/loadData.js';
 import { MatchSession } from '../game/session.js';
 import { createLobby } from '../realtime/lobby.js';
 import * as store from '../realtime/store.js';
@@ -55,21 +55,21 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
   }
 
   io.on('connection', (socket: TypedSocket) => {
-    socket.on('bot:start', () => {
+    socket.on('bot:start', (payload) => {
       if (tooFast(socket)) return;
-      beginMatch('bot', [socket, null]);
+      beginMatch('bot', [socket, null], resolvePoolId(payload?.poolId));
     });
-    socket.on('room:create', () => {
+    socket.on('room:create', (payload) => {
       if (tooFast(socket)) return;
-      lobby.createRoom(socket);
+      lobby.createRoom(socket, resolvePoolId(payload?.poolId));
     });
     socket.on('room:join', (payload) => {
       if (tooFast(socket)) return;
       lobby.joinRoom(typeof payload?.roomId === 'string' ? payload.roomId : '', socket);
     });
-    socket.on('queue:join', () => {
+    socket.on('queue:join', (payload) => {
       if (tooFast(socket)) return;
-      lobby.joinQueue(socket);
+      lobby.joinQueue(socket, resolvePoolId(payload?.poolId));
     });
 
     socket.on('match:reconnect', (payload) => {
@@ -148,8 +148,9 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
       if (!entry) return;
 
       if (entry.session.mode === 'bot') {
+        const poolId = entry.session.poolId;
         store.deleteEntry(link.matchId);
-        beginMatch('bot', [socket, null]);
+        beginMatch('bot', [socket, null], poolId);
         return;
       }
 
@@ -157,8 +158,9 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
       const other = link.playerIdx === 0 ? 1 : 0;
       if (entry.rematchRequested[other]) {
         const [s0, s1] = entry.sockets;
+        const { mode, poolId } = entry.session;
         store.deleteEntry(link.matchId);
-        if (s0 && s1) beginMatch(entry.session.mode, [s0, s1]);
+        if (s0 && s1) beginMatch(mode, [s0, s1], poolId);
       } else {
         emitToPlayer(link.matchId, other, 'match:rematchRequested');
       }
@@ -206,7 +208,7 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
 
   // --- Maç kurulumu (bot / friend / matchmaking ortak) ---
 
-  function beginMatch(mode: MatchMode, sockets: [TypedSocket, TypedSocket | null]): void {
+  function beginMatch(mode: MatchMode, sockets: [TypedSocket, TypedSocket | null], poolId: string): void {
     for (const s of sockets) {
       if (!s) continue;
       // Lobi hijyeni: maça giren socket'in bekleyen oda/kuyruk girdisi kalmasın
@@ -230,11 +232,12 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
     const id = randomUUID();
     const tokens: [string, string] = [randomUUID(), randomUUID()];
     const seed = Date.now() ^ Math.floor(Math.random() * 0xffffffff);
-    const session = new MatchSession(id, mode, tokens, config as GameConfig, cards, fieldTasks, gkTasks, seed);
+    const poolCards = cardsByPool.get(poolId)!; // resolvePoolId geçersizi varsayılana çevirir
+    const session = new MatchSession(id, mode, tokens, config as GameConfig, poolCards, fieldTasks, gkTasks, seed, poolId);
     store.createEntry(session, sockets);
 
     for (const idx of [0, 1] as const) {
-      sockets[idx]?.emit('match:start', { matchId: id, playerIdx: idx, playerToken: tokens[idx] });
+      sockets[idx]?.emit('match:start', { matchId: id, playerIdx: idx, playerToken: tokens[idx], poolId });
     }
     emitDraftOptions(session);
     if (mode === 'bot') scheduleBotDraftPick(session);

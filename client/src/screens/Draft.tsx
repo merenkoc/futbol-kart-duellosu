@@ -5,14 +5,16 @@ import { playClick } from '../sound.js';
 
 interface Props {
   state: DraftUiState;
+  poolLabel?: string | null;
   onPick: (cardId: string) => void;
 }
 
-export function Draft({ state, onPick }: Props) {
+export function Draft({ state, poolLabel, onPick }: Props) {
   const reduceMotion = useReducedMotion();
   const locked = state.myPickId !== null;
   return (
     <div className="screen draft-screen">
+      {poolLabel && <p className="pool-tag">⚽ {poolLabel}</p>}
       <h2>
         Draft — Tur {state.round}/{state.totalRounds}
         {state.isGkRound && ' (Kaleci Turu)'}

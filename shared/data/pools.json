@@ -1,0 +1,17 @@
+[
+  { "id": "turkiye",    "label": "Türkiye",         "type": "national", "nation": "Turkey",    "emoji": "🇹🇷", "short": "TUR", "colors": ["#e30a17", "#7a0410"] },
+  { "id": "ingiltere",  "label": "İngiltere",       "type": "national", "nation": "England",   "emoji": "🇬🇧", "short": "ENG", "colors": ["#ffffff", "#c8102e"] },
+  { "id": "almanya",    "label": "Almanya",         "type": "national", "nation": "Germany",   "emoji": "🇩🇪", "short": "GER", "colors": ["#1a1a1a", "#ffce00"] },
+  { "id": "ispanya",    "label": "İspanya",         "type": "national", "nation": "Spain",     "emoji": "🇪🇸", "short": "ESP", "colors": ["#aa151b", "#f1bf00"] },
+  { "id": "fransa",     "label": "Fransa",          "type": "national", "nation": "France",    "emoji": "🇫🇷", "short": "FRA", "colors": ["#0055a4", "#ef4135"] },
+  { "id": "italya",     "label": "İtalya",          "type": "national", "nation": "Italy",     "emoji": "🇮🇹", "short": "ITA", "colors": ["#008c45", "#cd212a"] },
+  { "id": "portekiz",   "label": "Portekiz",        "type": "national", "nation": "Portugal",  "emoji": "🇵🇹", "short": "POR", "colors": ["#046a38", "#da291c"] },
+  { "id": "arjantin",   "label": "Arjantin",        "type": "national", "nation": "Argentina", "emoji": "🇦🇷", "short": "ARG", "colors": ["#74acdf", "#f6b40e"] },
+  { "id": "brezilya",   "label": "Brezilya",        "type": "national", "nation": "Brazil",    "emoji": "🇧🇷", "short": "BRA", "colors": ["#009739", "#fedd00"] },
+  { "id": "superlig",   "label": "Süper Lig",       "type": "league",   "league": "Trendyol Süper Lig",  "short": "SL", "colors": ["#f26822", "#8a2c05"] },
+  { "id": "premier",    "label": "Premier League",  "type": "league",   "league": "Premier League",      "short": "PL", "colors": ["#38003c", "#00ff85"] },
+  { "id": "laliga",     "label": "LaLiga",          "type": "league",   "league": "LALIGA EA SPORTS",    "short": "LL", "colors": ["#ff4b44", "#a90b32"] },
+  { "id": "seriea",     "label": "Serie A",         "type": "league",   "league": "Serie A Enilive",     "short": "SA", "colors": ["#024494", "#00d2ff"] },
+  { "id": "bundesliga", "label": "Bundesliga",      "type": "league",   "league": "Bundesliga",          "short": "BL", "colors": ["#d20515", "#5c0109"] },
+  { "id": "ligue1",     "label": "Ligue 1",         "type": "league",   "league": "Ligue 1 McDonald's",  "short": "L1", "colors": ["#091c3e", "#cdfb0a"] }
+]

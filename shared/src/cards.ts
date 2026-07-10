@@ -7,8 +7,12 @@ export function overall(card: Card): number {
   return Math.round(values.reduce((a, b) => a + b, 0) / values.length);
 }
 
-/** Overall'a göre kademe. Aralık dışıysa hata — veri doğrulama testi bunu yakalar. */
+/**
+ * Kademe: kartta havuz-içi göreli `tier` set ise o geçerlidir; değilse overall
+ * config aralıklarına oturtulur. Aralık dışıysa hata — veri doğrulama testi yakalar.
+ */
 export function tierOf(card: Card, config: GameConfig): Tier {
+  if (card.tier) return card.tier;
   const ov = overall(card);
   for (const [tier, range] of Object.entries(config.tiers) as [Tier, { min: number; max: number }][]) {
     if (ov >= range.min && ov <= range.max) return tier;

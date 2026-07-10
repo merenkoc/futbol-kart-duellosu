@@ -12,6 +12,8 @@ import { KeeperRound } from './screens/KeeperRound.js';
 import { Penalty } from './screens/Penalty.js';
 import { MatchEnd } from './screens/MatchEnd.js';
 import { Splash } from './screens/Splash.js';
+import { TeamSelect } from './screens/TeamSelect.js';
+import { poolLabel } from './pools.js';
 
 const STORAGE_KEY = 'fkd:match';
 
@@ -19,6 +21,7 @@ interface StoredMatch {
   matchId: string;
   playerToken: string;
   playerIdx: 0 | 1;
+  poolId?: string;
 }
 
 export default function App() {
@@ -49,11 +52,14 @@ export default function App() {
     if (socket.connected) setConnected(true);
     socket.on('room:created', ({ roomId }) => dispatch({ type: 'ROOM_CREATED', roomId }));
     socket.on('queue:waiting', () => dispatch({ type: 'QUEUE_WAITING' }));
-    socket.on('match:start', ({ matchId, playerToken, playerIdx }) => {
+    socket.on('match:start', ({ matchId, playerToken, playerIdx, poolId }) => {
       // Bot maçı dahil tüm maçları sakla ki sayfa yenilemede reconnect edilebilsin.
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ matchId, playerToken, playerIdx } satisfies StoredMatch));
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ matchId, playerToken, playerIdx, poolId } satisfies StoredMatch)
+      );
       reconnecting.current = false;
-      dispatch({ type: 'MATCH_START', matchId, playerIdx });
+      dispatch({ type: 'MATCH_START', matchId, playerIdx, poolId });
     });
     socket.on('draft:options', (payload) => dispatch({ type: 'DRAFT_OPTIONS', ...payload }));
     socket.on('draft:opponentPicked', ({ round }) => dispatch({ type: 'DRAFT_OPPONENT_PICKED', round }));
@@ -93,9 +99,9 @@ export default function App() {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
       try {
-        const { matchId, playerToken, playerIdx } = JSON.parse(saved) as StoredMatch;
+        const { matchId, playerToken, playerIdx, poolId } = JSON.parse(saved) as StoredMatch;
         reconnecting.current = true;
-        dispatch({ type: 'RESTORE_SESSION', matchId, playerIdx });
+        dispatch({ type: 'RESTORE_SESSION', matchId, playerIdx, poolId });
         socket.emit('match:reconnect', { matchId, playerToken });
         return;
       } catch {
@@ -138,23 +144,35 @@ export default function App() {
         >
           {state.screen === 'menu' && (
             <MainMenu
-              onStartBot={() => {
-                socket.emit('bot:start');
-              }}
-              onCreateRoom={() => {
-                dispatch({ type: 'LOBBY_CREATING' });
-                socket.emit('room:create');
-              }}
-              onJoinQueue={() => {
-                dispatch({ type: 'LOBBY_QUEUE' });
-                socket.emit('queue:join');
+              onStartBot={() => dispatch({ type: 'TEAM_SELECT_OPEN', mode: 'bot' })}
+              onCreateRoom={() => dispatch({ type: 'TEAM_SELECT_OPEN', mode: 'friend' })}
+              onJoinQueue={() => dispatch({ type: 'TEAM_SELECT_OPEN', mode: 'queue' })}
+            />
+          )}
+          {state.screen === 'teamSelect' && (
+            <TeamSelect
+              mode={state.pendingMode}
+              onBack={() => dispatch({ type: 'RESET' })}
+              onConfirm={(poolId) => {
+                if (state.pendingMode === 'friend') {
+                  dispatch({ type: 'LOBBY_CREATING', poolId });
+                  socket.emit('room:create', { poolId });
+                } else if (state.pendingMode === 'queue') {
+                  dispatch({ type: 'LOBBY_QUEUE', poolId });
+                  socket.emit('queue:join', { poolId });
+                } else {
+                  socket.emit('bot:start', { poolId });
+                }
               }}
             />
           )}
-          {state.screen === 'lobby' && state.lobby && <Lobby state={state.lobby} />}
+          {state.screen === 'lobby' && state.lobby && (
+            <Lobby state={state.lobby} poolLabel={poolLabel(state.poolId)} />
+          )}
           {state.screen === 'draft' && state.draft && (
             <Draft
               state={state.draft}
+              poolLabel={poolLabel(state.poolId)}
               onPick={(cardId) => {
                 dispatch({ type: 'DRAFT_PICK_LOCAL', cardId });
                 socket.emit('draft:pick', { cardId });

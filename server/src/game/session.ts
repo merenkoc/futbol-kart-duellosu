@@ -47,6 +47,9 @@ export class MatchSession {
   finalWinner?: 0 | 1;
   finalDecidedBy?: 'score' | 'penalty' | 'forfeit';
 
+  /** Maçın oynandığı havuz (rematch aynı havuzla kurulur). */
+  readonly poolId: string;
+
   constructor(
     id: string,
     mode: MatchMode,
@@ -55,13 +58,15 @@ export class MatchSession {
     pool: Card[],
     fieldTasks: Task[],
     gkTasks: Task[],
-    seed: number
+    seed: number,
+    poolId = 'default'
   ) {
     this.id = id;
     this.mode = mode;
     this.playerTokens = playerTokens;
     this.config = config;
     this.pool = pool;
+    this.poolId = poolId;
     this.rng = mulberry32(seed);
     this.draftState = createDraft(pool, config, this.rng);
     this.fieldTasks = fieldTasks;

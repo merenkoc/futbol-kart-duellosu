@@ -1,16 +1,35 @@
 import { describe, expect, it } from 'vitest';
 import { overall, tierOf, validateCard } from '../src/engine/cards.js';
-import { cards, config, fieldCards, fieldTasks, gkCards, gkTasks } from './helpers.js';
+import type { Card, PoolInfo, Tier } from '@fkd/shared';
+import rawPools from '../../shared/data/pools.json';
+import { cards, config, fieldTasks, gkTasks } from './helpers.js';
 
-describe('cards.json doğrulama', () => {
+const pools = rawPools as unknown as PoolInfo[];
+const byPool = new Map<string, Card[]>();
+for (const c of cards) {
+  const list = byPool.get(c.pool ?? 'default') ?? [];
+  list.push(c);
+  byPool.set(c.pool ?? 'default', list);
+}
+
+describe('cards.json + pools.json doğrulama', () => {
   it('kart id\'leri benzersiz', () => {
     const ids = cards.map((c) => c.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
 
-  it('havuz boyutları: ~30 saha + ~10 kaleci', () => {
-    expect(fieldCards.length).toBe(30);
-    expect(gkCards.length).toBe(10);
+  it('pools.json\'daki her havuz için kart var, kartlardaki her havuz pools.json\'da tanımlı', () => {
+    const poolIds = new Set(pools.map((p) => p.id));
+    expect(new Set(byPool.keys())).toEqual(poolIds);
+  });
+
+  it('her havuz tam 25 saha + 5 kaleci', () => {
+    for (const [poolId, list] of byPool) {
+      const field = list.filter((c) => c.position === 'field');
+      const gk = list.filter((c) => c.position === 'gk');
+      expect(field.length, `${poolId} saha`).toBe(25);
+      expect(gk.length, `${poolId} kaleci`).toBe(5);
+    }
   });
 
   it('her kartın statları config listesiyle eşleşiyor ve 0-99 aralığında', () => {
@@ -19,33 +38,30 @@ describe('cards.json doğrulama', () => {
     }
   });
 
-  it('her kartın overall\'ı bir kademeye oturuyor (75-95)', () => {
+  it('her kartın havuz-içi kademesi atanmış ve tierOf onu kullanıyor', () => {
     for (const card of cards) {
-      expect(() => tierOf(card, config)).not.toThrow();
+      expect(card.tier, card.id).toBeDefined();
+      expect(tierOf(card, config)).toBe(card.tier);
     }
   });
 
-  it('her kademede dengeli dağılım var (saha: her kademeden en az 8, kaleci: en az 3)', () => {
-    const countByTier = (list: typeof cards) => {
-      const counts = { alt: 0, orta: 0, ust: 0 };
-      for (const c of list) counts[tierOf(c, config)]++;
-      return counts;
-    };
-    const f = countByTier(fieldCards);
-    expect(f.alt).toBeGreaterThanOrEqual(8);
-    expect(f.orta).toBeGreaterThanOrEqual(8);
-    expect(f.ust).toBeGreaterThanOrEqual(8);
-    const g = countByTier(gkCards);
-    expect(g.alt).toBeGreaterThanOrEqual(3);
-    expect(g.orta).toBeGreaterThanOrEqual(3);
-    expect(g.ust).toBeGreaterThanOrEqual(3);
+  it('her havuzda draft kompozisyonlarını besleyecek kademe dağılımı var (saha 7/10/8, kaleci 1/2/2)', () => {
+    for (const [poolId, list] of byPool) {
+      const count = (pos: string, tier: Tier) => list.filter((c) => c.position === pos && c.tier === tier).length;
+      expect(count('field', 'ust'), `${poolId} saha üst`).toBe(7);
+      expect(count('field', 'orta'), `${poolId} saha orta`).toBe(10);
+      expect(count('field', 'alt'), `${poolId} saha alt`).toBe(8);
+      expect(count('gk', 'ust'), `${poolId} kaleci üst`).toBe(1);
+      expect(count('gk', 'orta'), `${poolId} kaleci orta`).toBe(2);
+      expect(count('gk', 'alt'), `${poolId} kaleci alt`).toBe(2);
+    }
   });
 
   it('overall doğru hesaplanıyor (statların yuvarlanmış ortalaması)', () => {
-    const arda = cards.find((c) => c.id === 'arda_guler')!;
-    const vals = Object.values(arda.stats);
+    const card = cards[0]!;
+    const vals = Object.values(card.stats);
     const expected = Math.round(vals.reduce((a, b) => a + b, 0) / vals.length);
-    expect(overall(arda)).toBe(expected);
+    expect(overall(card)).toBe(expected);
   });
 });
 

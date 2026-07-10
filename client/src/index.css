@@ -473,6 +473,53 @@ button, .card { touch-action: manipulation; -webkit-tap-highlight-color: transpa
 .menu-buttons .menu-btn-secondary { background: rgba(2, 6, 23, 0.4); color: var(--text); border-color: var(--border); }
 .menu-buttons .menu-btn-secondary:hover { border-color: var(--text-muted); }
 
+/* ========== TAKIM SEÇİMİ — yuvarlak rozetler + kaydırmalı şeritler ========== */
+.team-select-screen { align-items: center; text-align: center; }
+.pool-section { align-self: stretch; min-width: 0; max-width: 100%; }
+.pool-section h3 {
+  margin: 0.5rem 0 0.1rem; color: var(--text-muted);
+  letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.75rem;
+}
+.pool-strip {
+  display: flex; gap: 0.9rem; overflow-x: auto;
+  padding: 0.6rem 0.4rem 0.9rem;
+  scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch;
+}
+.pool-badge {
+  flex: 0 0 auto; scroll-snap-align: center; width: 96px;
+  background: none; border: none; padding: 0; cursor: pointer; color: var(--text);
+  display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+}
+.pool-badge-face {
+  display: flex; align-items: center; justify-content: center;
+  width: 78px; height: 78px; border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, var(--pool-c1), var(--pool-c2) 82%);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(2, 6, 23, 0.5);
+  font-size: 2.1rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.pool-badge-face.pool-badge-mono {
+  font-size: 1.45rem; font-weight: 800; letter-spacing: 0.04em; color: #fff;
+  text-shadow: 0 1px 3px rgba(2, 6, 23, 0.7);
+}
+.pool-badge:hover .pool-badge-face { transform: scale(1.06); }
+.pool-badge.selected .pool-badge-face {
+  border-color: var(--accent);
+  box-shadow: var(--glow-accent), inset 0 2px 6px rgba(255, 255, 255, 0.22);
+  transform: scale(1.1);
+}
+.pool-badge-label { font-size: 0.78rem; color: var(--text-dim); white-space: nowrap; }
+.pool-badge.selected .pool-badge-label { color: var(--accent); font-weight: 700; }
+.team-select-actions { margin-top: 0.4rem; align-items: center; }
+/* Maç öncesi/sırası havuz etiketi */
+.pool-tag {
+  margin: 0; align-self: center;
+  background: rgba(2, 6, 23, 0.5); border: 1px solid var(--border);
+  color: var(--text-dim); font-size: 0.8rem; font-weight: 700;
+  padding: 0.2rem 0.8rem; border-radius: 999px;
+}
+
 /* ========== SPLASH — soğuk başlangıç (#24) ========== */
 .splash {
   position: fixed; inset: 0; z-index: 100;

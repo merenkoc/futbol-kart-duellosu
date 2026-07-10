@@ -1,42 +1,6527 @@
 [
-  { "id": "arda_guler", "name": "Arda Güler", "position": "field", "stats": { "dripling": 82, "hiz": 72, "sut": 88, "teknik": 86, "pas": 87, "calim": 82 } },
-  { "id": "hakan_calhanoglu", "name": "Hakan Çalhanoğlu", "position": "field", "stats": { "dripling": 85, "hiz": 71, "sut": 80, "teknik": 88, "pas": 87, "calim": 83 } },
-  { "id": "kenan_yildiz", "name": "Kenan Yıldız", "position": "field", "stats": { "dripling": 84, "hiz": 86, "sut": 81, "teknik": 81, "pas": 73, "calim": 75 } },
-  { "id": "kerem_akturkoglu", "name": "Kerem Aktürkoğlu", "position": "field", "stats": { "dripling": 78, "hiz": 81, "sut": 72, "teknik": 72, "pas": 71, "calim": 84 } },
-  { "id": "baris_alper_yilmaz", "name": "Barış Alper Yılmaz", "position": "field", "stats": { "dripling": 82, "hiz": 91, "sut": 75, "teknik": 83, "pas": 71, "calim": 84 } },
-  { "id": "ferdi_kadioglu", "name": "Ferdi Kadıoğlu", "position": "field", "stats": { "dripling": 80, "hiz": 88, "sut": 65, "teknik": 79, "pas": 75, "calim": 83 } },
-  { "id": "orkun_kokcu", "name": "Orkun Kökçü", "position": "field", "stats": { "dripling": 80, "hiz": 72, "sut": 76, "teknik": 85, "pas": 83, "calim": 78 } },
-  { "id": "cengiz_under", "name": "Cengiz Ünder", "position": "field", "stats": { "dripling": 78, "hiz": 77, "sut": 75, "teknik": 80, "pas": 76, "calim": 78 } },
-  { "id": "irfan_can_kahveci", "name": "İrfan Can Kahveci", "position": "field", "stats": { "dripling": 80, "hiz": 73, "sut": 79, "teknik": 81, "pas": 79, "calim": 77 } },
-  { "id": "yusuf_yazici", "name": "Yusuf Yazıcı", "position": "field", "stats": { "dripling": 78, "hiz": 72, "sut": 80, "teknik": 81, "pas": 82, "calim": 76 } },
-  { "id": "yunus_akgun", "name": "Yunus Akgün", "position": "field", "stats": { "dripling": 76, "hiz": 88, "sut": 65, "teknik": 73, "pas": 64, "calim": 87 } },
-  { "id": "oguz_aydin", "name": "Oğuz Aydın", "position": "field", "stats": { "dripling": 73, "hiz": 81, "sut": 68, "teknik": 73, "pas": 70, "calim": 76 } },
-  { "id": "salih_ozcan", "name": "Salih Özcan", "position": "field", "stats": { "dripling": 74, "hiz": 71, "sut": 59, "teknik": 73, "pas": 68, "calim": 77 } },
-  { "id": "ismail_yuksek", "name": "İsmail Yüksek", "position": "field", "stats": { "dripling": 72, "hiz": 74, "sut": 60, "teknik": 77, "pas": 71, "calim": 76 } },
-  { "id": "emre_mor", "name": "Emre Mor", "position": "field", "stats": { "dripling": 81, "hiz": 88, "sut": 65, "teknik": 76, "pas": 65, "calim": 92 } },
-  { "id": "enes_unal", "name": "Enes Ünal", "position": "field", "stats": { "dripling": 77, "hiz": 67, "sut": 80, "teknik": 80, "pas": 68, "calim": 68 } },
-  { "id": "semih_kilicsoy", "name": "Semih Kılıçsoy", "position": "field", "stats": { "dripling": 75, "hiz": 78, "sut": 74, "teknik": 76, "pas": 60, "calim": 75 } },
-  { "id": "can_uzun", "name": "Can Uzun", "position": "field", "stats": { "dripling": 75, "hiz": 70, "sut": 72, "teknik": 75, "pas": 65, "calim": 79 } },
-  { "id": "mert_muldur", "name": "Mert Müldür", "position": "field", "stats": { "dripling": 74, "hiz": 74, "sut": 53, "teknik": 76, "pas": 65, "calim": 82 } },
-  { "id": "zeki_celik", "name": "Zeki Çelik", "position": "field", "stats": { "dripling": 70, "hiz": 71, "sut": 59, "teknik": 73, "pas": 69, "calim": 67 } },
-  { "id": "umut_nayir", "name": "Umut Nayir", "position": "field", "stats": { "dripling": 66, "hiz": 63, "sut": 70, "teknik": 71, "pas": 53, "calim": 62 } },
-  { "id": "bertug_yildirim", "name": "Bertuğ Yıldırım", "position": "field", "stats": { "dripling": 62, "hiz": 70, "sut": 64, "teknik": 65, "pas": 48, "calim": 64 } },
-  { "id": "deniz_gul", "name": "Deniz Gül", "position": "field", "stats": { "dripling": 60, "hiz": 65, "sut": 61, "teknik": 60, "pas": 48, "calim": 61 } },
-  { "id": "efe_akman", "name": "Efe Akman", "position": "field", "stats": { "dripling": 70, "hiz": 74, "sut": 66, "teknik": 68, "pas": 60, "calim": 72 } },
-  { "id": "ahmed_kutucu", "name": "Ahmed Kutucu", "position": "field", "stats": { "dripling": 67, "hiz": 73, "sut": 68, "teknik": 65, "pas": 58, "calim": 75 } },
-  { "id": "halil_dervisoglu", "name": "Halil Dervişoğlu", "position": "field", "stats": { "dripling": 72, "hiz": 73, "sut": 65, "teknik": 74, "pas": 63, "calim": 74 } },
-  { "id": "dogukan_sinik", "name": "Doğukan Sinik", "position": "field", "stats": { "dripling": 72, "hiz": 81, "sut": 62, "teknik": 70, "pas": 64, "calim": 84 } },
-  { "id": "emirhan_ilkhan", "name": "Emirhan İlkhan", "position": "field", "stats": { "dripling": 70, "hiz": 66, "sut": 58, "teknik": 68, "pas": 63, "calim": 73 } },
-  { "id": "yusuf_sari", "name": "Yusuf Sarı", "position": "field", "stats": { "dripling": 79, "hiz": 85, "sut": 70, "teknik": 75, "pas": 70, "calim": 91 } },
-  { "id": "berat_ozdemir", "name": "Berat Özdemir", "position": "field", "stats": { "dripling": 69, "hiz": 71, "sut": 60, "teknik": 71, "pas": 70, "calim": 71 } },
-  { "id": "ugurcan_cakir", "name": "Uğurcan Çakır", "position": "gk", "stats": { "atlama": 78, "kurtaris": 74, "pozisyonAlma": 80 } },
-  { "id": "altay_bayindir", "name": "Altay Bayındır", "position": "gk", "stats": { "atlama": 78, "kurtaris": 76, "pozisyonAlma": 76 } },
-  { "id": "mert_gunok", "name": "Mert Günok", "position": "gk", "stats": { "atlama": 74, "kurtaris": 76, "pozisyonAlma": 78 } },
-  { "id": "dogan_alemdar", "name": "Doğan Alemdar", "position": "gk", "stats": { "atlama": 70, "kurtaris": 69, "pozisyonAlma": 71 } },
-  { "id": "berke_ozer", "name": "Berke Özer", "position": "gk", "stats": { "atlama": 66, "kurtaris": 70, "pozisyonAlma": 65 } },
-  { "id": "irfan_can_egribayat", "name": "İrfan Can Eğribayat", "position": "gk", "stats": { "atlama": 70, "kurtaris": 72, "pozisyonAlma": 68 } },
-  { "id": "muhammed_sengezer", "name": "Muhammed Şengezer", "position": "gk", "stats": { "atlama": 67, "kurtaris": 67, "pozisyonAlma": 66 } },
-  { "id": "okan_kocuk", "name": "Okan Kocuk", "position": "gk", "stats": { "atlama": 72, "kurtaris": 71, "pozisyonAlma": 65 } },
-  { "id": "gokhan_akkan", "name": "Gökhan Akkan", "position": "gk", "stats": { "atlama": 70, "kurtaris": 70, "pozisyonAlma": 70 } },
-  { "id": "ertugrul_cetin", "name": "Ertuğrul Çetin", "position": "gk", "stats": { "atlama": 62, "kurtaris": 60, "pozisyonAlma": 59 } }
+  {
+    "id": "turkiye_hakan_calhanoglu",
+    "name": "Hakan Çalhanoğlu",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "ust",
+    "stats": {
+      "dripling": 85,
+      "hiz": 71,
+      "sut": 80,
+      "teknik": 88,
+      "pas": 87,
+      "calim": 84
+    }
+  },
+  {
+    "id": "turkiye_ferdi_kadioglu",
+    "name": "Ferdi Kadıoğlu",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "ust",
+    "stats": {
+      "dripling": 85,
+      "hiz": 88,
+      "sut": 65,
+      "teknik": 83,
+      "pas": 75,
+      "calim": 88
+    }
+  },
+  {
+    "id": "turkiye_orkun_kokcu",
+    "name": "Orkun Kökçü",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "ust",
+    "stats": {
+      "dripling": 80,
+      "hiz": 72,
+      "sut": 76,
+      "teknik": 85,
+      "pas": 83,
+      "calim": 78
+    }
+  },
+  {
+    "id": "turkiye_baris_alper_yilmaz",
+    "name": "Barış Alper Yılmaz",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "ust",
+    "stats": {
+      "dripling": 82,
+      "hiz": 91,
+      "sut": 75,
+      "teknik": 83,
+      "pas": 71,
+      "calim": 84
+    }
+  },
+  {
+    "id": "turkiye_abdulkerim_bardakci",
+    "name": "Abdülkerim Bardakcı",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "ust",
+    "stats": {
+      "dripling": 69,
+      "hiz": 61,
+      "sut": 45,
+      "teknik": 72,
+      "pas": 71,
+      "calim": 65
+    }
+  },
+  {
+    "id": "turkiye_irfan_can_kahveci",
+    "name": "İrfan Can Kahveci",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "ust",
+    "stats": {
+      "dripling": 80,
+      "hiz": 73,
+      "sut": 79,
+      "teknik": 81,
+      "pas": 79,
+      "calim": 80
+    }
+  },
+  {
+    "id": "turkiye_arda_guler",
+    "name": "Arda Güler",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "ust",
+    "stats": {
+      "dripling": 82,
+      "hiz": 72,
+      "sut": 73,
+      "teknik": 82,
+      "pas": 80,
+      "calim": 83
+    }
+  },
+  {
+    "id": "turkiye_caglar_soyuncu",
+    "name": "Çağlar Söyüncü",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 65,
+      "hiz": 69,
+      "sut": 47,
+      "teknik": 68,
+      "pas": 59,
+      "calim": 62
+    }
+  },
+  {
+    "id": "turkiye_enes_unal",
+    "name": "Enes Ünal",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 77,
+      "hiz": 67,
+      "sut": 80,
+      "teknik": 80,
+      "pas": 68,
+      "calim": 74
+    }
+  },
+  {
+    "id": "turkiye_kerem_akturkoglu",
+    "name": "Kerem Aktürkoğlu",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 78,
+      "hiz": 86,
+      "sut": 72,
+      "teknik": 72,
+      "pas": 71,
+      "calim": 84
+    }
+  },
+  {
+    "id": "turkiye_ismail_yuksek",
+    "name": "İsmail Yüksek",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 72,
+      "hiz": 74,
+      "sut": 60,
+      "teknik": 77,
+      "pas": 71,
+      "calim": 73
+    }
+  },
+  {
+    "id": "turkiye_merih_demiral",
+    "name": "Merih Demiral",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 60,
+      "hiz": 72,
+      "sut": 39,
+      "teknik": 59,
+      "pas": 47,
+      "calim": 60
+    }
+  },
+  {
+    "id": "turkiye_ozan_kabak",
+    "name": "Ozan Kabak",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 66,
+      "hiz": 63,
+      "sut": 37,
+      "teknik": 71,
+      "pas": 59,
+      "calim": 65
+    }
+  },
+  {
+    "id": "turkiye_salih_ozcan",
+    "name": "Salih Özcan",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 74,
+      "hiz": 71,
+      "sut": 59,
+      "teknik": 73,
+      "pas": 68,
+      "calim": 75
+    }
+  },
+  {
+    "id": "turkiye_cengiz_under",
+    "name": "Cengiz Ünder",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 78,
+      "hiz": 77,
+      "sut": 75,
+      "teknik": 80,
+      "pas": 76,
+      "calim": 78
+    }
+  },
+  {
+    "id": "turkiye_kaan_ayhan",
+    "name": "Kaan Ayhan",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 69,
+      "hiz": 59,
+      "sut": 53,
+      "teknik": 78,
+      "pas": 73,
+      "calim": 65
+    }
+  },
+  {
+    "id": "turkiye_zeki_celik",
+    "name": "Zeki Çelik",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "dripling": 70,
+      "hiz": 71,
+      "sut": 59,
+      "teknik": 73,
+      "pas": 69,
+      "calim": 68
+    }
+  },
+  {
+    "id": "turkiye_yusuf_sari",
+    "name": "Yusuf Sarı",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "dripling": 79,
+      "hiz": 85,
+      "sut": 70,
+      "teknik": 75,
+      "pas": 70,
+      "calim": 85
+    }
+  },
+  {
+    "id": "turkiye_efecan_karaca",
+    "name": "Efecan Karaca",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "dripling": 77,
+      "hiz": 79,
+      "sut": 65,
+      "teknik": 75,
+      "pas": 72,
+      "calim": 80
+    }
+  },
+  {
+    "id": "turkiye_mert_muldur",
+    "name": "Mert Müldür",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "dripling": 74,
+      "hiz": 74,
+      "sut": 53,
+      "teknik": 76,
+      "pas": 65,
+      "calim": 77
+    }
+  },
+  {
+    "id": "turkiye_cenk_tosun",
+    "name": "Cenk Tosun",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "dripling": 71,
+      "hiz": 66,
+      "sut": 75,
+      "teknik": 74,
+      "pas": 67,
+      "calim": 68
+    }
+  },
+  {
+    "id": "turkiye_ridvan_yilmaz",
+    "name": "Rıdvan Yılmaz",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 86,
+      "sut": 56,
+      "teknik": 74,
+      "pas": 67,
+      "calim": 84
+    }
+  },
+  {
+    "id": "turkiye_okay_yokuslu",
+    "name": "Okay Yokuşlu",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "dripling": 68,
+      "hiz": 56,
+      "sut": 70,
+      "teknik": 72,
+      "pas": 70,
+      "calim": 65
+    }
+  },
+  {
+    "id": "turkiye_emre_akbaba",
+    "name": "Emre Akbaba",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "dripling": 73,
+      "hiz": 66,
+      "sut": 73,
+      "teknik": 75,
+      "pas": 74,
+      "calim": 71
+    }
+  },
+  {
+    "id": "turkiye_oguz_aydin",
+    "name": "Oğuz Aydın",
+    "position": "field",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "dripling": 73,
+      "hiz": 81,
+      "sut": 68,
+      "teknik": 73,
+      "pas": 70,
+      "calim": 76
+    }
+  },
+  {
+    "id": "turkiye_ugurcan_cakir",
+    "name": "Uğurcan Çakır",
+    "position": "gk",
+    "pool": "turkiye",
+    "tier": "ust",
+    "stats": {
+      "atlama": 78,
+      "kurtaris": 75,
+      "pozisyonAlma": 80
+    }
+  },
+  {
+    "id": "turkiye_mert_gunok",
+    "name": "Mert Günok",
+    "position": "gk",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "atlama": 74,
+      "kurtaris": 77,
+      "pozisyonAlma": 78
+    }
+  },
+  {
+    "id": "turkiye_altay_bayindir",
+    "name": "Altay Bayındır",
+    "position": "gk",
+    "pool": "turkiye",
+    "tier": "orta",
+    "stats": {
+      "atlama": 78,
+      "kurtaris": 76,
+      "pozisyonAlma": 76
+    }
+  },
+  {
+    "id": "turkiye_ersin_destanoglu",
+    "name": "Ersin Destanoğlu",
+    "position": "gk",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "atlama": 73,
+      "kurtaris": 74,
+      "pozisyonAlma": 74
+    }
+  },
+  {
+    "id": "turkiye_gunay_guvenc",
+    "name": "Günay Güvenç",
+    "position": "gk",
+    "pool": "turkiye",
+    "tier": "alt",
+    "stats": {
+      "atlama": 72,
+      "kurtaris": 73,
+      "pozisyonAlma": 70
+    }
+  },
+  {
+    "id": "ingiltere_jude_bellingham",
+    "name": "Jude Bellingham",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "ust",
+    "stats": {
+      "dripling": 88,
+      "hiz": 80,
+      "sut": 87,
+      "teknik": 89,
+      "pas": 83,
+      "calim": 86
+    }
+  },
+  {
+    "id": "ingiltere_harry_kane",
+    "name": "Harry Kane",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "ust",
+    "stats": {
+      "dripling": 83,
+      "hiz": 65,
+      "sut": 93,
+      "teknik": 87,
+      "pas": 84,
+      "calim": 74
+    }
+  },
+  {
+    "id": "ingiltere_phil_foden",
+    "name": "Phil Foden",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "ust",
+    "stats": {
+      "dripling": 90,
+      "hiz": 86,
+      "sut": 86,
+      "teknik": 91,
+      "pas": 85,
+      "calim": 91
+    }
+  },
+  {
+    "id": "ingiltere_beth_mead",
+    "name": "Beth Mead",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "ust",
+    "stats": {
+      "dripling": 88,
+      "hiz": 82,
+      "sut": 84,
+      "teknik": 90,
+      "pas": 84,
+      "calim": 82
+    }
+  },
+  {
+    "id": "ingiltere_bukayo_saka",
+    "name": "Bukayo Saka",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "ust",
+    "stats": {
+      "dripling": 88,
+      "hiz": 85,
+      "sut": 83,
+      "teknik": 88,
+      "pas": 81,
+      "calim": 87
+    }
+  },
+  {
+    "id": "ingiltere_declan_rice",
+    "name": "Declan Rice",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "ust",
+    "stats": {
+      "dripling": 79,
+      "hiz": 73,
+      "sut": 72,
+      "teknik": 84,
+      "pas": 82,
+      "calim": 69
+    }
+  },
+  {
+    "id": "ingiltere_trent_alexander_arnold",
+    "name": "Trent Alexander-Arnold",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "ust",
+    "stats": {
+      "dripling": 80,
+      "hiz": 75,
+      "sut": 72,
+      "teknik": 85,
+      "pas": 90,
+      "calim": 76
+    }
+  },
+  {
+    "id": "ingiltere_lauren_hemp",
+    "name": "Lauren Hemp",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 90,
+      "sut": 76,
+      "teknik": 88,
+      "pas": 84,
+      "calim": 89
+    }
+  },
+  {
+    "id": "ingiltere_lauren_james",
+    "name": "Lauren James",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 89,
+      "sut": 81,
+      "teknik": 90,
+      "pas": 80,
+      "calim": 81
+    }
+  },
+  {
+    "id": "ingiltere_chloe_kelly",
+    "name": "Chloe Kelly",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 88,
+      "sut": 79,
+      "teknik": 86,
+      "pas": 85,
+      "calim": 85
+    }
+  },
+  {
+    "id": "ingiltere_james_maddison",
+    "name": "James Maddison",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 71,
+      "sut": 81,
+      "teknik": 88,
+      "pas": 86,
+      "calim": 85
+    }
+  },
+  {
+    "id": "ingiltere_cole_palmer",
+    "name": "Cole Palmer",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 75,
+      "sut": 82,
+      "teknik": 87,
+      "pas": 83,
+      "calim": 83
+    }
+  },
+  {
+    "id": "ingiltere_john_stones",
+    "name": "John Stones",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 79,
+      "hiz": 69,
+      "sut": 58,
+      "teknik": 83,
+      "pas": 75,
+      "calim": 74
+    }
+  },
+  {
+    "id": "ingiltere_ollie_watkins",
+    "name": "Ollie Watkins",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 85,
+      "sut": 83,
+      "teknik": 79,
+      "pas": 73,
+      "calim": 80
+    }
+  },
+  {
+    "id": "ingiltere_millie_bright",
+    "name": "Millie Bright",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 58,
+      "hiz": 57,
+      "sut": 50,
+      "teknik": 60,
+      "pas": 69,
+      "calim": 47
+    }
+  },
+  {
+    "id": "ingiltere_lucy_bronze",
+    "name": "Lucy Bronze",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 79,
+      "hiz": 71,
+      "sut": 68,
+      "teknik": 81,
+      "pas": 80,
+      "calim": 76
+    }
+  },
+  {
+    "id": "ingiltere_rachel_daly",
+    "name": "Rachel Daly",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 77,
+      "sut": 85,
+      "teknik": 87,
+      "pas": 76,
+      "calim": 78
+    }
+  },
+  {
+    "id": "ingiltere_alessia_russo",
+    "name": "Alessia Russo",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 82,
+      "sut": 83,
+      "teknik": 84,
+      "pas": 69,
+      "calim": 84
+    }
+  },
+  {
+    "id": "ingiltere_keira_walsh",
+    "name": "Keira Walsh",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "dripling": 79,
+      "hiz": 64,
+      "sut": 46,
+      "teknik": 83,
+      "pas": 81,
+      "calim": 76
+    }
+  },
+  {
+    "id": "ingiltere_leah_williamson",
+    "name": "Leah Williamson",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "dripling": 72,
+      "hiz": 74,
+      "sut": 45,
+      "teknik": 83,
+      "pas": 73,
+      "calim": 67
+    }
+  },
+  {
+    "id": "ingiltere_jack_grealish",
+    "name": "Jack Grealish",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "dripling": 88,
+      "hiz": 76,
+      "sut": 76,
+      "teknik": 90,
+      "pas": 82,
+      "calim": 87
+    }
+  },
+  {
+    "id": "ingiltere_kyle_walker",
+    "name": "Kyle Walker",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 89,
+      "sut": 64,
+      "teknik": 82,
+      "pas": 77,
+      "calim": 72
+    }
+  },
+  {
+    "id": "ingiltere_benjamin_white",
+    "name": "Benjamin White",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 73,
+      "sut": 35,
+      "teknik": 83,
+      "pas": 77,
+      "calim": 73
+    }
+  },
+  {
+    "id": "ingiltere_hannah_blundell",
+    "name": "Hannah Blundell",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "dripling": 73,
+      "hiz": 70,
+      "sut": 54,
+      "teknik": 80,
+      "pas": 72,
+      "calim": 68
+    }
+  },
+  {
+    "id": "ingiltere_alex_greenwood",
+    "name": "Alex Greenwood",
+    "position": "field",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "dripling": 74,
+      "hiz": 71,
+      "sut": 65,
+      "teknik": 84,
+      "pas": 80,
+      "calim": 66
+    }
+  },
+  {
+    "id": "ingiltere_mary_earps",
+    "name": "Mary Earps",
+    "position": "gk",
+    "pool": "ingiltere",
+    "tier": "ust",
+    "stats": {
+      "atlama": 83,
+      "kurtaris": 84,
+      "pozisyonAlma": 85
+    }
+  },
+  {
+    "id": "ingiltere_jordan_pickford",
+    "name": "Jordan Pickford",
+    "position": "gk",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "atlama": 83,
+      "kurtaris": 83,
+      "pozisyonAlma": 80
+    }
+  },
+  {
+    "id": "ingiltere_nick_pope",
+    "name": "Nick Pope",
+    "position": "gk",
+    "pool": "ingiltere",
+    "tier": "orta",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 84,
+      "pozisyonAlma": 82
+    }
+  },
+  {
+    "id": "ingiltere_aaron_ramsdale",
+    "name": "Aaron Ramsdale",
+    "position": "gk",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "atlama": 81,
+      "kurtaris": 81,
+      "pozisyonAlma": 78
+    }
+  },
+  {
+    "id": "ingiltere_khiara_keating",
+    "name": "Khiara Keating",
+    "position": "gk",
+    "pool": "ingiltere",
+    "tier": "alt",
+    "stats": {
+      "atlama": 78,
+      "kurtaris": 80,
+      "pozisyonAlma": 80
+    }
+  },
+  {
+    "id": "almanya_antonio_rudiger",
+    "name": "Antonio Rüdiger",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 70,
+      "hiz": 82,
+      "sut": 55,
+      "teknik": 74,
+      "pas": 73,
+      "calim": 63
+    }
+  },
+  {
+    "id": "almanya_florian_wirtz",
+    "name": "Florian Wirtz",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 89,
+      "hiz": 81,
+      "sut": 78,
+      "teknik": 90,
+      "pas": 87,
+      "calim": 89
+    }
+  },
+  {
+    "id": "almanya_jamal_musiala",
+    "name": "Jamal Musiala",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 90,
+      "hiz": 84,
+      "sut": 81,
+      "teknik": 84,
+      "pas": 78,
+      "calim": 94
+    }
+  },
+  {
+    "id": "almanya_ilkay_gundogan",
+    "name": "İlkay Gündoğan",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 62,
+      "sut": 83,
+      "teknik": 91,
+      "pas": 85,
+      "calim": 83
+    }
+  },
+  {
+    "id": "almanya_alexandra_popp",
+    "name": "Alexandra Popp",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 80,
+      "hiz": 76,
+      "sut": 87,
+      "teknik": 83,
+      "pas": 75,
+      "calim": 78
+    }
+  },
+  {
+    "id": "almanya_jonathan_tah",
+    "name": "Jonathan Tah",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 62,
+      "hiz": 71,
+      "sut": 38,
+      "teknik": 67,
+      "pas": 60,
+      "calim": 55
+    }
+  },
+  {
+    "id": "almanya_joshua_kimmich",
+    "name": "Joshua Kimmich",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 69,
+      "sut": 74,
+      "teknik": 85,
+      "pas": 88,
+      "calim": 83
+    }
+  },
+  {
+    "id": "almanya_lena_oberdorf",
+    "name": "Lena Oberdorf",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 75,
+      "hiz": 62,
+      "sut": 62,
+      "teknik": 80,
+      "pas": 76,
+      "calim": 71
+    }
+  },
+  {
+    "id": "almanya_lea_schuller",
+    "name": "Lea Schüller",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 87,
+      "sut": 83,
+      "teknik": 86,
+      "pas": 70,
+      "calim": 83
+    }
+  },
+  {
+    "id": "almanya_julian_brandt",
+    "name": "Julian Brandt",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 71,
+      "sut": 79,
+      "teknik": 87,
+      "pas": 85,
+      "calim": 85
+    }
+  },
+  {
+    "id": "almanya_leroy_sane",
+    "name": "Leroy Sané",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 90,
+      "sut": 83,
+      "teknik": 85,
+      "pas": 80,
+      "calim": 87
+    }
+  },
+  {
+    "id": "almanya_nico_schlotterbeck",
+    "name": "Nico Schlotterbeck",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 73,
+      "hiz": 77,
+      "sut": 59,
+      "teknik": 71,
+      "pas": 70,
+      "calim": 71
+    }
+  },
+  {
+    "id": "almanya_kathrin_hendrich",
+    "name": "Kathrin Hendrich",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 73,
+      "hiz": 73,
+      "sut": 44,
+      "teknik": 80,
+      "pas": 70,
+      "calim": 73
+    }
+  },
+  {
+    "id": "almanya_svenja_huth",
+    "name": "Svenja Huth",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 82,
+      "sut": 71,
+      "teknik": 85,
+      "pas": 82,
+      "calim": 88
+    }
+  },
+  {
+    "id": "almanya_sara_dabritz",
+    "name": "Sara Däbritz",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 76,
+      "sut": 81,
+      "teknik": 88,
+      "pas": 84,
+      "calim": 88
+    }
+  },
+  {
+    "id": "almanya_linda_dallmann",
+    "name": "Linda Dallmann",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 77,
+      "sut": 78,
+      "teknik": 85,
+      "pas": 81,
+      "calim": 90
+    }
+  },
+  {
+    "id": "almanya_sara_doorsoun",
+    "name": "Sara Doorsoun",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 76,
+      "hiz": 77,
+      "sut": 60,
+      "teknik": 81,
+      "pas": 74,
+      "calim": 76
+    }
+  },
+  {
+    "id": "almanya_robert_andrich",
+    "name": "Robert Andrich",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 73,
+      "hiz": 54,
+      "sut": 77,
+      "teknik": 76,
+      "pas": 76,
+      "calim": 69
+    }
+  },
+  {
+    "id": "almanya_leon_goretzka",
+    "name": "Leon Goretzka",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 81,
+      "hiz": 70,
+      "sut": 80,
+      "teknik": 81,
+      "pas": 80,
+      "calim": 78
+    }
+  },
+  {
+    "id": "almanya_kai_havertz",
+    "name": "Kai Havertz",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 82,
+      "hiz": 77,
+      "sut": 81,
+      "teknik": 86,
+      "pas": 80,
+      "calim": 80
+    }
+  },
+  {
+    "id": "almanya_klara_buhl",
+    "name": "Klara Bühl",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 83,
+      "hiz": 83,
+      "sut": 85,
+      "teknik": 85,
+      "pas": 77,
+      "calim": 85
+    }
+  },
+  {
+    "id": "almanya_laura_freigang",
+    "name": "Laura Freigang",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 82,
+      "hiz": 83,
+      "sut": 84,
+      "teknik": 85,
+      "pas": 73,
+      "calim": 79
+    }
+  },
+  {
+    "id": "almanya_giulia_gwinn",
+    "name": "Giulia Gwinn",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 82,
+      "sut": 61,
+      "teknik": 81,
+      "pas": 77,
+      "calim": 87
+    }
+  },
+  {
+    "id": "almanya_emre_can",
+    "name": "Emre Can",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 76,
+      "hiz": 77,
+      "sut": 78,
+      "teknik": 78,
+      "pas": 74,
+      "calim": 72
+    }
+  },
+  {
+    "id": "almanya_niclas_fullkrug",
+    "name": "Niclas Füllkrug",
+    "position": "field",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 75,
+      "hiz": 63,
+      "sut": 84,
+      "teknik": 79,
+      "pas": 71,
+      "calim": 69
+    }
+  },
+  {
+    "id": "almanya_marc_andre_ter_stegen",
+    "name": "Marc-André ter Stegen",
+    "position": "gk",
+    "pool": "almanya",
+    "tier": "ust",
+    "stats": {
+      "atlama": 86,
+      "kurtaris": 88,
+      "pozisyonAlma": 86
+    }
+  },
+  {
+    "id": "almanya_manuel_neuer",
+    "name": "Manuel Neuer",
+    "position": "gk",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "atlama": 83,
+      "kurtaris": 82,
+      "pozisyonAlma": 88
+    }
+  },
+  {
+    "id": "almanya_merle_frohms",
+    "name": "Merle Frohms",
+    "position": "gk",
+    "pool": "almanya",
+    "tier": "orta",
+    "stats": {
+      "atlama": 85,
+      "kurtaris": 83,
+      "pozisyonAlma": 86
+    }
+  },
+  {
+    "id": "almanya_ann_katrin_berger",
+    "name": "Ann-Katrin Berger",
+    "position": "gk",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "atlama": 85,
+      "kurtaris": 84,
+      "pozisyonAlma": 81
+    }
+  },
+  {
+    "id": "almanya_almuth_schult",
+    "name": "Almuth Schult",
+    "position": "gk",
+    "pool": "almanya",
+    "tier": "alt",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 83,
+      "pozisyonAlma": 85
+    }
+  },
+  {
+    "id": "ispanya_rodri",
+    "name": "Rodri",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 66,
+      "sut": 80,
+      "teknik": 90,
+      "pas": 86,
+      "calim": 75
+    }
+  },
+  {
+    "id": "ispanya_aitana_bonmati",
+    "name": "Aitana Bonmatí",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 91,
+      "hiz": 81,
+      "sut": 86,
+      "teknik": 91,
+      "pas": 86,
+      "calim": 93
+    }
+  },
+  {
+    "id": "ispanya_alexia_putellas",
+    "name": "Alexia Putellas",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 91,
+      "hiz": 82,
+      "sut": 89,
+      "teknik": 92,
+      "pas": 90,
+      "calim": 90
+    }
+  },
+  {
+    "id": "ispanya_mapi_leon",
+    "name": "Mapi León",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 76,
+      "hiz": 75,
+      "sut": 73,
+      "teknik": 82,
+      "pas": 83,
+      "calim": 71
+    }
+  },
+  {
+    "id": "ispanya_patri_guijarro",
+    "name": "Patri Guijarro",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 78,
+      "sut": 82,
+      "teknik": 90,
+      "pas": 83,
+      "calim": 84
+    }
+  },
+  {
+    "id": "ispanya_irene_paredes",
+    "name": "Irene Paredes",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 68,
+      "hiz": 71,
+      "sut": 51,
+      "teknik": 80,
+      "pas": 67,
+      "calim": 62
+    }
+  },
+  {
+    "id": "ispanya_grimaldo",
+    "name": "Grimaldo",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 85,
+      "hiz": 74,
+      "sut": 73,
+      "teknik": 86,
+      "pas": 88,
+      "calim": 85
+    }
+  },
+  {
+    "id": "ispanya_carvajal",
+    "name": "Carvajal",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 81,
+      "hiz": 81,
+      "sut": 58,
+      "teknik": 85,
+      "pas": 79,
+      "calim": 78
+    }
+  },
+  {
+    "id": "ispanya_pedri",
+    "name": "Pedri",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 77,
+      "sut": 69,
+      "teknik": 88,
+      "pas": 82,
+      "calim": 88
+    }
+  },
+  {
+    "id": "ispanya_mikel_merino",
+    "name": "Mikel Merino",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 72,
+      "sut": 79,
+      "teknik": 85,
+      "pas": 82,
+      "calim": 79
+    }
+  },
+  {
+    "id": "ispanya_nico_williams",
+    "name": "Nico Williams",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 93,
+      "sut": 75,
+      "teknik": 85,
+      "pas": 78,
+      "calim": 90
+    }
+  },
+  {
+    "id": "ispanya_ona_batlle",
+    "name": "Ona Batlle",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 80,
+      "sut": 50,
+      "teknik": 78,
+      "pas": 78,
+      "calim": 81
+    }
+  },
+  {
+    "id": "ispanya_iago_aspas",
+    "name": "Iago Aspas",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 81,
+      "sut": 86,
+      "teknik": 87,
+      "pas": 79,
+      "calim": 86
+    }
+  },
+  {
+    "id": "ispanya_aleix_garcia",
+    "name": "Aleix García",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 67,
+      "sut": 77,
+      "teknik": 87,
+      "pas": 85,
+      "calim": 80
+    }
+  },
+  {
+    "id": "ispanya_dani_olmo",
+    "name": "Dani Olmo",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 73,
+      "sut": 77,
+      "teknik": 87,
+      "pas": 82,
+      "calim": 87
+    }
+  },
+  {
+    "id": "ispanya_mariona",
+    "name": "Mariona",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 77,
+      "sut": 84,
+      "teknik": 85,
+      "pas": 84,
+      "calim": 85
+    }
+  },
+  {
+    "id": "ispanya_alba_redondo",
+    "name": "Alba Redondo",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 84,
+      "sut": 85,
+      "teknik": 85,
+      "pas": 70,
+      "calim": 84
+    }
+  },
+  {
+    "id": "ispanya_aymeric_laporte",
+    "name": "Aymeric Laporte",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 70,
+      "hiz": 55,
+      "sut": 50,
+      "teknik": 82,
+      "pas": 74,
+      "calim": 61
+    }
+  },
+  {
+    "id": "ispanya_robin_le_normand",
+    "name": "Robin Le Normand",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 60,
+      "hiz": 62,
+      "sut": 26,
+      "teknik": 74,
+      "pas": 54,
+      "calim": 47
+    }
+  },
+  {
+    "id": "ispanya_marcos_llorente",
+    "name": "Marcos Llorente",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 89,
+      "sut": 79,
+      "teknik": 80,
+      "pas": 78,
+      "calim": 82
+    }
+  },
+  {
+    "id": "ispanya_morata",
+    "name": "Morata",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 82,
+      "sut": 81,
+      "teknik": 83,
+      "pas": 73,
+      "calim": 77
+    }
+  },
+  {
+    "id": "ispanya_gerard_moreno",
+    "name": "Gerard Moreno",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 81,
+      "hiz": 77,
+      "sut": 85,
+      "teknik": 82,
+      "pas": 77,
+      "calim": 80
+    }
+  },
+  {
+    "id": "ispanya_gavi",
+    "name": "Gavi",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 85,
+      "hiz": 76,
+      "sut": 66,
+      "teknik": 85,
+      "pas": 78,
+      "calim": 86
+    }
+  },
+  {
+    "id": "ispanya_parejo",
+    "name": "Parejo",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 52,
+      "sut": 80,
+      "teknik": 85,
+      "pas": 88,
+      "calim": 69
+    }
+  },
+  {
+    "id": "ispanya_pedro_porro",
+    "name": "Pedro Porro",
+    "position": "field",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 81,
+      "hiz": 82,
+      "sut": 73,
+      "teknik": 83,
+      "pas": 80,
+      "calim": 81
+    }
+  },
+  {
+    "id": "ispanya_unai_simon",
+    "name": "Unai Simón",
+    "position": "gk",
+    "pool": "ispanya",
+    "tier": "ust",
+    "stats": {
+      "atlama": 85,
+      "kurtaris": 84,
+      "pozisyonAlma": 85
+    }
+  },
+  {
+    "id": "ispanya_alex_remiro",
+    "name": "Álex Remiro",
+    "position": "gk",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 83,
+      "pozisyonAlma": 86
+    }
+  },
+  {
+    "id": "ispanya_david_raya",
+    "name": "David Raya",
+    "position": "gk",
+    "pool": "ispanya",
+    "tier": "orta",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 82,
+      "pozisyonAlma": 81
+    }
+  },
+  {
+    "id": "ispanya_cata_coll",
+    "name": "Cata Coll",
+    "position": "gk",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "atlama": 81,
+      "kurtaris": 85,
+      "pozisyonAlma": 82
+    }
+  },
+  {
+    "id": "ispanya_misa",
+    "name": "Misa",
+    "position": "gk",
+    "pool": "ispanya",
+    "tier": "alt",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 79,
+      "pozisyonAlma": 84
+    }
+  },
+  {
+    "id": "fransa_kylian_mbappe",
+    "name": "Kylian Mbappé",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "ust",
+    "stats": {
+      "dripling": 92,
+      "hiz": 97,
+      "sut": 90,
+      "teknik": 92,
+      "pas": 80,
+      "calim": 93
+    }
+  },
+  {
+    "id": "fransa_antoine_griezmann",
+    "name": "Antoine Griezmann",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "ust",
+    "stats": {
+      "dripling": 89,
+      "hiz": 80,
+      "sut": 88,
+      "teknik": 91,
+      "pas": 87,
+      "calim": 89
+    }
+  },
+  {
+    "id": "fransa_marie_katoto",
+    "name": "Marie Katoto",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 85,
+      "sut": 87,
+      "teknik": 87,
+      "pas": 77,
+      "calim": 84
+    }
+  },
+  {
+    "id": "fransa_kadidiatou_diani",
+    "name": "Kadidiatou Diani",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "ust",
+    "stats": {
+      "dripling": 88,
+      "hiz": 90,
+      "sut": 85,
+      "teknik": 90,
+      "pas": 81,
+      "calim": 88
+    }
+  },
+  {
+    "id": "fransa_wendie_renard",
+    "name": "Wendie Renard",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "ust",
+    "stats": {
+      "dripling": 69,
+      "hiz": 48,
+      "sut": 66,
+      "teknik": 75,
+      "pas": 71,
+      "calim": 61
+    }
+  },
+  {
+    "id": "fransa_william_saliba",
+    "name": "William Saliba",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "ust",
+    "stats": {
+      "dripling": 74,
+      "hiz": 82,
+      "sut": 39,
+      "teknik": 82,
+      "pas": 70,
+      "calim": 64
+    }
+  },
+  {
+    "id": "fransa_theo_hernandez",
+    "name": "Theo Hernández",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 95,
+      "sut": 76,
+      "teknik": 85,
+      "pas": 78,
+      "calim": 84
+    }
+  },
+  {
+    "id": "fransa_sakina_karchaoui",
+    "name": "Sakina Karchaoui",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 89,
+      "sut": 66,
+      "teknik": 87,
+      "pas": 82,
+      "calim": 89
+    }
+  },
+  {
+    "id": "fransa_ousmane_dembele",
+    "name": "Ousmane Dembélé",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 92,
+      "sut": 75,
+      "teknik": 87,
+      "pas": 82,
+      "calim": 92
+    }
+  },
+  {
+    "id": "fransa_karim_benzema",
+    "name": "Karim Benzema",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 77,
+      "sut": 85,
+      "teknik": 87,
+      "pas": 81,
+      "calim": 81
+    }
+  },
+  {
+    "id": "fransa_selma_bacha",
+    "name": "Selma Bacha",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 87,
+      "sut": 73,
+      "teknik": 81,
+      "pas": 85,
+      "calim": 87
+    }
+  },
+  {
+    "id": "fransa_grace_geyoro",
+    "name": "Grace Geyoro",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 83,
+      "hiz": 79,
+      "sut": 72,
+      "teknik": 86,
+      "pas": 82,
+      "calim": 78
+    }
+  },
+  {
+    "id": "fransa_n_golo_kante",
+    "name": "N'Golo Kanté",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 76,
+      "sut": 65,
+      "teknik": 81,
+      "pas": 73,
+      "calim": 78
+    }
+  },
+  {
+    "id": "fransa_jules_kounde",
+    "name": "Jules Koundé",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 75,
+      "hiz": 84,
+      "sut": 45,
+      "teknik": 77,
+      "pas": 70,
+      "calim": 72
+    }
+  },
+  {
+    "id": "fransa_aurelien_tchouameni",
+    "name": "Aurélien Tchouaméni",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 78,
+      "hiz": 73,
+      "sut": 69,
+      "teknik": 81,
+      "pas": 79,
+      "calim": 75
+    }
+  },
+  {
+    "id": "fransa_eugenie_le_sommer",
+    "name": "Eugénie Le Sommer",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 70,
+      "sut": 85,
+      "teknik": 87,
+      "pas": 79,
+      "calim": 82
+    }
+  },
+  {
+    "id": "fransa_clara_mateo",
+    "name": "Clara Mateo",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 84,
+      "sut": 83,
+      "teknik": 86,
+      "pas": 80,
+      "calim": 81
+    }
+  },
+  {
+    "id": "fransa_kingsley_coman",
+    "name": "Kingsley Coman",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "dripling": 87,
+      "hiz": 89,
+      "sut": 75,
+      "teknik": 87,
+      "pas": 79,
+      "calim": 90
+    }
+  },
+  {
+    "id": "fransa_ferland_mendy",
+    "name": "Ferland Mendy",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "dripling": 76,
+      "hiz": 89,
+      "sut": 64,
+      "teknik": 76,
+      "pas": 76,
+      "calim": 78
+    }
+  },
+  {
+    "id": "fransa_christopher_nkunku",
+    "name": "Christopher Nkunku",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 81,
+      "sut": 81,
+      "teknik": 86,
+      "pas": 81,
+      "calim": 88
+    }
+  },
+  {
+    "id": "fransa_benjamin_pavard",
+    "name": "Benjamin Pavard",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "dripling": 75,
+      "hiz": 75,
+      "sut": 67,
+      "teknik": 78,
+      "pas": 75,
+      "calim": 72
+    }
+  },
+  {
+    "id": "fransa_sandy_baltimore",
+    "name": "Sandy Baltimore",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 84,
+      "sut": 72,
+      "teknik": 87,
+      "pas": 85,
+      "calim": 83
+    }
+  },
+  {
+    "id": "fransa_amandine_henry",
+    "name": "Amandine Henry",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "dripling": 77,
+      "hiz": 55,
+      "sut": 80,
+      "teknik": 82,
+      "pas": 78,
+      "calim": 71
+    }
+  },
+  {
+    "id": "fransa_amel_majri",
+    "name": "Amel Majri",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "dripling": 88,
+      "hiz": 78,
+      "sut": 76,
+      "teknik": 89,
+      "pas": 85,
+      "calim": 89
+    }
+  },
+  {
+    "id": "fransa_griedge_mbock",
+    "name": "Griedge Mbock",
+    "position": "field",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "dripling": 66,
+      "hiz": 63,
+      "sut": 55,
+      "teknik": 73,
+      "pas": 66,
+      "calim": 61
+    }
+  },
+  {
+    "id": "fransa_mike_maignan",
+    "name": "Mike Maignan",
+    "position": "gk",
+    "pool": "fransa",
+    "tier": "ust",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 86,
+      "pozisyonAlma": 84
+    }
+  },
+  {
+    "id": "fransa_constance_picaud",
+    "name": "Constance Picaud",
+    "position": "gk",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 83,
+      "pozisyonAlma": 82
+    }
+  },
+  {
+    "id": "fransa_brice_samba",
+    "name": "Brice Samba",
+    "position": "gk",
+    "pool": "fransa",
+    "tier": "orta",
+    "stats": {
+      "atlama": 79,
+      "kurtaris": 84,
+      "pozisyonAlma": 81
+    }
+  },
+  {
+    "id": "fransa_pauline_peyraud_magnin",
+    "name": "Pauline Peyraud-Magnin",
+    "position": "gk",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "atlama": 80,
+      "kurtaris": 82,
+      "pozisyonAlma": 82
+    }
+  },
+  {
+    "id": "fransa_alphonse_areola",
+    "name": "Alphonse Areola",
+    "position": "gk",
+    "pool": "fransa",
+    "tier": "alt",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 80,
+      "pozisyonAlma": 80
+    }
+  },
+  {
+    "id": "italya_alessandro_bastoni",
+    "name": "Alessandro Bastoni",
+    "position": "field",
+    "pool": "italya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 76,
+      "hiz": 75,
+      "sut": 43,
+      "teknik": 83,
+      "pas": 75,
+      "calim": 69
+    }
+  },
+  {
+    "id": "italya_nicolo_barella",
+    "name": "Nicolò Barella",
+    "position": "field",
+    "pool": "italya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 86,
+      "hiz": 81,
+      "sut": 78,
+      "teknik": 88,
+      "pas": 83,
+      "calim": 87
+    }
+  },
+  {
+    "id": "italya_sandro_tonali",
+    "name": "Sandro Tonali",
+    "position": "field",
+    "pool": "italya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 81,
+      "hiz": 84,
+      "sut": 74,
+      "teknik": 85,
+      "pas": 81,
+      "calim": 80
+    }
+  },
+  {
+    "id": "italya_cristiana_girelli",
+    "name": "Cristiana Girelli",
+    "position": "field",
+    "pool": "italya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 80,
+      "hiz": 80,
+      "sut": 85,
+      "teknik": 82,
+      "pas": 70,
+      "calim": 75
+    }
+  },
+  {
+    "id": "italya_francesco_acerbi",
+    "name": "Francesco Acerbi",
+    "position": "field",
+    "pool": "italya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 65,
+      "hiz": 60,
+      "sut": 50,
+      "teknik": 72,
+      "pas": 64,
+      "calim": 52
+    }
+  },
+  {
+    "id": "italya_federico_chiesa",
+    "name": "Federico Chiesa",
+    "position": "field",
+    "pool": "italya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 86,
+      "hiz": 93,
+      "sut": 83,
+      "teknik": 83,
+      "pas": 76,
+      "calim": 89
+    }
+  },
+  {
+    "id": "italya_federico_dimarco",
+    "name": "Federico Dimarco",
+    "position": "field",
+    "pool": "italya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 83,
+      "hiz": 80,
+      "sut": 77,
+      "teknik": 86,
+      "pas": 84,
+      "calim": 82
+    }
+  },
+  {
+    "id": "italya_lisa_boattin",
+    "name": "Lisa Boattin",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 81,
+      "hiz": 75,
+      "sut": 66,
+      "teknik": 83,
+      "pas": 81,
+      "calim": 79
+    }
+  },
+  {
+    "id": "italya_arianna_caruso",
+    "name": "Arianna Caruso",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 74,
+      "sut": 80,
+      "teknik": 89,
+      "pas": 82,
+      "calim": 85
+    }
+  },
+  {
+    "id": "italya_manuela_giugliano",
+    "name": "Manuela Giugliano",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 81,
+      "sut": 80,
+      "teknik": 87,
+      "pas": 84,
+      "calim": 87
+    }
+  },
+  {
+    "id": "italya_domenico_berardi",
+    "name": "Domenico Berardi",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 79,
+      "sut": 81,
+      "teknik": 84,
+      "pas": 78,
+      "calim": 88
+    }
+  },
+  {
+    "id": "italya_manuel_locatelli",
+    "name": "Manuel Locatelli",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 78,
+      "hiz": 64,
+      "sut": 70,
+      "teknik": 83,
+      "pas": 80,
+      "calim": 72
+    }
+  },
+  {
+    "id": "italya_lorenzo_pellegrini",
+    "name": "Lorenzo Pellegrini",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 83,
+      "hiz": 79,
+      "sut": 78,
+      "teknik": 87,
+      "pas": 83,
+      "calim": 80
+    }
+  },
+  {
+    "id": "italya_alessio_romagnoli",
+    "name": "Alessio Romagnoli",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 69,
+      "hiz": 64,
+      "sut": 40,
+      "teknik": 75,
+      "pas": 56,
+      "calim": 60
+    }
+  },
+  {
+    "id": "italya_mattia_zaccagni",
+    "name": "Mattia Zaccagni",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 87,
+      "sut": 77,
+      "teknik": 87,
+      "pas": 75,
+      "calim": 91
+    }
+  },
+  {
+    "id": "italya_elena_linari",
+    "name": "Elena Linari",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 68,
+      "hiz": 72,
+      "sut": 43,
+      "teknik": 82,
+      "pas": 63,
+      "calim": 61
+    }
+  },
+  {
+    "id": "italya_giovanni_di_lorenzo",
+    "name": "Giovanni Di Lorenzo",
+    "position": "field",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 76,
+      "hiz": 83,
+      "sut": 67,
+      "teknik": 77,
+      "pas": 73,
+      "calim": 76
+    }
+  },
+  {
+    "id": "italya_jorginho",
+    "name": "Jorginho",
+    "position": "field",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 46,
+      "sut": 67,
+      "teknik": 86,
+      "pas": 83,
+      "calim": 73
+    }
+  },
+  {
+    "id": "italya_ciro_immobile",
+    "name": "Ciro Immobile",
+    "position": "field",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 82,
+      "sut": 83,
+      "teknik": 79,
+      "pas": 67,
+      "calim": 76
+    }
+  },
+  {
+    "id": "italya_gianluca_mancini",
+    "name": "Gianluca Mancini",
+    "position": "field",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 64,
+      "hiz": 71,
+      "sut": 45,
+      "teknik": 76,
+      "pas": 56,
+      "calim": 47
+    }
+  },
+  {
+    "id": "italya_destiny_udogie",
+    "name": "Destiny Udogie",
+    "position": "field",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 88,
+      "sut": 65,
+      "teknik": 81,
+      "pas": 74,
+      "calim": 80
+    }
+  },
+  {
+    "id": "italya_barbara_bonansea",
+    "name": "Barbara Bonansea",
+    "position": "field",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 79,
+      "sut": 80,
+      "teknik": 86,
+      "pas": 76,
+      "calim": 82
+    }
+  },
+  {
+    "id": "italya_valentina_giacinti",
+    "name": "Valentina Giacinti",
+    "position": "field",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 79,
+      "hiz": 73,
+      "sut": 81,
+      "teknik": 83,
+      "pas": 68,
+      "calim": 71
+    }
+  },
+  {
+    "id": "italya_giada_greggi",
+    "name": "Giada Greggi",
+    "position": "field",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 83,
+      "hiz": 84,
+      "sut": 71,
+      "teknik": 84,
+      "pas": 72,
+      "calim": 85
+    }
+  },
+  {
+    "id": "italya_cecilia_salvai",
+    "name": "Cecilia Salvai",
+    "position": "field",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 67,
+      "hiz": 73,
+      "sut": 49,
+      "teknik": 76,
+      "pas": 70,
+      "calim": 65
+    }
+  },
+  {
+    "id": "italya_gianluigi_donnarumma",
+    "name": "Gianluigi Donnarumma",
+    "position": "gk",
+    "pool": "italya",
+    "tier": "ust",
+    "stats": {
+      "atlama": 90,
+      "kurtaris": 87,
+      "pozisyonAlma": 87
+    }
+  },
+  {
+    "id": "italya_guglielmo_vicario",
+    "name": "Guglielmo Vicario",
+    "position": "gk",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 84,
+      "pozisyonAlma": 84
+    }
+  },
+  {
+    "id": "italya_ivan_provedel",
+    "name": "Ivan Provedel",
+    "position": "gk",
+    "pool": "italya",
+    "tier": "orta",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 82,
+      "pozisyonAlma": 84
+    }
+  },
+  {
+    "id": "italya_marco_carnesecchi",
+    "name": "Marco Carnesecchi",
+    "position": "gk",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 82,
+      "pozisyonAlma": 83
+    }
+  },
+  {
+    "id": "italya_alex_meret",
+    "name": "Alex Meret",
+    "position": "gk",
+    "pool": "italya",
+    "tier": "alt",
+    "stats": {
+      "atlama": 80,
+      "kurtaris": 81,
+      "pozisyonAlma": 83
+    }
+  },
+  {
+    "id": "portekiz_ruben_dias",
+    "name": "Rúben Dias",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "ust",
+    "stats": {
+      "dripling": 69,
+      "hiz": 67,
+      "sut": 39,
+      "teknik": 75,
+      "pas": 70,
+      "calim": 63
+    }
+  },
+  {
+    "id": "portekiz_bernardo_silva",
+    "name": "Bernardo Silva",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "ust",
+    "stats": {
+      "dripling": 92,
+      "hiz": 75,
+      "sut": 78,
+      "teknik": 92,
+      "pas": 86,
+      "calim": 94
+    }
+  },
+  {
+    "id": "portekiz_bruno_fernandes",
+    "name": "Bruno Fernandes",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "ust",
+    "stats": {
+      "dripling": 83,
+      "hiz": 70,
+      "sut": 85,
+      "teknik": 86,
+      "pas": 88,
+      "calim": 81
+    }
+  },
+  {
+    "id": "portekiz_cristiano_ronaldo",
+    "name": "Cristiano Ronaldo",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "ust",
+    "stats": {
+      "dripling": 80,
+      "hiz": 77,
+      "sut": 88,
+      "teknik": 86,
+      "pas": 77,
+      "calim": 77
+    }
+  },
+  {
+    "id": "portekiz_joao_cancelo",
+    "name": "João Cancelo",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "ust",
+    "stats": {
+      "dripling": 85,
+      "hiz": 81,
+      "sut": 73,
+      "teknik": 87,
+      "pas": 85,
+      "calim": 82
+    }
+  },
+  {
+    "id": "portekiz_rafael_leao",
+    "name": "Rafael Leão",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 94,
+      "sut": 79,
+      "teknik": 87,
+      "pas": 80,
+      "calim": 87
+    }
+  },
+  {
+    "id": "portekiz_vitinha",
+    "name": "Vitinha",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 72,
+      "sut": 77,
+      "teknik": 87,
+      "pas": 84,
+      "calim": 89
+    }
+  },
+  {
+    "id": "portekiz_palhinha",
+    "name": "Palhinha",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 74,
+      "hiz": 52,
+      "sut": 68,
+      "teknik": 80,
+      "pas": 72,
+      "calim": 64
+    }
+  },
+  {
+    "id": "portekiz_diogo_jota",
+    "name": "Diogo Jota",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 82,
+      "sut": 82,
+      "teknik": 85,
+      "pas": 75,
+      "calim": 85
+    }
+  },
+  {
+    "id": "portekiz_ruben_neves",
+    "name": "Rúben Neves",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 77,
+      "hiz": 57,
+      "sut": 75,
+      "teknik": 83,
+      "pas": 86,
+      "calim": 69
+    }
+  },
+  {
+    "id": "portekiz_rafa",
+    "name": "Rafa",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 93,
+      "sut": 77,
+      "teknik": 85,
+      "pas": 77,
+      "calim": 88
+    }
+  },
+  {
+    "id": "portekiz_pedro_goncalves",
+    "name": "Pedro Gonçalves",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 78,
+      "sut": 82,
+      "teknik": 84,
+      "pas": 84,
+      "calim": 85
+    }
+  },
+  {
+    "id": "portekiz_nuno_mendes",
+    "name": "Nuno Mendes",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 89,
+      "sut": 58,
+      "teknik": 82,
+      "pas": 76,
+      "calim": 82
+    }
+  },
+  {
+    "id": "portekiz_otavio",
+    "name": "Otávio",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 78,
+      "sut": 71,
+      "teknik": 85,
+      "pas": 81,
+      "calim": 86
+    }
+  },
+  {
+    "id": "portekiz_diogo_dalot",
+    "name": "Diogo Dalot",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 85,
+      "sut": 63,
+      "teknik": 81,
+      "pas": 77,
+      "calim": 79
+    }
+  },
+  {
+    "id": "portekiz_raphael_guerreiro",
+    "name": "Raphaël Guerreiro",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 63,
+      "sut": 78,
+      "teknik": 89,
+      "pas": 85,
+      "calim": 89
+    }
+  },
+  {
+    "id": "portekiz_ricardo_horta",
+    "name": "Ricardo Horta",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "dripling": 81,
+      "hiz": 80,
+      "sut": 80,
+      "teknik": 80,
+      "pas": 80,
+      "calim": 82
+    }
+  },
+  {
+    "id": "portekiz_goncalo_inacio",
+    "name": "Gonçalo Inácio",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "dripling": 71,
+      "hiz": 80,
+      "sut": 37,
+      "teknik": 73,
+      "pas": 64,
+      "calim": 71
+    }
+  },
+  {
+    "id": "portekiz_joao_felix",
+    "name": "João Félix",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 80,
+      "sut": 78,
+      "teknik": 82,
+      "pas": 77,
+      "calim": 86
+    }
+  },
+  {
+    "id": "portekiz_nuno_santos",
+    "name": "Nuno Santos",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 83,
+      "sut": 81,
+      "teknik": 80,
+      "pas": 76,
+      "calim": 81
+    }
+  },
+  {
+    "id": "portekiz_danilo_pereira",
+    "name": "Danilo Pereira",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "dripling": 70,
+      "hiz": 50,
+      "sut": 63,
+      "teknik": 75,
+      "pas": 70,
+      "calim": 62
+    }
+  },
+  {
+    "id": "portekiz_joao_mario",
+    "name": "João Mário",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "dripling": 82,
+      "hiz": 68,
+      "sut": 76,
+      "teknik": 85,
+      "pas": 80,
+      "calim": 80
+    }
+  },
+  {
+    "id": "portekiz_william_carvalho",
+    "name": "William Carvalho",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "dripling": 76,
+      "hiz": 37,
+      "sut": 68,
+      "teknik": 81,
+      "pas": 78,
+      "calim": 64
+    }
+  },
+  {
+    "id": "portekiz_andre_silva",
+    "name": "André Silva",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "dripling": 81,
+      "hiz": 74,
+      "sut": 80,
+      "teknik": 83,
+      "pas": 71,
+      "calim": 79
+    }
+  },
+  {
+    "id": "portekiz_tatiana_pinto",
+    "name": "Tatiana Pinto",
+    "position": "field",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "dripling": 79,
+      "hiz": 76,
+      "sut": 77,
+      "teknik": 80,
+      "pas": 76,
+      "calim": 79
+    }
+  },
+  {
+    "id": "portekiz_diogo_costa",
+    "name": "Diogo Costa",
+    "position": "gk",
+    "pool": "portekiz",
+    "tier": "ust",
+    "stats": {
+      "atlama": 83,
+      "kurtaris": 82,
+      "pozisyonAlma": 83
+    }
+  },
+  {
+    "id": "portekiz_rui_silva",
+    "name": "Rui Silva",
+    "position": "gk",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 80,
+      "pozisyonAlma": 81
+    }
+  },
+  {
+    "id": "portekiz_anthony_lopes",
+    "name": "Anthony Lopes",
+    "position": "gk",
+    "pool": "portekiz",
+    "tier": "orta",
+    "stats": {
+      "atlama": 80,
+      "kurtaris": 80,
+      "pozisyonAlma": 76
+    }
+  },
+  {
+    "id": "portekiz_jose_sa",
+    "name": "José Sá",
+    "position": "gk",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "atlama": 80,
+      "kurtaris": 78,
+      "pozisyonAlma": 78
+    }
+  },
+  {
+    "id": "portekiz_luis_maximiano",
+    "name": "Luís Maximiano",
+    "position": "gk",
+    "pool": "portekiz",
+    "tier": "alt",
+    "stats": {
+      "atlama": 77,
+      "kurtaris": 77,
+      "pozisyonAlma": 72
+    }
+  },
+  {
+    "id": "arjantin_lautaro_martinez",
+    "name": "Lautaro Martínez",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 82,
+      "sut": 88,
+      "teknik": 89,
+      "pas": 75,
+      "calim": 87
+    }
+  },
+  {
+    "id": "arjantin_lionel_messi",
+    "name": "Lionel Messi",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "ust",
+    "stats": {
+      "dripling": 92,
+      "hiz": 79,
+      "sut": 85,
+      "teknik": 93,
+      "pas": 87,
+      "calim": 92
+    }
+  },
+  {
+    "id": "arjantin_paulo_dybala",
+    "name": "Paulo Dybala",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "ust",
+    "stats": {
+      "dripling": 89,
+      "hiz": 80,
+      "sut": 85,
+      "teknik": 91,
+      "pas": 84,
+      "calim": 89
+    }
+  },
+  {
+    "id": "arjantin_alexis_mac_allister",
+    "name": "Alexis Mac Allister",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 69,
+      "sut": 82,
+      "teknik": 86,
+      "pas": 85,
+      "calim": 83
+    }
+  },
+  {
+    "id": "arjantin_julian_alvarez",
+    "name": "Julián Álvarez",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "ust",
+    "stats": {
+      "dripling": 85,
+      "hiz": 85,
+      "sut": 84,
+      "teknik": 86,
+      "pas": 80,
+      "calim": 85
+    }
+  },
+  {
+    "id": "arjantin_rodrigo_de_paul",
+    "name": "Rodrigo De Paul",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "ust",
+    "stats": {
+      "dripling": 82,
+      "hiz": 76,
+      "sut": 77,
+      "teknik": 85,
+      "pas": 83,
+      "calim": 80
+    }
+  },
+  {
+    "id": "arjantin_lisandro_martinez",
+    "name": "Lisandro Martínez",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "ust",
+    "stats": {
+      "dripling": 79,
+      "hiz": 71,
+      "sut": 59,
+      "teknik": 81,
+      "pas": 78,
+      "calim": 77
+    }
+  },
+  {
+    "id": "arjantin_exequiel_palacios",
+    "name": "Exequiel Palacios",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 69,
+      "sut": 76,
+      "teknik": 83,
+      "pas": 79,
+      "calim": 80
+    }
+  },
+  {
+    "id": "arjantin_cristian_romero",
+    "name": "Cristian Romero",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 66,
+      "hiz": 68,
+      "sut": 46,
+      "teknik": 69,
+      "pas": 59,
+      "calim": 64
+    }
+  },
+  {
+    "id": "arjantin_marcos_acuna",
+    "name": "Marcos Acuña",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 74,
+      "sut": 74,
+      "teknik": 82,
+      "pas": 82,
+      "calim": 82
+    }
+  },
+  {
+    "id": "arjantin_angel_di_maria",
+    "name": "Ángel Di María",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 76,
+      "sut": 80,
+      "teknik": 90,
+      "pas": 85,
+      "calim": 89
+    }
+  },
+  {
+    "id": "arjantin_mauro_icardi",
+    "name": "Mauro Icardi",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 76,
+      "hiz": 68,
+      "sut": 83,
+      "teknik": 81,
+      "pas": 71,
+      "calim": 70
+    }
+  },
+  {
+    "id": "arjantin_guido_rodriguez",
+    "name": "Guido Rodríguez",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 70,
+      "hiz": 51,
+      "sut": 58,
+      "teknik": 76,
+      "pas": 72,
+      "calim": 60
+    }
+  },
+  {
+    "id": "arjantin_angel_correa",
+    "name": "Ángel Correa",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 85,
+      "sut": 84,
+      "teknik": 85,
+      "pas": 77,
+      "calim": 88
+    }
+  },
+  {
+    "id": "arjantin_enzo_fernandez",
+    "name": "Enzo Fernández",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 69,
+      "sut": 73,
+      "teknik": 84,
+      "pas": 82,
+      "calim": 77
+    }
+  },
+  {
+    "id": "arjantin_nahuel_molina",
+    "name": "Nahuel Molina",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 78,
+      "hiz": 85,
+      "sut": 67,
+      "teknik": 80,
+      "pas": 75,
+      "calim": 80
+    }
+  },
+  {
+    "id": "arjantin_luciano_acosta",
+    "name": "Luciano Acosta",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 79,
+      "sut": 73,
+      "teknik": 84,
+      "pas": 76,
+      "calim": 87
+    }
+  },
+  {
+    "id": "arjantin_nicolas_otamendi",
+    "name": "Nicolás Otamendi",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "dripling": 59,
+      "hiz": 60,
+      "sut": 57,
+      "teknik": 66,
+      "pas": 64,
+      "calim": 55
+    }
+  },
+  {
+    "id": "arjantin_juan_foyth",
+    "name": "Juan Foyth",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "dripling": 72,
+      "hiz": 71,
+      "sut": 46,
+      "teknik": 78,
+      "pas": 71,
+      "calim": 69
+    }
+  },
+  {
+    "id": "arjantin_nicolas_gonzalez",
+    "name": "Nicolás González",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "dripling": 83,
+      "hiz": 85,
+      "sut": 76,
+      "teknik": 85,
+      "pas": 73,
+      "calim": 83
+    }
+  },
+  {
+    "id": "arjantin_giovani_lo_celso",
+    "name": "Giovani Lo Celso",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "dripling": 83,
+      "hiz": 69,
+      "sut": 74,
+      "teknik": 84,
+      "pas": 81,
+      "calim": 82
+    }
+  },
+  {
+    "id": "arjantin_facundo_medina",
+    "name": "Facundo Medina",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "dripling": 72,
+      "hiz": 73,
+      "sut": 36,
+      "teknik": 76,
+      "pas": 69,
+      "calim": 66
+    }
+  },
+  {
+    "id": "arjantin_ezequiel_avila",
+    "name": "Ezequiel Ávila",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "dripling": 77,
+      "hiz": 77,
+      "sut": 80,
+      "teknik": 77,
+      "pas": 65,
+      "calim": 75
+    }
+  },
+  {
+    "id": "arjantin_leonardo_balerdi",
+    "name": "Leonardo Balerdi",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "dripling": 68,
+      "hiz": 64,
+      "sut": 45,
+      "teknik": 76,
+      "pas": 62,
+      "calim": 63
+    }
+  },
+  {
+    "id": "arjantin_ever_banega",
+    "name": "Éver Banega",
+    "position": "field",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 52,
+      "sut": 73,
+      "teknik": 80,
+      "pas": 81,
+      "calim": 74
+    }
+  },
+  {
+    "id": "arjantin_emiliano_martinez",
+    "name": "Emiliano Martínez",
+    "position": "gk",
+    "pool": "arjantin",
+    "tier": "ust",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 84,
+      "pozisyonAlma": 87
+    }
+  },
+  {
+    "id": "arjantin_paulo_gazzaniga",
+    "name": "Paulo Gazzaniga",
+    "position": "gk",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 81,
+      "pozisyonAlma": 82
+    }
+  },
+  {
+    "id": "arjantin_jeremias_conan_ledesma",
+    "name": "Jeremías Conan Ledesma",
+    "position": "gk",
+    "pool": "arjantin",
+    "tier": "orta",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 81,
+      "pozisyonAlma": 81
+    }
+  },
+  {
+    "id": "arjantin_walter_benitez",
+    "name": "Walter Benítez",
+    "position": "gk",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "atlama": 79,
+      "kurtaris": 80,
+      "pozisyonAlma": 79
+    }
+  },
+  {
+    "id": "arjantin_juan_musso",
+    "name": "Juan Musso",
+    "position": "gk",
+    "pool": "arjantin",
+    "tier": "alt",
+    "stats": {
+      "atlama": 79,
+      "kurtaris": 80,
+      "pozisyonAlma": 81
+    }
+  },
+  {
+    "id": "brezilya_vini_jr",
+    "name": "Vini Jr.",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 91,
+      "hiz": 95,
+      "sut": 84,
+      "teknik": 90,
+      "pas": 81,
+      "calim": 94
+    }
+  },
+  {
+    "id": "brezilya_debinha",
+    "name": "Debinha",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 91,
+      "hiz": 84,
+      "sut": 81,
+      "teknik": 91,
+      "pas": 87,
+      "calim": 92
+    }
+  },
+  {
+    "id": "brezilya_neymar_jr",
+    "name": "Neymar Jr",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 92,
+      "hiz": 85,
+      "sut": 79,
+      "teknik": 93,
+      "pas": 84,
+      "calim": 92
+    }
+  },
+  {
+    "id": "brezilya_marquinhos",
+    "name": "Marquinhos",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 74,
+      "hiz": 79,
+      "sut": 56,
+      "teknik": 79,
+      "pas": 75,
+      "calim": 69
+    }
+  },
+  {
+    "id": "brezilya_gabriel",
+    "name": "Gabriel",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 61,
+      "hiz": 69,
+      "sut": 41,
+      "teknik": 71,
+      "pas": 63,
+      "calim": 53
+    }
+  },
+  {
+    "id": "brezilya_rodrygo",
+    "name": "Rodrygo",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 88,
+      "hiz": 89,
+      "sut": 81,
+      "teknik": 87,
+      "pas": 79,
+      "calim": 88
+    }
+  },
+  {
+    "id": "brezilya_bremer",
+    "name": "Bremer",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "ust",
+    "stats": {
+      "dripling": 66,
+      "hiz": 82,
+      "sut": 50,
+      "teknik": 68,
+      "pas": 58,
+      "calim": 64
+    }
+  },
+  {
+    "id": "brezilya_eder_militao",
+    "name": "Éder Militão",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 71,
+      "hiz": 85,
+      "sut": 50,
+      "teknik": 72,
+      "pas": 69,
+      "calim": 70
+    }
+  },
+  {
+    "id": "brezilya_bruno_guimaraes",
+    "name": "Bruno Guimarães",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 68,
+      "sut": 75,
+      "teknik": 85,
+      "pas": 83,
+      "calim": 82
+    }
+  },
+  {
+    "id": "brezilya_raphinha",
+    "name": "Raphinha",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 91,
+      "sut": 79,
+      "teknik": 85,
+      "pas": 78,
+      "calim": 88
+    }
+  },
+  {
+    "id": "brezilya_casemiro",
+    "name": "Casemiro",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 69,
+      "hiz": 38,
+      "sut": 74,
+      "teknik": 77,
+      "pas": 77,
+      "calim": 58
+    }
+  },
+  {
+    "id": "brezilya_marta",
+    "name": "Marta",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 72,
+      "sut": 82,
+      "teknik": 88,
+      "pas": 85,
+      "calim": 85
+    }
+  },
+  {
+    "id": "brezilya_gabriel_martinelli",
+    "name": "Gabriel Martinelli",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 89,
+      "sut": 78,
+      "teknik": 84,
+      "pas": 75,
+      "calim": 87
+    }
+  },
+  {
+    "id": "brezilya_douglas_luiz",
+    "name": "Douglas Luiz",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 66,
+      "sut": 78,
+      "teknik": 85,
+      "pas": 85,
+      "calim": 77
+    }
+  },
+  {
+    "id": "brezilya_joelinton",
+    "name": "Joelinton",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 76,
+      "sut": 72,
+      "teknik": 85,
+      "pas": 76,
+      "calim": 76
+    }
+  },
+  {
+    "id": "brezilya_pepe",
+    "name": "Pepê",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 87,
+      "sut": 74,
+      "teknik": 86,
+      "pas": 75,
+      "calim": 89
+    }
+  },
+  {
+    "id": "brezilya_lucas_paqueta",
+    "name": "Lucas Paquetá",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 72,
+      "sut": 77,
+      "teknik": 86,
+      "pas": 79,
+      "calim": 81
+    }
+  },
+  {
+    "id": "brezilya_danilo",
+    "name": "Danilo",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 74,
+      "hiz": 76,
+      "sut": 67,
+      "teknik": 79,
+      "pas": 74,
+      "calim": 68
+    }
+  },
+  {
+    "id": "brezilya_gabriel_jesus",
+    "name": "Gabriel Jesus",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 88,
+      "hiz": 83,
+      "sut": 80,
+      "teknik": 87,
+      "pas": 75,
+      "calim": 90
+    }
+  },
+  {
+    "id": "brezilya_fabinho",
+    "name": "Fabinho",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 77,
+      "hiz": 58,
+      "sut": 69,
+      "teknik": 81,
+      "pas": 78,
+      "calim": 70
+    }
+  },
+  {
+    "id": "brezilya_savinho",
+    "name": "Savinho",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 88,
+      "sut": 72,
+      "teknik": 83,
+      "pas": 77,
+      "calim": 89
+    }
+  },
+  {
+    "id": "brezilya_malcom",
+    "name": "Malcom",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 84,
+      "sut": 79,
+      "teknik": 84,
+      "pas": 79,
+      "calim": 85
+    }
+  },
+  {
+    "id": "brezilya_anderson_talisca",
+    "name": "Anderson Talisca",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 83,
+      "hiz": 79,
+      "sut": 84,
+      "teknik": 86,
+      "pas": 78,
+      "calim": 85
+    }
+  },
+  {
+    "id": "brezilya_luana",
+    "name": "Luana",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 82,
+      "hiz": 54,
+      "sut": 73,
+      "teknik": 86,
+      "pas": 81,
+      "calim": 75
+    }
+  },
+  {
+    "id": "brezilya_rafaelle",
+    "name": "Rafaelle",
+    "position": "field",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "dripling": 65,
+      "hiz": 61,
+      "sut": 39,
+      "teknik": 73,
+      "pas": 68,
+      "calim": 65
+    }
+  },
+  {
+    "id": "brezilya_alisson",
+    "name": "Alisson",
+    "position": "gk",
+    "pool": "brezilya",
+    "tier": "ust",
+    "stats": {
+      "atlama": 86,
+      "kurtaris": 87,
+      "pozisyonAlma": 90
+    }
+  },
+  {
+    "id": "brezilya_ederson",
+    "name": "Ederson",
+    "position": "gk",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "atlama": 87,
+      "kurtaris": 85,
+      "pozisyonAlma": 86
+    }
+  },
+  {
+    "id": "brezilya_bento",
+    "name": "Bento",
+    "position": "gk",
+    "pool": "brezilya",
+    "tier": "orta",
+    "stats": {
+      "atlama": 79,
+      "kurtaris": 80,
+      "pozisyonAlma": 81
+    }
+  },
+  {
+    "id": "brezilya_matheus",
+    "name": "Matheus",
+    "position": "gk",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 78,
+      "pozisyonAlma": 77
+    }
+  },
+  {
+    "id": "brezilya_lucas_perri",
+    "name": "Lucas Perri",
+    "position": "gk",
+    "pool": "brezilya",
+    "tier": "alt",
+    "stats": {
+      "atlama": 81,
+      "kurtaris": 77,
+      "pozisyonAlma": 75
+    }
+  },
+  {
+    "id": "superlig_youssef_en_nesyri",
+    "name": "Youssef En-Nesyri",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "ust",
+    "stats": {
+      "dripling": 77,
+      "hiz": 82,
+      "sut": 82,
+      "teknik": 82,
+      "pas": 63,
+      "calim": 73
+    }
+  },
+  {
+    "id": "superlig_rafa",
+    "name": "Rafa",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "ust",
+    "stats": {
+      "dripling": 86,
+      "hiz": 93,
+      "sut": 77,
+      "teknik": 85,
+      "pas": 77,
+      "calim": 88
+    }
+  },
+  {
+    "id": "superlig_mauro_icardi",
+    "name": "Mauro Icardi",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "ust",
+    "stats": {
+      "dripling": 76,
+      "hiz": 68,
+      "sut": 83,
+      "teknik": 81,
+      "pas": 71,
+      "calim": 70
+    }
+  },
+  {
+    "id": "superlig_dusan_tadic",
+    "name": "Dušan Tadić",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "ust",
+    "stats": {
+      "dripling": 81,
+      "hiz": 64,
+      "sut": 79,
+      "teknik": 84,
+      "pas": 85,
+      "calim": 77
+    }
+  },
+  {
+    "id": "superlig_lucas_torreira",
+    "name": "Lucas Torreira",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "ust",
+    "stats": {
+      "dripling": 81,
+      "hiz": 76,
+      "sut": 69,
+      "teknik": 81,
+      "pas": 78,
+      "calim": 83
+    }
+  },
+  {
+    "id": "superlig_edin_dzeko",
+    "name": "Edin Džeko",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "ust",
+    "stats": {
+      "dripling": 76,
+      "hiz": 57,
+      "sut": 82,
+      "teknik": 81,
+      "pas": 73,
+      "calim": 69
+    }
+  },
+  {
+    "id": "superlig_ciro_immobile",
+    "name": "Ciro Immobile",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "ust",
+    "stats": {
+      "dripling": 78,
+      "hiz": 82,
+      "sut": 83,
+      "teknik": 79,
+      "pas": 67,
+      "calim": 76
+    }
+  },
+  {
+    "id": "superlig_fred",
+    "name": "Fred",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 75,
+      "sut": 71,
+      "teknik": 82,
+      "pas": 79,
+      "calim": 85
+    }
+  },
+  {
+    "id": "superlig_stefan_savic",
+    "name": "Stefan Savić",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 57,
+      "hiz": 63,
+      "sut": 35,
+      "teknik": 66,
+      "pas": 57,
+      "calim": 52
+    }
+  },
+  {
+    "id": "superlig_ali_al_musrati",
+    "name": "Ali Al Musrati",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 71,
+      "hiz": 62,
+      "sut": 66,
+      "teknik": 78,
+      "pas": 71,
+      "calim": 64
+    }
+  },
+  {
+    "id": "superlig_dries_mertens",
+    "name": "Dries Mertens",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 81,
+      "hiz": 68,
+      "sut": 78,
+      "teknik": 84,
+      "pas": 81,
+      "calim": 76
+    }
+  },
+  {
+    "id": "superlig_allan_saint_maximin",
+    "name": "Allan Saint-Maximin",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 89,
+      "sut": 72,
+      "teknik": 82,
+      "pas": 73,
+      "calim": 92
+    }
+  },
+  {
+    "id": "superlig_davinson_sanchez",
+    "name": "Davinson Sánchez",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 65,
+      "hiz": 77,
+      "sut": 47,
+      "teknik": 70,
+      "pas": 55,
+      "calim": 62
+    }
+  },
+  {
+    "id": "superlig_sebastian_szymanski",
+    "name": "Sebastian Szymański",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 79,
+      "hiz": 81,
+      "sut": 77,
+      "teknik": 79,
+      "pas": 79,
+      "calim": 82
+    }
+  },
+  {
+    "id": "superlig_baris_alper_yilmaz",
+    "name": "Barış Alper Yılmaz",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 91,
+      "sut": 75,
+      "teknik": 83,
+      "pas": 71,
+      "calim": 84
+    }
+  },
+  {
+    "id": "superlig_hakim_ziyech",
+    "name": "Hakim Ziyech",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 74,
+      "sut": 77,
+      "teknik": 81,
+      "pas": 82,
+      "calim": 81
+    }
+  },
+  {
+    "id": "superlig_abdulkerim_bardakci",
+    "name": "Abdülkerim Bardakcı",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "dripling": 69,
+      "hiz": 61,
+      "sut": 45,
+      "teknik": 72,
+      "pas": 71,
+      "calim": 65
+    }
+  },
+  {
+    "id": "superlig_alexander_djiku",
+    "name": "Alexander Djiku",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "dripling": 69,
+      "hiz": 75,
+      "sut": 43,
+      "teknik": 75,
+      "pas": 67,
+      "calim": 67
+    }
+  },
+  {
+    "id": "superlig_irfan_can_kahveci",
+    "name": "İrfan Can Kahveci",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 73,
+      "sut": 79,
+      "teknik": 81,
+      "pas": 79,
+      "calim": 80
+    }
+  },
+  {
+    "id": "superlig_edin_visca",
+    "name": "Edin Višća",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "dripling": 81,
+      "hiz": 82,
+      "sut": 78,
+      "teknik": 80,
+      "pas": 76,
+      "calim": 83
+    }
+  },
+  {
+    "id": "superlig_sofyan_amrabat",
+    "name": "Sofyan Amrabat",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "dripling": 75,
+      "hiz": 65,
+      "sut": 69,
+      "teknik": 79,
+      "pas": 73,
+      "calim": 68
+    }
+  },
+  {
+    "id": "superlig_kerem_demirbay",
+    "name": "Kerem Demirbay",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "dripling": 79,
+      "hiz": 62,
+      "sut": 76,
+      "teknik": 82,
+      "pas": 79,
+      "calim": 78
+    }
+  },
+  {
+    "id": "superlig_rodrigo_becao",
+    "name": "Rodrigo Becão",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "dripling": 56,
+      "hiz": 54,
+      "sut": 33,
+      "teknik": 61,
+      "pas": 56,
+      "calim": 51
+    }
+  },
+  {
+    "id": "superlig_victor_nelsson",
+    "name": "Victor Nelsson",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "dripling": 67,
+      "hiz": 63,
+      "sut": 43,
+      "teknik": 69,
+      "pas": 60,
+      "calim": 64
+    }
+  },
+  {
+    "id": "superlig_alex_oxlade_chamberlain",
+    "name": "Alex Oxlade-Chamberlain",
+    "position": "field",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "dripling": 81,
+      "hiz": 78,
+      "sut": 75,
+      "teknik": 81,
+      "pas": 77,
+      "calim": 81
+    }
+  },
+  {
+    "id": "superlig_fernando_muslera",
+    "name": "Fernando Muslera",
+    "position": "gk",
+    "pool": "superlig",
+    "tier": "ust",
+    "stats": {
+      "atlama": 81,
+      "kurtaris": 81,
+      "pozisyonAlma": 82
+    }
+  },
+  {
+    "id": "superlig_dominik_livakovic",
+    "name": "Dominik Livaković",
+    "position": "gk",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "atlama": 80,
+      "kurtaris": 80,
+      "pozisyonAlma": 80
+    }
+  },
+  {
+    "id": "superlig_ugurcan_cakir",
+    "name": "Uğurcan Çakır",
+    "position": "gk",
+    "pool": "superlig",
+    "tier": "orta",
+    "stats": {
+      "atlama": 78,
+      "kurtaris": 75,
+      "pozisyonAlma": 80
+    }
+  },
+  {
+    "id": "superlig_mert_gunok",
+    "name": "Mert Günok",
+    "position": "gk",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "atlama": 74,
+      "kurtaris": 77,
+      "pozisyonAlma": 78
+    }
+  },
+  {
+    "id": "superlig_andreas_gianniotis",
+    "name": "Andreas Gianniotis",
+    "position": "gk",
+    "pool": "superlig",
+    "tier": "alt",
+    "stats": {
+      "atlama": 77,
+      "kurtaris": 74,
+      "pozisyonAlma": 71
+    }
+  },
+  {
+    "id": "premier_rodri",
+    "name": "Rodri",
+    "position": "field",
+    "pool": "premier",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 66,
+      "sut": 80,
+      "teknik": 90,
+      "pas": 86,
+      "calim": 75
+    }
+  },
+  {
+    "id": "premier_erling_haaland",
+    "name": "Erling Haaland",
+    "position": "field",
+    "pool": "premier",
+    "tier": "ust",
+    "stats": {
+      "dripling": 81,
+      "hiz": 88,
+      "sut": 92,
+      "teknik": 83,
+      "pas": 70,
+      "calim": 78
+    }
+  },
+  {
+    "id": "premier_kevin_de_bruyne",
+    "name": "Kevin De Bruyne",
+    "position": "field",
+    "pool": "premier",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 67,
+      "sut": 87,
+      "teknik": 92,
+      "pas": 94,
+      "calim": 81
+    }
+  },
+  {
+    "id": "premier_martin_degaard",
+    "name": "Martin Ødegaard",
+    "position": "field",
+    "pool": "premier",
+    "tier": "ust",
+    "stats": {
+      "dripling": 89,
+      "hiz": 70,
+      "sut": 82,
+      "teknik": 91,
+      "pas": 89,
+      "calim": 87
+    }
+  },
+  {
+    "id": "premier_virgil_van_dijk",
+    "name": "Virgil van Dijk",
+    "position": "field",
+    "pool": "premier",
+    "tier": "ust",
+    "stats": {
+      "dripling": 71,
+      "hiz": 78,
+      "sut": 60,
+      "teknik": 77,
+      "pas": 71,
+      "calim": 62
+    }
+  },
+  {
+    "id": "premier_mohamed_salah",
+    "name": "Mohamed Salah",
+    "position": "field",
+    "pool": "premier",
+    "tier": "ust",
+    "stats": {
+      "dripling": 88,
+      "hiz": 89,
+      "sut": 87,
+      "teknik": 86,
+      "pas": 82,
+      "calim": 89
+    }
+  },
+  {
+    "id": "premier_phil_foden",
+    "name": "Phil Foden",
+    "position": "field",
+    "pool": "premier",
+    "tier": "ust",
+    "stats": {
+      "dripling": 90,
+      "hiz": 86,
+      "sut": 86,
+      "teknik": 91,
+      "pas": 85,
+      "calim": 91
+    }
+  },
+  {
+    "id": "premier_ruben_dias",
+    "name": "Rúben Dias",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 69,
+      "hiz": 67,
+      "sut": 39,
+      "teknik": 75,
+      "pas": 70,
+      "calim": 63
+    }
+  },
+  {
+    "id": "premier_bernardo_silva",
+    "name": "Bernardo Silva",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 92,
+      "hiz": 75,
+      "sut": 78,
+      "teknik": 92,
+      "pas": 86,
+      "calim": 94
+    }
+  },
+  {
+    "id": "premier_william_saliba",
+    "name": "William Saliba",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 74,
+      "hiz": 82,
+      "sut": 39,
+      "teknik": 82,
+      "pas": 70,
+      "calim": 64
+    }
+  },
+  {
+    "id": "premier_bukayo_saka",
+    "name": "Bukayo Saka",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 85,
+      "sut": 83,
+      "teknik": 88,
+      "pas": 81,
+      "calim": 87
+    }
+  },
+  {
+    "id": "premier_declan_rice",
+    "name": "Declan Rice",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 79,
+      "hiz": 73,
+      "sut": 72,
+      "teknik": 84,
+      "pas": 82,
+      "calim": 69
+    }
+  },
+  {
+    "id": "premier_bruno_fernandes",
+    "name": "Bruno Fernandes",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 83,
+      "hiz": 70,
+      "sut": 85,
+      "teknik": 86,
+      "pas": 88,
+      "calim": 81
+    }
+  },
+  {
+    "id": "premier_heung_min_son",
+    "name": "Heung Min Son",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 87,
+      "sut": 89,
+      "teknik": 85,
+      "pas": 81,
+      "calim": 84
+    }
+  },
+  {
+    "id": "premier_ilkay_gundogan",
+    "name": "İlkay Gündoğan",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 62,
+      "sut": 83,
+      "teknik": 91,
+      "pas": 85,
+      "calim": 83
+    }
+  },
+  {
+    "id": "premier_gabriel",
+    "name": "Gabriel",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 61,
+      "hiz": 69,
+      "sut": 41,
+      "teknik": 71,
+      "pas": 63,
+      "calim": 53
+    }
+  },
+  {
+    "id": "premier_alexis_mac_allister",
+    "name": "Alexis Mac Allister",
+    "position": "field",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 69,
+      "sut": 82,
+      "teknik": 86,
+      "pas": 85,
+      "calim": 83
+    }
+  },
+  {
+    "id": "premier_trent_alexander_arnold",
+    "name": "Trent Alexander-Arnold",
+    "position": "field",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 75,
+      "sut": 72,
+      "teknik": 85,
+      "pas": 90,
+      "calim": 76
+    }
+  },
+  {
+    "id": "premier_bruno_guimaraes",
+    "name": "Bruno Guimarães",
+    "position": "field",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 68,
+      "sut": 75,
+      "teknik": 85,
+      "pas": 83,
+      "calim": 82
+    }
+  },
+  {
+    "id": "premier_alexander_isak",
+    "name": "Alexander Isak",
+    "position": "field",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 85,
+      "sut": 84,
+      "teknik": 87,
+      "pas": 73,
+      "calim": 84
+    }
+  },
+  {
+    "id": "premier_james_maddison",
+    "name": "James Maddison",
+    "position": "field",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 71,
+      "sut": 81,
+      "teknik": 88,
+      "pas": 86,
+      "calim": 85
+    }
+  },
+  {
+    "id": "premier_mikel_merino",
+    "name": "Mikel Merino",
+    "position": "field",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "dripling": 82,
+      "hiz": 72,
+      "sut": 79,
+      "teknik": 85,
+      "pas": 82,
+      "calim": 79
+    }
+  },
+  {
+    "id": "premier_cole_palmer",
+    "name": "Cole Palmer",
+    "position": "field",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 75,
+      "sut": 82,
+      "teknik": 87,
+      "pas": 83,
+      "calim": 83
+    }
+  },
+  {
+    "id": "premier_andrew_robertson",
+    "name": "Andrew Robertson",
+    "position": "field",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "dripling": 79,
+      "hiz": 78,
+      "sut": 61,
+      "teknik": 82,
+      "pas": 82,
+      "calim": 77
+    }
+  },
+  {
+    "id": "premier_john_stones",
+    "name": "John Stones",
+    "position": "field",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "dripling": 79,
+      "hiz": 69,
+      "sut": 58,
+      "teknik": 83,
+      "pas": 75,
+      "calim": 74
+    }
+  },
+  {
+    "id": "premier_alisson",
+    "name": "Alisson",
+    "position": "gk",
+    "pool": "premier",
+    "tier": "ust",
+    "stats": {
+      "atlama": 86,
+      "kurtaris": 87,
+      "pozisyonAlma": 90
+    }
+  },
+  {
+    "id": "premier_ederson",
+    "name": "Ederson",
+    "position": "gk",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "atlama": 87,
+      "kurtaris": 85,
+      "pozisyonAlma": 86
+    }
+  },
+  {
+    "id": "premier_emiliano_martinez",
+    "name": "Emiliano Martínez",
+    "position": "gk",
+    "pool": "premier",
+    "tier": "orta",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 84,
+      "pozisyonAlma": 87
+    }
+  },
+  {
+    "id": "premier_guglielmo_vicario",
+    "name": "Guglielmo Vicario",
+    "position": "gk",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 84,
+      "pozisyonAlma": 84
+    }
+  },
+  {
+    "id": "premier_andre_onana",
+    "name": "André Onana",
+    "position": "gk",
+    "pool": "premier",
+    "tier": "alt",
+    "stats": {
+      "atlama": 83,
+      "kurtaris": 81,
+      "pozisyonAlma": 79
+    }
+  },
+  {
+    "id": "laliga_kylian_mbappe",
+    "name": "Kylian Mbappé",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 92,
+      "hiz": 97,
+      "sut": 90,
+      "teknik": 92,
+      "pas": 80,
+      "calim": 93
+    }
+  },
+  {
+    "id": "laliga_jude_bellingham",
+    "name": "Jude Bellingham",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 88,
+      "hiz": 80,
+      "sut": 87,
+      "teknik": 89,
+      "pas": 83,
+      "calim": 86
+    }
+  },
+  {
+    "id": "laliga_vini_jr",
+    "name": "Vini Jr.",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 91,
+      "hiz": 95,
+      "sut": 84,
+      "teknik": 90,
+      "pas": 81,
+      "calim": 94
+    }
+  },
+  {
+    "id": "laliga_antoine_griezmann",
+    "name": "Antoine Griezmann",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 89,
+      "hiz": 80,
+      "sut": 88,
+      "teknik": 91,
+      "pas": 87,
+      "calim": 89
+    }
+  },
+  {
+    "id": "laliga_robert_lewandowski",
+    "name": "Robert Lewandowski",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 86,
+      "hiz": 75,
+      "sut": 88,
+      "teknik": 90,
+      "pas": 79,
+      "calim": 81
+    }
+  },
+  {
+    "id": "laliga_federico_valverde",
+    "name": "Federico Valverde",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 88,
+      "sut": 82,
+      "teknik": 88,
+      "pas": 84,
+      "calim": 80
+    }
+  },
+  {
+    "id": "laliga_antonio_rudiger",
+    "name": "Antonio Rüdiger",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 70,
+      "hiz": 82,
+      "sut": 55,
+      "teknik": 74,
+      "pas": 73,
+      "calim": 63
+    }
+  },
+  {
+    "id": "laliga_frenkie_de_jong",
+    "name": "Frenkie de Jong",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 82,
+      "sut": 69,
+      "teknik": 89,
+      "pas": 86,
+      "calim": 87
+    }
+  },
+  {
+    "id": "laliga_rodrygo",
+    "name": "Rodrygo",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 89,
+      "sut": 81,
+      "teknik": 87,
+      "pas": 79,
+      "calim": 88
+    }
+  },
+  {
+    "id": "laliga_luka_modric",
+    "name": "Luka Modrić",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 72,
+      "sut": 76,
+      "teknik": 90,
+      "pas": 88,
+      "calim": 88
+    }
+  },
+  {
+    "id": "laliga_carvajal",
+    "name": "Carvajal",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 81,
+      "hiz": 81,
+      "sut": 58,
+      "teknik": 85,
+      "pas": 79,
+      "calim": 78
+    }
+  },
+  {
+    "id": "laliga_pedri",
+    "name": "Pedri",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 88,
+      "hiz": 77,
+      "sut": 69,
+      "teknik": 88,
+      "pas": 82,
+      "calim": 88
+    }
+  },
+  {
+    "id": "laliga_david_alaba",
+    "name": "David Alaba",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 79,
+      "sut": 71,
+      "teknik": 83,
+      "pas": 83,
+      "calim": 77
+    }
+  },
+  {
+    "id": "laliga_ronald_araujo",
+    "name": "Ronald Araujo",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 62,
+      "hiz": 82,
+      "sut": 53,
+      "teknik": 68,
+      "pas": 64,
+      "calim": 56
+    }
+  },
+  {
+    "id": "laliga_eder_militao",
+    "name": "Éder Militão",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 71,
+      "hiz": 85,
+      "sut": 50,
+      "teknik": 72,
+      "pas": 69,
+      "calim": 70
+    }
+  },
+  {
+    "id": "laliga_jules_kounde",
+    "name": "Jules Koundé",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 75,
+      "hiz": 84,
+      "sut": 45,
+      "teknik": 77,
+      "pas": 70,
+      "calim": 72
+    }
+  },
+  {
+    "id": "laliga_aurelien_tchouameni",
+    "name": "Aurélien Tchouaméni",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 78,
+      "hiz": 73,
+      "sut": 69,
+      "teknik": 81,
+      "pas": 79,
+      "calim": 75
+    }
+  },
+  {
+    "id": "laliga_nico_williams",
+    "name": "Nico Williams",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 93,
+      "sut": 75,
+      "teknik": 85,
+      "pas": 78,
+      "calim": 90
+    }
+  },
+  {
+    "id": "laliga_julian_alvarez",
+    "name": "Julián Álvarez",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 85,
+      "hiz": 85,
+      "sut": 84,
+      "teknik": 86,
+      "pas": 80,
+      "calim": 85
+    }
+  },
+  {
+    "id": "laliga_iago_aspas",
+    "name": "Iago Aspas",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 81,
+      "sut": 86,
+      "teknik": 87,
+      "pas": 79,
+      "calim": 86
+    }
+  },
+  {
+    "id": "laliga_rodrigo_de_paul",
+    "name": "Rodrigo De Paul",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 82,
+      "hiz": 76,
+      "sut": 77,
+      "teknik": 85,
+      "pas": 83,
+      "calim": 80
+    }
+  },
+  {
+    "id": "laliga_raphinha",
+    "name": "Raphinha",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 91,
+      "sut": 79,
+      "teknik": 85,
+      "pas": 78,
+      "calim": 88
+    }
+  },
+  {
+    "id": "laliga_ferland_mendy",
+    "name": "Ferland Mendy",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 76,
+      "hiz": 89,
+      "sut": 64,
+      "teknik": 76,
+      "pas": 76,
+      "calim": 78
+    }
+  },
+  {
+    "id": "laliga_dani_olmo",
+    "name": "Dani Olmo",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 87,
+      "hiz": 73,
+      "sut": 77,
+      "teknik": 87,
+      "pas": 82,
+      "calim": 87
+    }
+  },
+  {
+    "id": "laliga_eduardo_camavinga",
+    "name": "Eduardo Camavinga",
+    "position": "field",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 80,
+      "sut": 67,
+      "teknik": 86,
+      "pas": 81,
+      "calim": 83
+    }
+  },
+  {
+    "id": "laliga_thibaut_courtois",
+    "name": "Thibaut Courtois",
+    "position": "gk",
+    "pool": "laliga",
+    "tier": "ust",
+    "stats": {
+      "atlama": 85,
+      "kurtaris": 90,
+      "pozisyonAlma": 88
+    }
+  },
+  {
+    "id": "laliga_marc_andre_ter_stegen",
+    "name": "Marc-André ter Stegen",
+    "position": "gk",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "atlama": 86,
+      "kurtaris": 88,
+      "pozisyonAlma": 86
+    }
+  },
+  {
+    "id": "laliga_jan_oblak",
+    "name": "Jan Oblak",
+    "position": "gk",
+    "pool": "laliga",
+    "tier": "orta",
+    "stats": {
+      "atlama": 85,
+      "kurtaris": 89,
+      "pozisyonAlma": 86
+    }
+  },
+  {
+    "id": "laliga_unai_simon",
+    "name": "Unai Simón",
+    "position": "gk",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "atlama": 85,
+      "kurtaris": 84,
+      "pozisyonAlma": 85
+    }
+  },
+  {
+    "id": "laliga_giorgi_mamardashvili",
+    "name": "Giorgi Mamardashvili",
+    "position": "gk",
+    "pool": "laliga",
+    "tier": "alt",
+    "stats": {
+      "atlama": 86,
+      "kurtaris": 84,
+      "pozisyonAlma": 85
+    }
+  },
+  {
+    "id": "seriea_lautaro_martinez",
+    "name": "Lautaro Martínez",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 82,
+      "sut": 88,
+      "teknik": 89,
+      "pas": 75,
+      "calim": 87
+    }
+  },
+  {
+    "id": "seriea_victor_osimhen",
+    "name": "Victor Osimhen",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "ust",
+    "stats": {
+      "dripling": 81,
+      "hiz": 89,
+      "sut": 84,
+      "teknik": 84,
+      "pas": 65,
+      "calim": 79
+    }
+  },
+  {
+    "id": "seriea_paulo_dybala",
+    "name": "Paulo Dybala",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "ust",
+    "stats": {
+      "dripling": 89,
+      "hiz": 80,
+      "sut": 85,
+      "teknik": 91,
+      "pas": 84,
+      "calim": 89
+    }
+  },
+  {
+    "id": "seriea_theo_hernandez",
+    "name": "Theo Hernández",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 95,
+      "sut": 76,
+      "teknik": 85,
+      "pas": 78,
+      "calim": 84
+    }
+  },
+  {
+    "id": "seriea_alessandro_bastoni",
+    "name": "Alessandro Bastoni",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "ust",
+    "stats": {
+      "dripling": 76,
+      "hiz": 75,
+      "sut": 43,
+      "teknik": 83,
+      "pas": 75,
+      "calim": 69
+    }
+  },
+  {
+    "id": "seriea_nicolo_barella",
+    "name": "Nicolò Barella",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "ust",
+    "stats": {
+      "dripling": 86,
+      "hiz": 81,
+      "sut": 78,
+      "teknik": 88,
+      "pas": 83,
+      "calim": 87
+    }
+  },
+  {
+    "id": "seriea_rafael_leao",
+    "name": "Rafael Leão",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 94,
+      "sut": 79,
+      "teknik": 87,
+      "pas": 80,
+      "calim": 87
+    }
+  },
+  {
+    "id": "seriea_bremer",
+    "name": "Bremer",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 66,
+      "hiz": 82,
+      "sut": 50,
+      "teknik": 68,
+      "pas": 58,
+      "calim": 64
+    }
+  },
+  {
+    "id": "seriea_hakan_calhanoglu",
+    "name": "Hakan Çalhanoğlu",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 71,
+      "sut": 80,
+      "teknik": 88,
+      "pas": 87,
+      "calim": 84
+    }
+  },
+  {
+    "id": "seriea_khvicha_kvaratskhelia",
+    "name": "Khvicha Kvaratskhelia",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 86,
+      "sut": 79,
+      "teknik": 87,
+      "pas": 80,
+      "calim": 87
+    }
+  },
+  {
+    "id": "seriea_francesco_acerbi",
+    "name": "Francesco Acerbi",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 65,
+      "hiz": 60,
+      "sut": 50,
+      "teknik": 72,
+      "pas": 64,
+      "calim": 52
+    }
+  },
+  {
+    "id": "seriea_federico_dimarco",
+    "name": "Federico Dimarco",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 83,
+      "hiz": 80,
+      "sut": 77,
+      "teknik": 86,
+      "pas": 84,
+      "calim": 82
+    }
+  },
+  {
+    "id": "seriea_artem_dovbyk",
+    "name": "Artem Dovbyk",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 79,
+      "hiz": 84,
+      "sut": 85,
+      "teknik": 79,
+      "pas": 69,
+      "calim": 78
+    }
+  },
+  {
+    "id": "seriea_benjamin_pavard",
+    "name": "Benjamin Pavard",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 75,
+      "hiz": 75,
+      "sut": 67,
+      "teknik": 78,
+      "pas": 75,
+      "calim": 72
+    }
+  },
+  {
+    "id": "seriea_dusan_vlahovic",
+    "name": "Dušan Vlahović",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 79,
+      "hiz": 78,
+      "sut": 84,
+      "teknik": 84,
+      "pas": 69,
+      "calim": 72
+    }
+  },
+  {
+    "id": "seriea_ismael_bennacer",
+    "name": "Ismaël Bennacer",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 77,
+      "sut": 73,
+      "teknik": 85,
+      "pas": 82,
+      "calim": 85
+    }
+  },
+  {
+    "id": "seriea_stefan_de_vrij",
+    "name": "Stefan de Vrij",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "dripling": 69,
+      "hiz": 62,
+      "sut": 41,
+      "teknik": 74,
+      "pas": 65,
+      "calim": 63
+    }
+  },
+  {
+    "id": "seriea_teun_koopmeiners",
+    "name": "Teun Koopmeiners",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 66,
+      "sut": 78,
+      "teknik": 84,
+      "pas": 83,
+      "calim": 71
+    }
+  },
+  {
+    "id": "seriea_manuel_locatelli",
+    "name": "Manuel Locatelli",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 64,
+      "sut": 70,
+      "teknik": 83,
+      "pas": 80,
+      "calim": 72
+    }
+  },
+  {
+    "id": "seriea_henrikh_mkhitaryan",
+    "name": "Henrikh Mkhitaryan",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "dripling": 84,
+      "hiz": 78,
+      "sut": 79,
+      "teknik": 86,
+      "pas": 82,
+      "calim": 84
+    }
+  },
+  {
+    "id": "seriea_morata",
+    "name": "Morata",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 82,
+      "sut": 81,
+      "teknik": 83,
+      "pas": 73,
+      "calim": 77
+    }
+  },
+  {
+    "id": "seriea_lorenzo_pellegrini",
+    "name": "Lorenzo Pellegrini",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "dripling": 83,
+      "hiz": 79,
+      "sut": 78,
+      "teknik": 87,
+      "pas": 83,
+      "calim": 80
+    }
+  },
+  {
+    "id": "seriea_christian_pulisic",
+    "name": "Christian Pulisic",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 88,
+      "sut": 82,
+      "teknik": 86,
+      "pas": 78,
+      "calim": 88
+    }
+  },
+  {
+    "id": "seriea_alessio_romagnoli",
+    "name": "Alessio Romagnoli",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "dripling": 69,
+      "hiz": 64,
+      "sut": 40,
+      "teknik": 75,
+      "pas": 56,
+      "calim": 60
+    }
+  },
+  {
+    "id": "seriea_douglas_luiz",
+    "name": "Douglas Luiz",
+    "position": "field",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 66,
+      "sut": 78,
+      "teknik": 85,
+      "pas": 85,
+      "calim": 77
+    }
+  },
+  {
+    "id": "seriea_mike_maignan",
+    "name": "Mike Maignan",
+    "position": "gk",
+    "pool": "seriea",
+    "tier": "ust",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 86,
+      "pozisyonAlma": 84
+    }
+  },
+  {
+    "id": "seriea_yann_sommer",
+    "name": "Yann Sommer",
+    "position": "gk",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "atlama": 83,
+      "kurtaris": 87,
+      "pozisyonAlma": 86
+    }
+  },
+  {
+    "id": "seriea_ivan_provedel",
+    "name": "Ivan Provedel",
+    "position": "gk",
+    "pool": "seriea",
+    "tier": "orta",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 82,
+      "pozisyonAlma": 84
+    }
+  },
+  {
+    "id": "seriea_marco_carnesecchi",
+    "name": "Marco Carnesecchi",
+    "position": "gk",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "atlama": 84,
+      "kurtaris": 82,
+      "pozisyonAlma": 83
+    }
+  },
+  {
+    "id": "seriea_alex_meret",
+    "name": "Alex Meret",
+    "position": "gk",
+    "pool": "seriea",
+    "tier": "alt",
+    "stats": {
+      "atlama": 80,
+      "kurtaris": 81,
+      "pozisyonAlma": 83
+    }
+  },
+  {
+    "id": "bundesliga_harry_kane",
+    "name": "Harry Kane",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 83,
+      "hiz": 65,
+      "sut": 93,
+      "teknik": 87,
+      "pas": 84,
+      "calim": 74
+    }
+  },
+  {
+    "id": "bundesliga_florian_wirtz",
+    "name": "Florian Wirtz",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 89,
+      "hiz": 81,
+      "sut": 78,
+      "teknik": 90,
+      "pas": 87,
+      "calim": 89
+    }
+  },
+  {
+    "id": "bundesliga_jamal_musiala",
+    "name": "Jamal Musiala",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 90,
+      "hiz": 84,
+      "sut": 81,
+      "teknik": 84,
+      "pas": 78,
+      "calim": 94
+    }
+  },
+  {
+    "id": "bundesliga_granit_xhaka",
+    "name": "Granit Xhaka",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 74,
+      "hiz": 50,
+      "sut": 75,
+      "teknik": 83,
+      "pas": 85,
+      "calim": 62
+    }
+  },
+  {
+    "id": "bundesliga_grimaldo",
+    "name": "Grimaldo",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 85,
+      "hiz": 74,
+      "sut": 73,
+      "teknik": 86,
+      "pas": 88,
+      "calim": 85
+    }
+  },
+  {
+    "id": "bundesliga_jonathan_tah",
+    "name": "Jonathan Tah",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 62,
+      "hiz": 71,
+      "sut": 38,
+      "teknik": 67,
+      "pas": 60,
+      "calim": 55
+    }
+  },
+  {
+    "id": "bundesliga_joshua_kimmich",
+    "name": "Joshua Kimmich",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "ust",
+    "stats": {
+      "dripling": 84,
+      "hiz": 69,
+      "sut": 74,
+      "teknik": 85,
+      "pas": 88,
+      "calim": 83
+    }
+  },
+  {
+    "id": "bundesliga_julian_brandt",
+    "name": "Julian Brandt",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 71,
+      "sut": 79,
+      "teknik": 87,
+      "pas": 85,
+      "calim": 85
+    }
+  },
+  {
+    "id": "bundesliga_lois_openda",
+    "name": "Loïs Openda",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 81,
+      "hiz": 93,
+      "sut": 84,
+      "teknik": 83,
+      "pas": 69,
+      "calim": 81
+    }
+  },
+  {
+    "id": "bundesliga_palhinha",
+    "name": "Palhinha",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 74,
+      "hiz": 52,
+      "sut": 68,
+      "teknik": 80,
+      "pas": 72,
+      "calim": 64
+    }
+  },
+  {
+    "id": "bundesliga_leroy_sane",
+    "name": "Leroy Sané",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 90,
+      "sut": 83,
+      "teknik": 85,
+      "pas": 80,
+      "calim": 87
+    }
+  },
+  {
+    "id": "bundesliga_nico_schlotterbeck",
+    "name": "Nico Schlotterbeck",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 73,
+      "hiz": 77,
+      "sut": 59,
+      "teknik": 71,
+      "pas": 70,
+      "calim": 71
+    }
+  },
+  {
+    "id": "bundesliga_kingsley_coman",
+    "name": "Kingsley Coman",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 87,
+      "hiz": 89,
+      "sut": 75,
+      "teknik": 87,
+      "pas": 79,
+      "calim": 90
+    }
+  },
+  {
+    "id": "bundesliga_jeremie_frimpong",
+    "name": "Jeremie Frimpong",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 86,
+      "hiz": 93,
+      "sut": 62,
+      "teknik": 84,
+      "pas": 75,
+      "calim": 89
+    }
+  },
+  {
+    "id": "bundesliga_aleix_garcia",
+    "name": "Aleix García",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 84,
+      "hiz": 67,
+      "sut": 77,
+      "teknik": 87,
+      "pas": 85,
+      "calim": 80
+    }
+  },
+  {
+    "id": "bundesliga_serhou_guirassy",
+    "name": "Serhou Guirassy",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 69,
+      "sut": 86,
+      "teknik": 84,
+      "pas": 71,
+      "calim": 74
+    }
+  },
+  {
+    "id": "bundesliga_exequiel_palacios",
+    "name": "Exequiel Palacios",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "dripling": 82,
+      "hiz": 69,
+      "sut": 76,
+      "teknik": 83,
+      "pas": 79,
+      "calim": 80
+    }
+  },
+  {
+    "id": "bundesliga_marcel_sabitzer",
+    "name": "Marcel Sabitzer",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 82,
+      "hiz": 76,
+      "sut": 84,
+      "teknik": 84,
+      "pas": 81,
+      "calim": 80
+    }
+  },
+  {
+    "id": "bundesliga_robert_andrich",
+    "name": "Robert Andrich",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 73,
+      "hiz": 54,
+      "sut": 77,
+      "teknik": 76,
+      "pas": 76,
+      "calim": 69
+    }
+  },
+  {
+    "id": "bundesliga_leon_goretzka",
+    "name": "Leon Goretzka",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 81,
+      "hiz": 70,
+      "sut": 80,
+      "teknik": 81,
+      "pas": 80,
+      "calim": 78
+    }
+  },
+  {
+    "id": "bundesliga_kim_min_jae",
+    "name": "Kim Min Jae",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 63,
+      "hiz": 76,
+      "sut": 33,
+      "teknik": 68,
+      "pas": 57,
+      "calim": 61
+    }
+  },
+  {
+    "id": "bundesliga_konrad_laimer",
+    "name": "Konrad Laimer",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 77,
+      "hiz": 80,
+      "sut": 69,
+      "teknik": 78,
+      "pas": 77,
+      "calim": 76
+    }
+  },
+  {
+    "id": "bundesliga_donyell_malen",
+    "name": "Donyell Malen",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 85,
+      "hiz": 89,
+      "sut": 81,
+      "teknik": 85,
+      "pas": 74,
+      "calim": 87
+    }
+  },
+  {
+    "id": "bundesliga_willi_orban",
+    "name": "Willi Orban",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 56,
+      "hiz": 58,
+      "sut": 36,
+      "teknik": 59,
+      "pas": 56,
+      "calim": 50
+    }
+  },
+  {
+    "id": "bundesliga_xavi_simons",
+    "name": "Xavi Simons",
+    "position": "field",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "dripling": 86,
+      "hiz": 81,
+      "sut": 77,
+      "teknik": 86,
+      "pas": 80,
+      "calim": 88
+    }
+  },
+  {
+    "id": "bundesliga_gregor_kobel",
+    "name": "Gregor Kobel",
+    "position": "gk",
+    "pool": "bundesliga",
+    "tier": "ust",
+    "stats": {
+      "atlama": 87,
+      "kurtaris": 88,
+      "pozisyonAlma": 87
+    }
+  },
+  {
+    "id": "bundesliga_manuel_neuer",
+    "name": "Manuel Neuer",
+    "position": "gk",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "atlama": 83,
+      "kurtaris": 82,
+      "pozisyonAlma": 88
+    }
+  },
+  {
+    "id": "bundesliga_lukas_hradecky",
+    "name": "Lukáš Hrádecký",
+    "position": "gk",
+    "pool": "bundesliga",
+    "tier": "orta",
+    "stats": {
+      "atlama": 85,
+      "kurtaris": 84,
+      "pozisyonAlma": 82
+    }
+  },
+  {
+    "id": "bundesliga_oliver_baumann",
+    "name": "Oliver Baumann",
+    "position": "gk",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "atlama": 81,
+      "kurtaris": 82,
+      "pozisyonAlma": 79
+    }
+  },
+  {
+    "id": "bundesliga_peter_gulacsi",
+    "name": "Péter Gulácsi",
+    "position": "gk",
+    "pool": "bundesliga",
+    "tier": "alt",
+    "stats": {
+      "atlama": 82,
+      "kurtaris": 82,
+      "pozisyonAlma": 83
+    }
+  },
+  {
+    "id": "ligue1_marquinhos",
+    "name": "Marquinhos",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "ust",
+    "stats": {
+      "dripling": 74,
+      "hiz": 79,
+      "sut": 56,
+      "teknik": 79,
+      "pas": 75,
+      "calim": 69
+    }
+  },
+  {
+    "id": "ligue1_ousmane_dembele",
+    "name": "Ousmane Dembélé",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "ust",
+    "stats": {
+      "dripling": 88,
+      "hiz": 92,
+      "sut": 75,
+      "teknik": 87,
+      "pas": 82,
+      "calim": 92
+    }
+  },
+  {
+    "id": "ligue1_vitinha",
+    "name": "Vitinha",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "ust",
+    "stats": {
+      "dripling": 87,
+      "hiz": 72,
+      "sut": 77,
+      "teknik": 87,
+      "pas": 84,
+      "calim": 89
+    }
+  },
+  {
+    "id": "ligue1_achraf_hakimi",
+    "name": "Achraf Hakimi",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "ust",
+    "stats": {
+      "dripling": 80,
+      "hiz": 91,
+      "sut": 76,
+      "teknik": 82,
+      "pas": 80,
+      "calim": 80
+    }
+  },
+  {
+    "id": "ligue1_lucas_hernandez",
+    "name": "Lucas Hernández",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "ust",
+    "stats": {
+      "dripling": 71,
+      "hiz": 74,
+      "sut": 54,
+      "teknik": 77,
+      "pas": 72,
+      "calim": 67
+    }
+  },
+  {
+    "id": "ligue1_nuno_mendes",
+    "name": "Nuno Mendes",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "ust",
+    "stats": {
+      "dripling": 82,
+      "hiz": 89,
+      "sut": 58,
+      "teknik": 82,
+      "pas": 76,
+      "calim": 82
+    }
+  },
+  {
+    "id": "ligue1_randal_kolo_muani",
+    "name": "Randal Kolo Muani",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "ust",
+    "stats": {
+      "dripling": 81,
+      "hiz": 90,
+      "sut": 80,
+      "teknik": 81,
+      "pas": 71,
+      "calim": 83
+    }
+  },
+  {
+    "id": "ligue1_alexandre_lacazette",
+    "name": "Alexandre Lacazette",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 83,
+      "hiz": 70,
+      "sut": 84,
+      "teknik": 84,
+      "pas": 76,
+      "calim": 81
+    }
+  },
+  {
+    "id": "ligue1_fabian_ruiz",
+    "name": "Fabián Ruiz",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 80,
+      "hiz": 54,
+      "sut": 76,
+      "teknik": 84,
+      "pas": 80,
+      "calim": 74
+    }
+  },
+  {
+    "id": "ligue1_marco_asensio",
+    "name": "Marco Asensio",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 83,
+      "hiz": 76,
+      "sut": 79,
+      "teknik": 86,
+      "pas": 81,
+      "calim": 81
+    }
+  },
+  {
+    "id": "ligue1_jonathan_david",
+    "name": "Jonathan David",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 78,
+      "hiz": 82,
+      "sut": 81,
+      "teknik": 80,
+      "pas": 71,
+      "calim": 77
+    }
+  },
+  {
+    "id": "ligue1_alexandr_golovin",
+    "name": "Alexandr Golovin",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 83,
+      "hiz": 77,
+      "sut": 77,
+      "teknik": 83,
+      "pas": 80,
+      "calim": 85
+    }
+  },
+  {
+    "id": "ligue1_presnel_kimpembe",
+    "name": "Presnel Kimpembe",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 69,
+      "hiz": 74,
+      "sut": 43,
+      "teknik": 77,
+      "pas": 67,
+      "calim": 66
+    }
+  },
+  {
+    "id": "ligue1_milan_skriniar",
+    "name": "Milan Škriniar",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 65,
+      "hiz": 57,
+      "sut": 45,
+      "teknik": 70,
+      "pas": 60,
+      "calim": 56
+    }
+  },
+  {
+    "id": "ligue1_wilfried_zaha",
+    "name": "Wilfried Zaha",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 85,
+      "hiz": 86,
+      "sut": 78,
+      "teknik": 86,
+      "pas": 73,
+      "calim": 86
+    }
+  },
+  {
+    "id": "ligue1_benjamin_andre",
+    "name": "Benjamin André",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 75,
+      "hiz": 61,
+      "sut": 64,
+      "teknik": 77,
+      "pas": 73,
+      "calim": 73
+    }
+  },
+  {
+    "id": "ligue1_bradley_barcola",
+    "name": "Bradley Barcola",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "dripling": 81,
+      "hiz": 88,
+      "sut": 74,
+      "teknik": 80,
+      "pas": 75,
+      "calim": 85
+    }
+  },
+  {
+    "id": "ligue1_jonathan_clauss",
+    "name": "Jonathan Clauss",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "dripling": 78,
+      "hiz": 88,
+      "sut": 69,
+      "teknik": 79,
+      "pas": 76,
+      "calim": 80
+    }
+  },
+  {
+    "id": "ligue1_kevin_danso",
+    "name": "Kevin Danso",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "dripling": 62,
+      "hiz": 75,
+      "sut": 32,
+      "teknik": 68,
+      "pas": 57,
+      "calim": 57
+    }
+  },
+  {
+    "id": "ligue1_pierre_emile_h_jbjerg",
+    "name": "Pierre-Emile Højbjerg",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "dripling": 74,
+      "hiz": 50,
+      "sut": 73,
+      "teknik": 79,
+      "pas": 76,
+      "calim": 67
+    }
+  },
+  {
+    "id": "ligue1_nemanja_matic",
+    "name": "Nemanja Matić",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "dripling": 76,
+      "hiz": 35,
+      "sut": 67,
+      "teknik": 84,
+      "pas": 76,
+      "calim": 63
+    }
+  },
+  {
+    "id": "ligue1_facundo_medina",
+    "name": "Facundo Medina",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "dripling": 72,
+      "hiz": 73,
+      "sut": 36,
+      "teknik": 76,
+      "pas": 69,
+      "calim": 66
+    }
+  },
+  {
+    "id": "ligue1_teji_savanier",
+    "name": "Téji Savanier",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "dripling": 82,
+      "hiz": 60,
+      "sut": 76,
+      "teknik": 82,
+      "pas": 84,
+      "calim": 83
+    }
+  },
+  {
+    "id": "ligue1_jordan_veretout",
+    "name": "Jordan Veretout",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "dripling": 79,
+      "hiz": 75,
+      "sut": 75,
+      "teknik": 81,
+      "pas": 78,
+      "calim": 76
+    }
+  },
+  {
+    "id": "ligue1_warren_zaire_emery",
+    "name": "Warren Zaïre-Emery",
+    "position": "field",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "dripling": 80,
+      "hiz": 79,
+      "sut": 68,
+      "teknik": 82,
+      "pas": 77,
+      "calim": 77
+    }
+  },
+  {
+    "id": "ligue1_gianluigi_donnarumma",
+    "name": "Gianluigi Donnarumma",
+    "position": "gk",
+    "pool": "ligue1",
+    "tier": "ust",
+    "stats": {
+      "atlama": 90,
+      "kurtaris": 87,
+      "pozisyonAlma": 87
+    }
+  },
+  {
+    "id": "ligue1_brice_samba",
+    "name": "Brice Samba",
+    "position": "gk",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "atlama": 79,
+      "kurtaris": 84,
+      "pozisyonAlma": 81
+    }
+  },
+  {
+    "id": "ligue1_lucas_chevalier",
+    "name": "Lucas Chevalier",
+    "position": "gk",
+    "pool": "ligue1",
+    "tier": "orta",
+    "stats": {
+      "atlama": 80,
+      "kurtaris": 81,
+      "pozisyonAlma": 78
+    }
+  },
+  {
+    "id": "ligue1_marco_bizot",
+    "name": "Marco Bizot",
+    "position": "gk",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "atlama": 79,
+      "kurtaris": 78,
+      "pozisyonAlma": 79
+    }
+  },
+  {
+    "id": "ligue1_marcin_bu_ka",
+    "name": "Marcin Bułka",
+    "position": "gk",
+    "pool": "ligue1",
+    "tier": "alt",
+    "stats": {
+      "atlama": 79,
+      "kurtaris": 79,
+      "pozisyonAlma": 79
+    }
+  }
 ]
