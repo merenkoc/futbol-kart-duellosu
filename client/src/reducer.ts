@@ -215,8 +215,8 @@ export function reducer(state: ClientState, action: Action): ClientState {
     case 'PENALTY_START':
       // Seri durumu (skor, seri no, kilitli seçim) artık sunucudan gelir — sayfa
       // yenileme/reconnect'te de doğru resync olur (eskiden 0-0 / "İlk Seri"ye dönüyordu).
-      // lastResult burada temizlenir; korumak yeni seride kart seçimini kilitlerdi
-      // (bkz. docs/faz4-duzeltme-plani.md Sorun 2).
+      // lastResult burada temizlenir; korunursa ani ölümde yeni seride kart seçimi
+      // kilitli kalır.
       return {
         ...state,
         screen: 'penalty',

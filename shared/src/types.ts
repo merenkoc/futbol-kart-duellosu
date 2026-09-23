@@ -1,5 +1,5 @@
 /**
- * Ortak tipler — hem server hem (Faz 2'de) client kullanır.
+ * Ortak tipler — hem server hem client kullanır.
  * Stat listeleri hard-code DEĞİLDİR: config.json'dan gelir,
  * kart statları Record<string, number> olarak tutulur.
  */
@@ -113,8 +113,8 @@ export interface RoundResult {
 }
 
 /**
- * Socket.io event sözleşmesi (tasarım dokümanı §12).
- * Faz 2: "bota karşı". Faz 3: "arkadaşla oyna" (room) + "rastgele eşleş" (queue) + reconnect.
+ * Socket.io event sözleşmesi.
+ * Modlar: "bota karşı", "arkadaşla oyna" (room), "rastgele eşleş" (queue); hepsinde reconnect var.
  */
 export type MatchMode = 'bot' | 'friend' | 'matchmaking';
 

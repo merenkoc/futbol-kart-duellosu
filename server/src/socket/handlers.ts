@@ -29,7 +29,7 @@ function rateLimited(key: string, max: number): boolean {
 }
 
 /**
- * Faz 3: "bota karşı", "arkadaşla oyna" ve "rastgele eşleş" tek bir orkestrasyon
+ * "Bota karşı", "arkadaşla oyna" ve "rastgele eşleş" tek bir orkestrasyon
  * katmanından geçer. Bir `MatchSession` iki gerçek socket'e (friend/matchmaking)
  * ya da bir gerçek + bir sanal bot'a (mode==='bot') bağlanabilir; hangi taraf
  * hangi event'i alacağını `realtime/store.ts` (socket<->oyuncu eşleşmesi) belirler.
@@ -182,7 +182,7 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
 
       if (entry.session.mode === 'bot') {
         // Bot maçının rakibi yok; forfeit yerine reconnect penceresi boyunca canlı
-        // tut ki sayfa yenilemede maç kaldığı yerden sürsün (docs O1). Dönülmezse temizle.
+        // tut ki sayfa yenilemede maç kaldığı yerden sürsün. Dönülmezse temizle.
         const cleanup = setTimeout(() => {
           const e = store.getEntry(link.matchId);
           if (e && !e.sockets[link.playerIdx]) store.deleteEntry(link.matchId);
@@ -285,7 +285,7 @@ export function registerHandlers(io: Server<ClientToServerEvents, ServerToClient
   }
 
   /**
-   * Sahne temposu (docs/faz4-duzeltme-plani.md Sorun 1): store'daki girdi hâlâ
+   * Sahne temposu için gecikmeli çalışan timer'lar: store'daki girdi hâlâ
    * bu session'a işaret ediyor mu? Forfeit/rematch bekleyen bir timer'ı
    * geçersiz kılmış olabilir — bot zamanlayıcılarındaki guard'la aynı desen.
    */

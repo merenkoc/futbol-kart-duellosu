@@ -8,10 +8,10 @@ import * as store from '../src/realtime/store.js';
 
 /**
  * Bot maçı yaşam döngüsü:
- *  - Sorun 1: maç bitince "Tekrar Oyna" hemen yeni bir bot maçı başlatmalı, takılmamalı.
+ *  - Maç bitince "Tekrar Oyna" hemen yeni bir bot maçı başlatmalı, takılmamalı.
  *    Kök neden: emitMatchEnd bot girdisini siliyordu; match:rematch handler girdiyi
  *    bulamayıp "Aktif maç yok" dönüyordu, client "Rakip bekleniyor…"de kalıyordu.
- *  - Sorun 2 (docs O1): bot maçında disconnect sonrası girdi reconnect penceresi
+ *  - Bot maçında disconnect sonrası girdi reconnect penceresi
  *    boyunca canlı kalmalı ki sayfa yenilemede match:reconnect kaldığı yerden resync etsin.
  */
 function waitFor<T = unknown>(socket: ClientSocket, event: string): Promise<T> {
@@ -38,7 +38,7 @@ describe('bot maçı yaşam döngüsü (rematch + reconnect)', () => {
     return ioClient(`http://localhost:${port}`, { transports: ['websocket'] });
   }
 
-  it('match:rematch takılmadan hemen yeni bir bot maçı başlatır (Sorun 1)', async () => {
+  it('match:rematch takılmadan hemen yeni bir bot maçı başlatır', async () => {
     const client = connect();
     await waitFor(client, 'connect');
 
@@ -59,7 +59,7 @@ describe('bot maçı yaşam döngüsü (rematch + reconnect)', () => {
     client.close();
   }, 15000);
 
-  it('disconnect sonrası bot maçı canlı kalır, reconnect resync eder (Sorun 2)', async () => {
+  it('disconnect sonrası bot maçı canlı kalır, reconnect resync eder', async () => {
     const client = connect();
     await waitFor(client, 'connect');
 

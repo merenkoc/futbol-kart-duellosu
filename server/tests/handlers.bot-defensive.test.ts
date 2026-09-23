@@ -7,17 +7,16 @@ import { registerHandlers } from '../src/socket/handlers.js';
 import * as store from '../src/realtime/store.js';
 
 /**
- * docs/saglik-fix-plani.md Y1: bot zamanlayıcılarındaki (`scheduleBotDraftPick` vb.)
- * `setTimeout` gövdeleri motor çağrılarını try/catch ile sarmalı — motor beklenmedik
- * şekilde `throw` ederse (K1 canlı bir örneğiydi) süreç düşmemeli, sadece loglanmalı.
- * Burada K1 kapandıktan sonra da bu savunma katmanının gerçekten var olduğunu,
- * `botRoundChoice` kasıtlı throw ettiğinde sunucunun ayakta kaldığını doğruluyoruz.
+ * Bot zamanlayıcılarındaki (`scheduleBotDraftPick` vb.) `setTimeout` gövdeleri
+ * motor çağrılarını try/catch ile sarmalı — motor beklenmedik şekilde `throw`
+ * ederse süreç düşmemeli, sadece loglanmalı. Burada `botRoundChoice` kasıtlı
+ * throw ettiğinde sunucunun ayakta kaldığını doğruluyoruz.
  */
 function waitFor<T = unknown>(socket: ClientSocket, event: string): Promise<T> {
   return new Promise((resolve) => socket.once(event, (payload: T) => resolve(payload)));
 }
 
-describe('bot zamanlayıcıları — savunma katmanı (Y1)', () => {
+describe('bot zamanlayıcıları — savunma katmanı', () => {
   let httpServer: ReturnType<typeof createServer>;
   let port: number;
 
@@ -59,7 +58,7 @@ describe('bot zamanlayıcıları — savunma katmanı (Y1)', () => {
     const entry = store.getEntry(matchId);
     expect(entry).toBeDefined();
     entry!.session.botRoundChoice = () => {
-      throw new Error('kasıtlı test hatası (Y1)');
+      throw new Error('kasıtlı test hatası');
     };
 
     // Draft'ı bitir: persistent listener her round:options'ta lastOptions'ı günceller;

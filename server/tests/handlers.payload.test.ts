@@ -6,8 +6,8 @@ import { io as ioClient, type Socket as ClientSocket } from 'socket.io-client';
 import { registerHandlers } from '../src/socket/handlers.js';
 
 /**
- * docs/saglik-fix-plani.md K2: bozuk/eksik socket payload'ları (destructure
- * hatasıyla) tüm Node sürecini düşürüyordu. Burada gerçek bir socket.io sunucusu
+ * Bozuk/eksik socket payload'ları (destructure hatasıyla) tüm Node sürecini
+ * düşürmemeli. Burada gerçek bir socket.io sunucusu
  * ayağa kaldırılıp kasıtlı bozuk payload'lar gönderiliyor; sunucunun ayakta
  * kaldığını (yeni bir client'ın hâlâ normal maç başlatabildiğini) doğruluyoruz.
  */
@@ -15,7 +15,7 @@ function waitFor<T = unknown>(socket: ClientSocket, event: string): Promise<T> {
   return new Promise((resolve) => socket.once(event, (payload: T) => resolve(payload)));
 }
 
-describe('socket handlers — bozuk payload dayanıklılığı (K2)', () => {
+describe('socket handlers — bozuk payload dayanıklılığı', () => {
   let httpServer: ReturnType<typeof createServer>;
   let port: number;
 

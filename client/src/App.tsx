@@ -30,7 +30,7 @@ export default function App() {
   const mountEffectRan = useRef(false);
   const reduceMotion = useReducedMotion();
 
-  // Soğuk başlangıç splash'i (#24): bağlantı kurulana VE min süre geçene kadar görünür.
+  // Açılış ekranı: sunucu bağlantısı kurulana VE minimum süre geçene kadar görünür.
   const [connected, setConnected] = useState(socket.connected);
   const [minSplashDone, setMinSplashDone] = useState(false);
   const [slowServer, setSlowServer] = useState(false);

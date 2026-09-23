@@ -7,7 +7,7 @@ import type { TypedSocket } from './types.js';
  * kurma işini (`MatchSession` + store girdisi + ilk event'ler) `beginMatch`
  * callback'ine devreder — böylece bu modül `socket/handlers.ts`'e bağımlı olmaz.
  *
- * Havuz kuralı (kullanıcı kararı): odada HOST'un seçtiği havuz geçerlidir;
+ * Havuz kuralı: odada HOST'un seçtiği havuz geçerlidir;
  * kuyrukta İLK giren oyuncunun havuzu geçerlidir.
  */
 export type BeginMatch = (mode: MatchMode, sockets: [TypedSocket, TypedSocket | null], poolId: string) => void;
@@ -48,7 +48,7 @@ export function createLobby(beginMatch: BeginMatch) {
 
   function joinQueue(socket: TypedSocket, poolId: string): void {
     // Eski oda/kuyruk girdisini düş: aynı socket kuyrukta birden fazla kez duramaz
-    // (docs/saglik-kontrolu-raporu.md O2) ve oda host'uyken kuyruğa da giremez.
+    // ve oda host'uyken kuyruğa da giremez.
     forget(socket);
     const waiting = queue.shift();
     if (!waiting) {

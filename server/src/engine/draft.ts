@@ -3,7 +3,7 @@ import { tierOf } from './cards.js';
 import { pickOne, shuffle, type RNG } from './rng.js';
 
 /**
- * Draft kuralları (tasarım dokümanı §5 + kullanıcı kararı):
+ * Draft kuralları:
  * - Her turda bir "kademe kompozisyonu" seçilir (örn. [alt,orta,ust] veya [orta,orta,ust]).
  *   İKİ OYUNCUYA AYNI KOMPOZİSYON uygulanır (adalet), ama kartlar bağımsız çekilir
  *   (aynı kart ikisine de sunulabilir — kopyalar rakipler arasında serbest).

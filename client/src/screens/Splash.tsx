@@ -6,9 +6,9 @@ interface Props {
 }
 
 /**
- * Soğuk başlangıç ekranı (#24): uygulama açılır açılmaz gösterilir; socket
- * bağlantısı kurulana ve minimum gösterim süresi geçene kadar ekranı kaplar.
- * Ücretsiz sunucu (Railway) uykudan uyanırken 20-60 sn sürebildiği için
+ * Açılış ekranı: uygulama açılır açılmaz gösterilir; socket bağlantısı
+ * kurulana ve minimum gösterim süresi geçene kadar ekranı kaplar.
+ * Ücretsiz sunucu (Render) uykudan uyanırken 30-60 sn sürebildiği için
  * uzayan beklemede açıklama notu çıkar. Kaldırılışı App'teki AnimatePresence
  * ile yumuşak biter.
  */

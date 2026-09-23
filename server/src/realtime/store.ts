@@ -2,10 +2,9 @@ import { MatchSession } from '../game/session.js';
 import type { TypedSocket } from './types.js';
 
 /**
- * In-memory eşleşme deposu. Faz 2'de tek bir socket (insan) + sanal bot vardı;
- * Faz 3'te iki taraf da gerçek socket olabildiği için hangi socket'in hangi
- * maçta hangi oyuncu (0|1) olduğunu ve socket kopunca reconnect penceresini
- * burada tutuyoruz. Maç bitince (ya da forfeit'le) girdi silinir.
+ * In-memory eşleşme deposu. Bot maçında tek gerçek socket vardır, arkadaş ve
+ * eşleşme maçlarında iki; hangi socket'in hangi maçta hangi oyuncu (0|1)
+ * olduğunu ve socket kopunca reconnect penceresini burada tutuyoruz. Maç bitince (ya da forfeit'le) girdi silinir.
  */
 export interface PlayerLink {
   matchId: string;

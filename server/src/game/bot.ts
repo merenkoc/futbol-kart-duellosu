@@ -4,7 +4,7 @@ import { pickOne, type RNG } from '../engine/rng.js';
 import { shooterPower } from '../engine/penalty.js';
 
 /**
- * Kural bazlı bot (tasarım dokümanı §9). Saf fonksiyonlar — karar gecikmesi
+ * Kural bazlı bot. Saf fonksiyonlar — karar gecikmesi
  * (config.bot.min/maxDelayMs) çağıran socket katmanında uygulanır, burada yok.
  */
 

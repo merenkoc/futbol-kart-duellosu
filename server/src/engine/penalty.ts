@@ -2,7 +2,7 @@ import type { Card, GameConfig } from '@fkd/shared';
 import type { RNG } from './rng.js';
 
 /**
- * Penaltı turu (tasarım dokümanı §8 + kullanıcı kararları):
+ * Penaltı turu:
  * - Atıcı: maçta KULLANILMIŞ 4 saha kartından biri geri çağrılır (kör seçim).
  * - Atıcı gücü = sut×0.7 + teknik×0.3 (config'ten, normalize edilir).
  * - Kurtarış gücü = kaleci 3 statının ortalaması.

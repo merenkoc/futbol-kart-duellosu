@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { compareScores, roundPoints, taskScore } from '../src/engine/scoring.js';
 import { config, fieldTasks, gkTasks, makeFieldCard, makeGkCard } from './helpers.js';
 
-describe('taskScore — tasarım dokümanındaki formüller', () => {
+describe('taskScore — görev formülleri', () => {
   const card = makeFieldCard('test', { dripling: 70, hiz: 60, sut: 90, teknik: 84, pas: 76, calim: 88 });
 
   const expectTask = (id: string, expected: number) => {

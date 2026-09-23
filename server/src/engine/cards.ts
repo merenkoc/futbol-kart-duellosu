@@ -1,6 +1,5 @@
 /**
- * `overall`/`tierOf`/`validateCard` client de kullanabilsin diye `shared/src/cards.ts`'e
- * taşındı (Faz 4 Sorun 4 — kart tasarımında kademe rengi için client'ın da bu
- * fonksiyonlara ihtiyacı var). Motor davranışı değişmedi, sadece re-export.
+ * `overall`/`tierOf`/`validateCard` `shared/src/cards.ts`'de durur çünkü client de
+ * kart üzerindeki kademe rengi için bunlara ihtiyaç duyar. Motor buradan re-export eder.
  */
 export { overall, tierOf, validateCard } from '@fkd/shared';

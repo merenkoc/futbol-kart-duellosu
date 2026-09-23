@@ -1,12 +1,10 @@
-# ⚽ Futbol Kart Düellosu
+# Futbol Kart Düellosu
 
-**İki oyunculu, gerçek zamanlı futbol kart oyunu.** Futbolcu kartlarıyla kadronu draft'la kur, sonra 5 turluk görev bazlı bir düelloda rakibinle kafa kafaya gel.
+İki kişilik, gerçek zamanlı bir futbol kart oyunu. Önce kartlardan kadronu kuruyorsun, sonra rakibinle 5 turluk bir düelloya giriyorsun. Her turda bir görev çıkıyor ve iki taraf da rakibin kartını görmeden, aynı anda kartını oynuyor.
 
-[![Canlı Oyna](https://img.shields.io/badge/▶_Canlı_Oyna-futbol--kart--duellosu-22c55e?style=for-the-badge)](https://futbol-kart-duellosu-server-virid.vercel.app)
+**Canlı:** https://futbol-kart-duellosu-server-virid.vercel.app
+
 [![Testler](https://github.com/merenkoc/futbol-kart-duellosu/actions/workflows/test.yml/badge.svg)](https://github.com/merenkoc/futbol-kart-duellosu/actions/workflows/test.yml)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
-![Socket.io](https://img.shields.io/badge/Socket.io-010101?logo=socketdotio&logoColor=white)
 
 <p align="center">
   <img src="docs/screenshots/menu.png" width="200" alt="Ana menü" />
@@ -19,68 +17,43 @@
   <img src="docs/screenshots/mac-sonu.png" width="200" alt="Maç sonu" />
 </p>
 
-> 📱 Oyun mobil tarayıcıda sorunsuz çalışır. **Mobil uygulama sürümü geliştiriliyor.**
+Bu Draft oyunu yayımladığım ilk oyun deneyimim. Sırada bu oyunu mobil platforma taşıma hedefim var. Yakında...
 
----
+## Oyun nasıl oynanıyor
 
-## 🎮 Nasıl Oynanır?
+**Takım seçimi.** 9 milli takım ve 6 lig arasından bir havuz seçiliyor. İki oyuncu da aynı havuzdaki oyunculardan kadro kuruyor.
 
-### 1. Takımını seç
-9 milli takım (Türkiye, İngiltere, Almanya, İspanya, Fransa, İtalya, Portekiz, Arjantin, Brezilya) ve 6 lig (Süper Lig, Premier League, LaLiga, Serie A, Bundesliga, Ligue 1) arasından bir havuz seçersin. İki oyuncu da aynı havuzun yıldızlarından kadro kurar.
+**Draft.** 5 tur sürüyor. Her turda önüne 3 kart geliyor ve birini alıyorsun; 3. tur kaleci turu. Sonunda elinde 4 saha oyuncusu ve 1 kaleci oluyor. Şans faktörü dengesiz olmasın diye iki oyuncuya her turda aynı kademe dağılımı sunuluyor. Maçta çıkacak görevler draft sırasında görünüyor, kadroyu ona göre kurabiliyorsun.
 
-### 2. Draft: kadronu kur
-- 5 draft turu var. Her turda önüne 3 kart gelir, birini seçersin.
-- 3. tur kaleci turudur.
-- Sonunda elinde **4 saha oyuncusu + 1 kaleci** olur.
-- Adil olsun diye iki oyuncuya her turda aynı kademe dağılımı sunulur (örneğin alt + orta + üst).
-- Maçta hangi görevlerin geleceği draft sırasında görünür, kadronu buna göre kurarsın.
+**Maç.** 5 tur. Her turda bir görev açıklanıyor: ara pası, kontratak, uzaktan şut gibi. İki oyuncu da kör seçimle bir kart oynuyor ve göreve uygun statlar karşılaştırılıyor. Turu kazanan 3, beraberlikte iki taraf da 1 puan alıyor. Oynanan kart bir daha kullanılamıyor.
 
-### 3. Maç: 5 turluk düello
-- Her turda bir **görev** açıklanır: Ara Pası, Kontratak, Uzaktan Şut, Birebir Çalım…
-- İki oyuncu **kör seçimle**, yani rakibin kartını görmeden, aynı anda bir kart oynar.
-- Kartlar açılır ve göreve uygun statlar karşılaştırılır. Örneğin *Serbest Vuruş* için şut ve pas bakılır.
-- Turu kazanan **3 puan** alır. Beraberlikte iki oyuncu da **1'er puan** alır.
-- Oynanan kart o maçta tekrar kullanılamaz.
+**Kilit Round.** 3. turda kart seçilmiyor, iki kaleci otomatik olarak karşı karşıya geliyor.
 
-### 4. Kilit Round
-3. turda kaleciler otomatik olarak karşı karşıya gelir. Bu tur, kaleci görevleriyle (Karşı Karşıya, Aşırtmayı Tutma…) oynanan özel animasyonlu bir turdur.
+**Penaltılar.** Puanlar eşitse penaltıya gidiliyor. Atıcı gücü rakip kalecinin kurtarış gücünü geçerse gol oluyor. Eşitlik sürerse ani ölüm oynanıyor; saha kartları biterse kaleciler birbirine atıyor.
 
-### 5. Penaltılar
-- Puanlar eşitse penaltıya gidilir.
-- Her oyuncu kartlarından birini atıcı seçer. Atıcı gücü rakip kalecinin kurtarış gücünü geçerse gol olur.
-- Eşitlik sürerse ani ölüme geçilir.
-- Saha kartları biterse kaleciler birbirine penaltı atar.
+## Özellikler
 
----
+- Üç mod var: bota karşı, arkadaşla (oda linkiyle) ve rastgele eşleşme.
+- Tüm oyun mantığı sunucuda çalışıyor. Rakibin eli ve henüz açılmamış seçimi client'a hiç gönderilmiyor, yani tarayıcıdan bakıp hile yapılamıyor.
+- Bağlantı koparsa 60 saniye içinde maça geri dönülebiliyor. Sayfayı yenilemek de maçı bozmuyor.
+- 15 havuzda toplam 450 kart var (375 saha oyuncusu, 75 kaleci).
+- Görev formülleri JSON'da tanımlı. Yeni bir görev eklemek için koda dokunmak gerekmiyor.
+- Kart çevirme, Kilit Round ve penaltı için animasyonlar var (Framer Motion). Ses efektleri dosya yerine Web Audio ile anlık üretiliyor.
+- Mobil tarayıcıda da oynanabiliyor.
+- 110 otomatik test var ve her push'ta GitHub Actions'ta çalışıyor.
 
-## ✨ Özellikler
-
-- **3 oyun modu:** Bota Karşı, Arkadaşla Oyna (oda linki ile) ve Rastgele Eşleş (matchmaking kuyruğu).
-- **Gerçek zamanlı multiplayer:** Socket.io ile anlık eşleşme ve kör seçim.
-- **Hile korumalı mimari:** tüm oyun mantığı sunucuda çalışır. Rakibin eli, seçenekleri ve kilitlenmemiş seçimleri client'a hiçbir zaman gönderilmez.
-- **Yeniden bağlanma:** bağlantın koparsa 60 saniye içinde maça kaldığın yerden dönersin. Sayfayı yenilemek de maçı bozmaz.
-- **Kural bazlı bot:** göreve göre en iyi kartı oynar. Zorluk ayarı `config.json`'dan yapılır.
-- **15 takım/lig havuzu, 450 kart** (375 saha oyuncusu + 75 kaleci).
-- **Veri odaklı tasarım:** görev formülleri JSON'da stat ağırlığı olarak tanımlı. Yeni görev ya da stat eklemek kod değişikliği gerektirmez.
-- **Animasyonlar:** Framer Motion ile kart çevirme, Kilit Round sekansı ve penaltı sahnesi. "Hareketi azalt" tercihine uyar.
-- **Dosyasız ses efektleri:** Web Audio API ile anlık üretilir.
-- **Mobil uyumlu arayüz:** dokunmatik kontroller ve safe-area desteği.
-- **110 otomatik test** (Vitest). Her push'ta GitHub Actions'ta çalışır.
-
----
-
-## 🏗️ Mimari
+## Mimari
 
 ```mermaid
 flowchart LR
     subgraph Client["Client — React + Vite (Vercel)"]
-        UI[Ekranlar<br/>Menü · Draft · Maç · Penaltı]
-        R[Reducer<br/>oyun state'i]
+        UI[Ekranlar]
+        R[Reducer]
     end
     subgraph Server["Server — Node.js + Socket.io (Render)"]
         H[Socket handler'ları<br/>oda · kuyruk · reconnect]
-        S[Maç oturumu<br/>+ Bot]
-        E[Oyun motoru<br/>saf fonksiyonlar]
+        S[Maç oturumu + bot]
+        E[Oyun motoru]
     end
     D[(shared/data<br/>kartlar · görevler · config)]
     UI <-- WebSocket --> H
@@ -89,107 +62,60 @@ flowchart LR
     E --> D
 ```
 
-npm workspaces ile kurulmuş bir monorepo:
+Proje npm workspaces ile üç pakete bölünmüş:
 
-| Paket | Görev |
-|---|---|
-| `shared/` | Ortak TypeScript tipleri ve oyun verisi (`cards.json`, `tasks.json`, `config.json`, `pools.json`) |
-| `server/` | Oyun motoru (draft, maç, puanlama, penaltı), bot, oda/eşleşme sistemi ve Socket.io katmanı |
-| `client/` | React arayüzü, ekranlar, animasyonlar ve ses |
+- `shared/`: ortak tipler ve oyun verisi (`cards.json`, `tasks.json`, `config.json`, `pools.json`)
+- `server/`: oyun motoru, bot, oda/eşleşme sistemi ve Socket.io katmanı
+- `client/`: React arayüzü
 
-**Tasarım kararları:**
-- Oyun motoru **saf fonksiyonlardan** oluşur. Tüm rastgelelik seed'lenebilir bir RNG (`mulberry32`) ile enjekte edilir, bu yüzden testler deterministiktir.
-- Maç state'i sunucu belleğinde tutulur. Hesap ya da veritabanı yoktur, maç bitince her şey sıfırlanır.
+Oyun motoru saf fonksiyonlardan oluşuyor. Rastgelelik dışarıdan verilen seed'li bir RNG ile geliyor, bu yüzden testler her çalıştırmada aynı sonucu veriyor. Maç durumu sunucunun belleğinde tutuluyor; hesap ya da veritabanı yok.
 
----
+**Kullanılan teknolojiler:** TypeScript, React 18, Vite, Framer Motion, Node.js, Socket.io, Vitest. Deploy için Vercel (client) ve Render (server) kullanılıyor.
 
-## 🛠️ Teknolojiler
+## Kendi bilgisayarında çalıştırma
 
-| Alan | Teknoloji |
-|---|---|
-| Dil | TypeScript |
-| Frontend | React 18, Vite, Framer Motion |
-| Backend | Node.js, Socket.io |
-| Test | Vitest |
-| Deploy | Vercel (client), Render (server) |
-
----
-
-## 🚀 Kendi Bilgisayarında Çalıştır
-
-Gereksinim: **Node.js 20+**
+Node.js 20 veya üstü gerekiyor.
 
 ```bash
 git clone https://github.com/merenkoc/futbol-kart-duellosu.git
 cd futbol-kart-duellosu
-npm install        # tüm paketleri kökten kurar
-npm run dev        # server (3001) + client (5173) birlikte başlar
+npm install
+npm run dev
 ```
 
-Tarayıcıda **http://localhost:5173** adresini aç. Lokal geliştirmede `.env` dosyasına gerek yok, varsayılan adresler kullanılır.
+Sonra tarayıcıda http://localhost:5173 adresini aç. Server 3001 portunda çalışıyor. Lokalde `.env` dosyasına gerek yok.
 
-### Testler
+Testleri çalıştırmak için:
 
 ```bash
-npm test                          # server + client testlerinin tamamı
-npm run typecheck -w @fkd/server  # tip kontrolü
+npm test
 ```
 
-### Yayına alma
+Vercel ve Render kurulumu [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) dosyasında anlatılıyor.
 
-Vercel + Render kurulumu için [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) dosyasına bak.
-
----
-
-## 📁 Proje Yapısı
+## Klasör yapısı
 
 ```
-.
-├── client/
-│   ├── src/
-│   │   ├── screens/        # Menü, Takım Seçimi, Lobi, Draft, Maç, Kilit Round, Penaltı, Maç Sonu
-│   │   ├── components/     # Kart, düello alanı, görev zaman çizelgesi
-│   │   ├── reducer.ts      # Client oyun state'i
-│   │   ├── socket.ts       # Socket.io bağlantısı
-│   │   └── sound.ts        # Web Audio ses efektleri
-│   └── tests/
-├── server/
-│   ├── src/
-│   │   ├── engine/         # draft, match, scoring, penalty, rng (saf fonksiyonlar)
-│   │   ├── game/           # Maç oturumu ve bot
-│   │   ├── realtime/       # Oda, eşleşme kuyruğu, maç deposu
-│   │   └── socket/         # Socket event handler'ları
-│   └── tests/
-├── shared/
-│   ├── data/               # cards.json, tasks.json, config.json, pools.json
-│   └── src/                # Ortak tipler
-├── tools/
-│   ├── gen-pools.mjs       # Oyuncu veri setinden kart havuzu üretici
-│   └── kart-editoru.html   # Kart verisi düzenleme aracı
-├── docs/
-├── render.yaml             # Render blueprint (server)
-└── vercel.json             # Vercel build ayarı (client)
+client/src/
+  screens/      menü, takım seçimi, lobi, draft, maç, kilit round, penaltı, maç sonu
+  components/   kart, düello alanı, görev şeridi
+server/src/
+  engine/       draft, maç, puanlama, penaltı, rng
+  game/         maç oturumu ve bot
+  realtime/     oda, eşleşme kuyruğu, maç deposu
+  socket/       socket event handler'ları
+shared/
+  data/         kart, görev, havuz ve ayar dosyaları
+tools/
+  gen-pools.mjs     oyuncu veri setinden kart havuzu üretir
+  kart-editoru.html kart verisini düzenlemek için basit bir araç
 ```
 
----
+## Sırada ne var
 
-## 🗺️ Yol Haritası
+Şu an oyunun mobil uygulama sürümü üzerinde çalışıyorum.
 
-- [x] Oyun motoru ve birim testleri
-- [x] Bota karşı oyun
-- [x] Multiplayer: oda linki, eşleşme ve yeniden bağlanma
-- [x] Animasyonlar, ses ve mobil uyumluluk
-- [x] Canlıya alma (Vercel + Render)
-- [x] Takım/lig seçim sistemi
-- [ ] **Mobil uygulama** (geliştiriliyor)
+## Notlar
 
----
-
-## ℹ️ Notlar
-
-- Sunucu Render'ın ücretsiz planında çalışıyor. 15 dakika kullanılmazsa uykuya geçer, ilk açılışta uyanması 30–60 saniye sürebilir. Açılış ekranı bu bekleme için tasarlandı.
-- Oyuncu istatistikleri, herkese açık EA SPORTS FC oyuncu veri setinden türetilmiştir. Bu proje EA SPORTS, FIFA ya da herhangi bir kulüp veya ligle bağlantılı değildir. Kâr amacı gütmeyen, kişisel bir portfolyo projesidir.
-
----
-
-Geliştirici: [@merenkoc](https://github.com/merenkoc)
+- Sunucu Render'ın ücretsiz planında. 15 dakika kimse girmezse uykuya geçiyor ve ilk açılışta uyanması 30–60 saniye sürebiliyor.
+- Oyuncu istatistikleri herkese açık bir EA SPORTS FC oyuncu veri setinden türetildi. Proje EA SPORTS, FIFA ya da herhangi bir kulüp veya ligle bağlantılı değil; kişisel ve kâr amacı gütmeyen bir proje.

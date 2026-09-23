@@ -25,9 +25,9 @@ import { botDelayMs, botDraftPick, botPenaltyPick, botRoundPick } from './bot.js
 
 /**
  * Tek bir maçın orkestrasyonu. Motorun saf fonksiyonlarını (draft/match/penalty)
- * sırayla çağıran ince, mutable bir kabuk — CLAUDE.md kuralı gereği tüm oyun
- * mantığı `engine/` içinde saf kalmaya devam ediyor, burada sadece phase geçişi var.
- * `mode==='bot'` dışında playerIdx 1 de gerçek bir insan olabilir (Faz 3);
+ * sırayla çağıran ince, mutable bir kabuk — tüm oyun mantığı `engine/` içinde
+ * saf kalır, burada sadece phase geçişi var.
+ * `mode==='bot'` dışında playerIdx 1 de gerçek bir insan olabilir;
  * bot'a özel metodlar (botXChoice) sadece mode==='bot' iken handler katmanınca çağrılır.
  */
 export type Phase = 'draft' | 'match' | 'penalty' | 'finished';
@@ -138,7 +138,7 @@ export class MatchSession {
   availableShooterIds(playerIdx: 0 | 1): string[] {
     // usedCardIds Kilit Round'da kalecinin id'sini de içerir (motor oynanan her
     // kartı "kullanıldı" işaretler) — saha atıcıları bitmeden kaleci listeye
-    // sızmaz (docs/saglik-fix-plani.md K1); 4 saha atıcısı tükenince 5. seri
+    // sızmaz; 4 saha atıcısı tükenince 5. seri
     // için SADECE kaleci sunulur.
     const fieldIds = new Set(this.hands![playerIdx].fieldCards.map((c) => c.id));
     const usedInMatch = this.matchState!.usedCardIds[playerIdx];

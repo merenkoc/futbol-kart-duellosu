@@ -5,7 +5,7 @@ import rawTasks from '../../shared/data/tasks.json';
 /**
  * Kademe renkleri (bronz/gümüş/altın) gibi salt kozmetik client hesapları için
  * `config.json` doğrudan import edilir — server'daki `data/loadData.ts` ile
- * aynı dosya, tek gerçek kaynak (CLAUDE.md). Socket üzerinden ayrıca taşınmaz.
+ * aynı dosya, böylece iki taraf da tek kaynaktan okur. Socket üzerinden ayrıca taşınmaz.
  */
 export const gameConfig = rawConfig as unknown as GameConfig;
 

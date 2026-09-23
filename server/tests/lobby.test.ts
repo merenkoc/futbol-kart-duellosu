@@ -45,7 +45,7 @@ describe('realtime/lobby', () => {
     expect(beginMatch).toHaveBeenCalledWith('matchmaking', [first, second], 'superlig');
   });
 
-  // docs/saglik-kontrolu-raporu.md O2: aynı socket üst üste queue:join yollarsa
+  // Aynı socket üst üste queue:join yollarsa
   // kuyrukta birden fazla kez durmamalı. Bu invariant'ı sabitliyor (ileride
   // joinQueue yeniden yazılırsa duplicate/çoklu eşleşme regresyonunu yakalar).
   it('aynı socket üst üste joinQueue çağırırsa kuyrukta bir kez durur, tam bir kez eşleşir', () => {

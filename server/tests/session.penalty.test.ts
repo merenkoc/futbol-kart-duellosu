@@ -4,7 +4,7 @@ import { MatchSession } from '../src/game/session.js';
 import { cards, config, fieldTasks, gkTasks, makeFieldCard, makeGkCard } from './helpers.js';
 
 /**
- * Sorun 1+2 (docs/faz4-duzeltme-plani.md): penaltı ani ölümde art arda berabere
+ * Penaltı ani ölümde art arda berabere
  * seriler yaşandığında hem motor+session'ın doğru ilerlediğini (bu test) hem de
  * client'ın kilitlenmediğini (client/tests/reducer.test.ts) ayrı ayrı doğruluyoruz.
  * Draft/maç aşamalarını atlayıp session'ı doğrudan penaltı fazına taşıyoruz —
@@ -92,11 +92,11 @@ describe('MatchSession — penaltı ani ölüm birden fazla seri', () => {
     expect(session.availableShooterIds(0)).toEqual(['h0-2', 'h0-3', 'h0-4']);
   });
 
-  // docs/saglik-fix-plani.md K1: Kilit Round'da motor kalecinin id'sini de
+  // Kilit Round'da motor kalecinin id'sini de
   // matchState.usedCardIds'e ekler (oynanan her kart "kullanıldı" işaretlenir).
   // availableShooterIds bunu saha kartı sanıp döndürürse bot `hand.fieldCards.find`
   // ile eşleyemez -> undefined -> shooterPower çöker (canlıda gözlemlenen kilitlenme).
-  it('K1 regresyonu: Kilit Round sonrası kalecinin id\'si atıcı listesine sızmaz', () => {
+  it('regresyon: Kilit Round sonrası kalecinin id\'si atıcı listesine sızmaz', () => {
     const session = buildPenaltySession();
     const gk0Id = session.hands![0].goalkeeper.id;
     const gk1Id = session.hands![1].goalkeeper.id;

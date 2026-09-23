@@ -3,7 +3,7 @@ import { compareScores, roundPoints, taskScore } from './scoring.js';
 import { shuffle, type RNG } from './rng.js';
 
 /**
- * Maç aşaması (tasarım dokümanı §6-7):
+ * Maç aşaması:
  * - 5 tur; 1,2,4,5 saha turu (kör kart seçimi), 3. tur Kilit Round (kaleciler otomatik).
  * - Görevler maç başında çekilir: 4 tekrarsız saha görevi + 1 kaleci görevi.
  * - Kazanan 3, beraberlikte 1-1.

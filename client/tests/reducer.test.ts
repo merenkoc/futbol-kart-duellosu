@@ -66,7 +66,7 @@ describe('reducer — görev önizlemesi', () => {
   });
 });
 
-describe('reducer — penaltı ani ölüm (docs/faz4-duzeltme-plani.md Sorun 2)', () => {
+describe('reducer — penaltı ani ölüm', () => {
   it('PENALTY_START -> PENALTY_RESULT -> PENALTY_START sonrası yeni seride kart seçimi tekrar açılır', () => {
     let state = reducer(initialClientState, penaltyStart(['c1', 'c2'], 0, [0, 0]));
     expect(state.penalty?.lastResult).toBeNull();
