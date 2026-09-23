@@ -1,6 +1,6 @@
 // EA FC oyuncu veri setinden (all_players.csv) havuz bazlı kart üretimi.
 // Kullanım: node tools/gen-pools.mjs [csv-yolu]
-//   varsayılan csv yolu: C:/Users/erenk/Downloads/archive/all_players.csv
+//   csv-yolu: EA FC oyuncu veri setinin (all_players.csv) bilgisayarındaki konumu
 //
 // Her havuz (shared/data/pools.json'daki tanım): en iyi 25 saha + 5 kaleci (OVR'a göre).
 // Stat eşleme (EA -> oyun):
@@ -17,7 +17,11 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const csvPath = process.argv[2] ?? 'C:/Users/erenk/Downloads/archive/all_players.csv';
+const csvPath = process.argv[2];
+if (!csvPath) {
+  console.error('Kullanım: node tools/gen-pools.mjs <all_players.csv yolu>');
+  process.exit(1);
+}
 const pools = JSON.parse(readFileSync(join(root, 'shared/data/pools.json'), 'utf8'));
 
 // --- Minimal ama doğru CSV ayrıştırıcı (tırnak içi virgül/yenisatır destekli) ---

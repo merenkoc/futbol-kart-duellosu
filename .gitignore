@@ -7,3 +7,16 @@ dist/
 .env
 .env.*
 !.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# Kişisel geliştirme notları (repoda yayınlanmaz, yerelde kalır)
+.claude/
+CLAUDE.md
+futbol-kart-oyunu-tasarim.md
+docs/*
+!docs/DEPLOYMENT.md
+!docs/screenshots/
+tools/uyari-bar-testi.html
